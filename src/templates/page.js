@@ -8,6 +8,7 @@ export default class Page extends React.Component {
     render() {
         let post_list = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'), ['frontmatter.show_in_sidebar', true]), 'frontmatter.date', 'desc');
         let post_len = _.size(post_list);
+        let x =0;
         return (
             <Layout {...this.props}>
                 <section id="main" className={'wrapper' + (_.get(this.props, 'pageContext.frontmatter.sidebar.enabled') ? ' sidebar ' + _.get(this.props, 'pageContext.frontmatter.sidebar.side') : '')}>

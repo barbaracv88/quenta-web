@@ -22,13 +22,15 @@
 	#header {
 		background: _palette(accent4, bg-alt);
 		color: _palette(accent4, fg-bold);
-		height: 3.5em;
+		height: 4em;
 		left: 0;
 		line-height: 3.5em;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: _misc(z-index-base);
+
+	
 
 		a {
 			color: inherit;
@@ -38,10 +40,11 @@
 		h1 {
 			@include icon;
 			color: _palette(accent4, fg-bold);
-			display: inline-block;
-			height: inherit;
+			display: block;
+			height: auto;
 			line-height: inherit;
 			margin-left: 1.5em;
+			width: 100%;
 
 			a {
 				display: inline-block;
@@ -49,21 +52,24 @@
 				height: inherit;
 				line-height: inherit;
 			}
-
-			&:before {
-				background: _palette(accent4, fg-bold);
-				border-radius: 100%;
-				color: _palette(accent1, bg);
-				content: '\f1b3';
-				display: inline-block;
-				font-size: 0.9em;
+			.logo{
 				height: 2em;
-				line-height: 2em;
-				margin-left: -0.5em;
-				margin-right: 0.5em;
-				text-align: center;
-				width: 2em;
+				margin-top: 1.2em;
 			}
+			// &:before {
+			// 	background: _palette(accent4, fg-bold);
+			// 	border-radius: 100%;
+			// 	color: _palette(accent1, bg);
+			// 	// content: '\f1b3';
+			// 	display: inline-block;
+			// 	font-size: 0.9em;
+			// 	height: 2em;
+			// 	line-height: 2em;
+			// 	margin-left: -0.5em;
+			// 	margin-right: 0.5em;
+			// 	text-align: center;
+			// 	width: 2em;
+			// }
 		}
 
 		nav {

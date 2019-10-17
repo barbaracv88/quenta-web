@@ -1,0 +1,35 @@
+about:
+  actions:
+    - is_primary: false
+      is_scrolly: false
+      label: Learn More
+      url: /no-sidebar
+  enabled: true
+  text: >-
+    Lorem ipsum dolor sit amet interdum mollis sapien. Sed amet ac lorem ipsum
+    interdum tempus sagittis lorem tempus.
+  title: Integer vitae sed feugiat
+contact_methods:
+  enabled: true
+  methods_col1:
+    - icon: fa-map-marker
+      text: |-
+        Untitled Corp  
+        1234 Fictional Road  
+        Suite 5432  
+        Nashville, TN 00000
+      title: Address
+      type: contact_with_text
+  methods_col2:
+    - icon: fa-phone
+      text: (000) 000-0000
+      title: Phone
+      type: contact_with_text
+    - icon: fa-envelope-o
+      text: information@untitled.tld
+      title: Email
+      type: contact_with_link
+      url: '#'
+copyright:
+  enabled: true
+  text: '&copy; Untitled. All rights reserved.'

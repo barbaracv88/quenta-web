@@ -7,10 +7,10 @@
 /* Banner */
 
 	#banner {
-		@include banner-bg('../../images/banner.jpg');
+		@include banner-bg('../../images/fondo-cabecera.png');
 		position: relative;
 		min-height: 70vh;
-		height: 35em;
+		height: 44em;
 
 		.content {
 			position: absolute;

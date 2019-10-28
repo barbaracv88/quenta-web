@@ -26,6 +26,12 @@ export default class Banner extends React.Component {
                         } */}
                     </div>
                 </div>
+                <ParallaxProvider>
+                <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+                <div className="image-header">
+                            </div>
+    </Parallax>
+    </ParallaxProvider>
             </section>
 
          

@@ -1,22 +1,28 @@
 import React from 'react';
 import _ from 'lodash';
 
-import {markdownify, Link, safePrefix, classNames} from '../utils';
+// import {markdownify, Link, safePrefix, classNames} from '../utils';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
 export default class Banner extends React.Component {
     render() {
         return (
+            <ParallaxProvider>
+                
             <section id="banner">
+              
                 <div className="content">
                     <div className="inner">
                         <header>
+                        <Parallax y={[83, -10]}  >
                             <h2>{_.get(this.props, 'pageContext.frontmatter.banner.title')}</h2>
                             {/* {markdownify(_.get(this.props, 'pageContext.frontmatter.banner.subtitle'))} */}
-                            
+                            </Parallax>
                         </header>
+                        <Parallax y={[103, -100]}>
                         <div className="image-header">
                             </div>
+                            </Parallax>
                         {/* {_.get(this.props, 'pageContext.frontmatter.banner.actions') && 
                             <ul className="actions">
                                 {_.map(_.get(this.props, 'pageContext.frontmatter.banner.actions'), (action, action_idx) => (
@@ -26,14 +32,11 @@ export default class Banner extends React.Component {
                         } */}
                     </div>
                 </div>
-                <ParallaxProvider>
-                <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-                <div className="image-header">
-                            </div>
-    </Parallax>
-    </ParallaxProvider>
-            </section>
+               
 
+   
+            </section>
+            </ParallaxProvider>
          
         );
         

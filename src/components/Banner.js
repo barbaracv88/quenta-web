@@ -12,7 +12,7 @@ export default class Banner extends React.Component {
                     <div className="inner">
                         <header>
                             <h2>{_.get(this.props, 'pageContext.frontmatter.banner.title')}</h2>
-                            {markdownify(_.get(this.props, 'pageContext.frontmatter.banner.subtitle'))}
+                            {/* {markdownify(_.get(this.props, 'pageContext.frontmatter.banner.subtitle'))} */}
                             
                         </header>
                         <div className="image-header">

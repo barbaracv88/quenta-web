@@ -61,3 +61,34 @@
 			}
 		}
 	}
+
+
+
+	.scroll {
+		position: relative;
+		top: 50vh;
+		// left: 50%;
+		// margin-left: -7rem;
+		width: 14rem;
+		height: auto;
+		font-family: 'futura-pt', Futura, Helvetica, sans-serif;
+		font-weight: bold;
+		letter-spacing: 0.3rem;
+		text-align: center;
+		// text-transform: uppercase;
+		font-size: 3rem;
+		color: #405d86;
+	
+		svg {
+			margin: 0 2rem;
+		}
+	
+		.arrow-1 {
+			position: relative;
+			z-index: 1;
+		}
+		.arrow-2 {
+			// margin-top: -120%;
+			// margin-left: 20%;
+		}
+	}

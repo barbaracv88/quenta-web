@@ -6,8 +6,8 @@ banner:
       is_scrolly: false
       label: Learn More
       url: /no-sidebar
-  subtitle: Sed magna in pharetra ultricies dolor sit consequat magna.
-  title: Amet donec nullam fermentum
+  subtitle: 
+  title: Lorem ipsum dolor sit amet, consectetuer adipiscing
 menus:
   main:
     title: Home

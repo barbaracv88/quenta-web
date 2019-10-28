@@ -8,19 +8,22 @@
 
 	#banner {
 		@include banner-bg('../../images/fondo-cabecera.png');
-		position: relative;
+		// position: relative;
 		min-height: 70vh;
-		height: 44em;
+		height: 78em;
+		background-position: top;
+		background-attachment: scroll;
+
 
 		.content {
 			position: absolute;
-			bottom: 0;
+			top: 3em;
 			left: 0;
 			@include color-typography(accent4);
-			@include color-button(accent4);
-			@include color-section(accent4);
-			@include padding(6.5em, 0);
-			width: 100%;
+			// @include color-button(accent4);
+			// @include color-section(accent4);
+			@include padding(0em, 13.9em);
+			width: 94%;
 
 			> .inner {
 				@include vendor('display', 'flex');
@@ -30,8 +33,16 @@
 
 				header {
 					width: 75%;
+					
 				}
+				.image-header {
+					background-image: url('../../images/pantalla-generica.png');
+					height: 36em;
+					background-repeat: no-repeat; 
+					background-size: cover;
+					width: 58em;
 
+				}
 				.actions {
 					padding-left: (_size(element-margin) * 1.5);
 					text-align: right;

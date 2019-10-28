@@ -50,7 +50,7 @@
 		font-weight: _font(weight-bold);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		letter-spacing: 0.05em;
 
 		a {
@@ -165,7 +165,7 @@
 		$highlight: _palette($p, highlight);
 
 		@if $p != null {
-			background-color: _palette($p, bg);
+			// background-color: _palette($p, bg);
 			color: _palette($p, fg);
 		}
 

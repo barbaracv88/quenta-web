@@ -6,13 +6,25 @@ banner:
       is_scrolly: false
       label: Learn More
       url: /no-sidebar
-  subtitle: 
-  title: Lorem ipsum dolor sit amet, consectetuer adipiscing
+  title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing'
 menus:
   main:
-    title: Home
+    title: Inicio
     weight: 1
 sections:
+  - component: Posts
+    section_id: posts
+    subtitle: >-
+      Proporcionamos servicios de valor añadido basados en soluciones
+
+      de <strong>Monitorización de Aplicaciones (APM) </strong>que permiten a
+      las compañías realizar un seguimiento, en tiempo real, de todas las
+      transacciones
+
+      de negocio en función de la experiencia del usuario (real o sintético),
+      independientemente de la tecnología e infraestructura utilizada.
+    title: Application Performance Management
+    type: posts
   - component: Features
     features:
       - description: >-
@@ -63,11 +75,14 @@ sections:
       lorem feugiat. In fringilla diet consectetur.
     title: Ultrices ante sagittis nunc senectus libero netus
     type: cta
-  - component: Posts
-    section_id: posts
-    subtitle: Sed magna in pharetra ultricies dolor sit amet consequat adipiscing lorem.
-    title: Convallis amet interdum
-    type: posts
+  - component: Features
+    features:
+      - description: Prueba 2
+        icon:
+          enabled: false
+        title: Prueba
+    section_id: Servicios
+    type: features
 template: home
-title: home
+title: Inicio
 ---

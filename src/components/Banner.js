@@ -14,12 +14,12 @@ export default class Banner extends React.Component {
                 <div className="content">
                     <div className="inner">
                         <header>
-                        <Parallax y={[83, -10]}  >
+                        <Parallax y={[183, -40]}  >
                             <h2>{_.get(this.props, 'pageContext.frontmatter.banner.title')}</h2>
                             {/* {markdownify(_.get(this.props, 'pageContext.frontmatter.banner.subtitle'))} */}
                             </Parallax>
                         </header>
-                        <Parallax y={[103, -100]}>
+                        <Parallax y={[200, -100]}>
                         <div className="image-header">
                             </div>
                             </Parallax>

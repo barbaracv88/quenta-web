@@ -1,5 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Carrousel from './components/Carrousel';
+
 
 export default function HTML(props) {
   return (
@@ -8,6 +10,7 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
+      
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.
@@ -18,6 +21,8 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+
+        <Carrousel/>
       </body>
     </html>
   )

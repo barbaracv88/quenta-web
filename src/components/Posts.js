@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 import {markdownify, getPages, Link, safePrefix} from '../utils';
 
+
 export default class Posts extends React.Component {
     render() {
         return (
@@ -14,7 +15,8 @@ export default class Posts extends React.Component {
                     </header>
                     <div className="posts">
                         {_.map(_.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'), ['frontmatter.show_in_home_posts', true]), 'frontmatter.date', 'desc'), (post, post_idx) => (
-                            <section key={post_idx} className="post">
+                          
+                           <section key={post_idx} className="post">
                                 {_.get(post, 'frontmatter.alt_img') && 
                                     <Link to={safePrefix(_.get(post, 'url'))} className="image"><img src={safePrefix(_.get(post, 'frontmatter.alt_img'))} alt="" /></Link>
                                 }
@@ -24,6 +26,7 @@ export default class Posts extends React.Component {
                                     <Link to={safePrefix(_.get(post, 'url'))} className="button">More</Link>
                                 </div>
                             </section>
+                           
                         ))}
                     </div>
                 </div>

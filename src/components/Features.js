@@ -1,6 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 
+
 import {markdownify} from '../utils';
 
 export default class Features extends React.Component {
@@ -17,7 +18,10 @@ export default class Features extends React.Component {
                         ))}
                     </ul>
                 </div>
+                
             </section>
+            
+            
         );
     }
 }

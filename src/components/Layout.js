@@ -16,6 +16,8 @@ export default class Body extends React.Component {
                     <meta name="viewport" content="width=device-width, initialScale=1, userScalable=no" />
                     <link rel="stylesheet" href={safePrefix('assets/css/main.css')} />
                     <link rel="stylesheet" href={safePrefix('assets/css/markdown-images.css')} />
+                    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+                    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
                     <body className={((_.get(this.props, 'pageContext.frontmatter.template') === _.get(this.props, 'pageContext.site.siteMetadata.landing_template')) ? 'landing ' : '')} />
                 </Helmet>
                     <Header {...this.props} />

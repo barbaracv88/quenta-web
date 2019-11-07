@@ -1,0 +1,117 @@
+.container {
+
+  @include banner-bg('../../images/fondo-equipo.png', true);
+  padding: 5em 10em 3em 10em;
+  position: relative;
+  color: #ffffff;
+
+  .employee {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    font-size: 19px;
+
+    .mail {
+      margin-top: 58px;
+      margin-left: 221px;
+    }
+
+    .linkedin {
+      margin-left: 193px;
+    }
+
+    .rrss {
+      width: 2.6em;
+      height: 2.6em;
+      position: absolute;
+      z-index: 1;
+    }
+
+
+    .img_employee {
+      max-height: 200px;
+      clip-path: circle(39% at center);
+      margin: auto;
+    }
+
+    .name {
+      padding-top: 20px;
+      margin: auto;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      font-weight: lighter;
+      position: relative;
+      &:before {
+        content : "";
+        position: absolute;
+        left    : 0;
+        bottom  : 0;
+        height  : 1px;
+        width: 20%;
+        margin-left: 40%;
+        border-bottom:1px solid #ffffff;
+      }
+    }
+
+    .position {
+      font-weight: bold;
+
+    }
+
+  }
+
+  button {
+    box-shadow: none;
+  }
+
+  .slick-next {
+    right: 0px;
+
+    &:before {
+      content: '\003E';
+    }
+  }
+
+  .slick-prev {
+    left: 0px;
+    z-index: 1;
+
+    &:before {
+      content: '\003C';
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 75%;
+
+  }
+
+  @include breakpoint('<=large') {
+    padding: 5em 3em 3em 3em;
+
+  }
+
+  @include breakpoint('<=medium') {
+    padding: 5em 3em 3em 3em;
+
+  }
+
+  @include breakpoint('<=small') {
+    padding: 2.5em 2em 0.5em 2em;
+
+  }
+
+  @include breakpoint('<=xsmall') {
+    padding: 2.5em 1.5em 0.5em 1.5em;
+
+    .img_employee {
+      max-height: 100px;
+      clip-path: circle(39% at center);
+      margin: auto;
+    }
+  }
+
+
+
+}

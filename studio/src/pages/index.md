@@ -25,40 +25,6 @@ sections:
       independientemente de la tecnología e infraestructura utilizada.
     title: Application Performance Management
     type: posts
-  - component: Features
-    features:
-      - description: >-
-          Lorem ipsum dolor sit amet interdum mollis sapien. Sed ac risus.
-          Phasellus lacinia, ullamcorper laoreet, lectus arcu pulvinar lorem
-          ipsum interdum sed tempus sagittis lorem feugiat. In fringilla diet
-          consectetur. Morbi libero orci, consectetur in odio maximus felis.
-        icon:
-          enabled: true
-          icon: fa-area-chart
-          style: style1
-        title: Integer vitae consequat sed magna feugiat
-      - description: >-
-          Lorem ipsum dolor sit amet interdum mollis sapien. Sed ac risus.
-          Phasellus lacinia, ullamcorper laoreet, lectus arcu pulvinar lorem
-          ipsum interdum sed tempus sagittis lorem feugiat. In fringilla diet
-          consectetur. Morbi libero orci, consectetur in odio maximus felis.
-        icon:
-          enabled: true
-          icon: fa-pie-chart
-          style: style2
-        title: Phasellus libero eu sed augue gravida
-      - description: >-
-          Lorem ipsum dolor sit amet interdum mollis sapien. Sed ac risus.
-          Phasellus lacinia, ullamcorper laoreet, lectus arcu pulvinar lorem
-          ipsum interdum sed tempus sagittis lorem feugiat. In fringilla diet
-          consectetur. Morbi libero orci, consectetur in odio maximus felis.
-        icon:
-          enabled: true
-          icon: fa-cube
-          style: style3
-        title: Lacus ultricies sagittis mi dui dapibus
-    section_id: features
-    type: features
   - actions:
       - is_primary: false
         is_scrolly: false
@@ -75,14 +41,6 @@ sections:
       lorem feugiat. In fringilla diet consectetur.
     title: Ultrices ante sagittis nunc senectus libero netus
     type: cta
-  - component: Features
-    features:
-      - description: Prueba 2
-        icon:
-          enabled: false
-        title: Prueba
-    section_id: Servicios
-    type: features
 template: home
 title: Inicio
 ---

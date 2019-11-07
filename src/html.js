@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Carrousel from './components/Carrousel';
 
 
 export default function HTML(props) {
@@ -22,7 +21,7 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
 
-        <Carrousel/>
+       
       </body>
     </html>
   )

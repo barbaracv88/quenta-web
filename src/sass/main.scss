@@ -24,10 +24,10 @@ $size: (
 
 // Font.
 $font: (
-    family:				('Open Sans', Helvetica, sans-serif),
+    family:				('Roboto', sans-serif),
     family-fixed:		('Courier New', monospace),
-    weight:				300,
-    weight-bold:		700
+    weight:				400,
+    weight-bold:		500
 );
 
 // Palette.
@@ -100,7 +100,7 @@ $palette: (
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import 'font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /*
 	Archetype by Pixelarity
@@ -133,7 +133,6 @@ $palette: (
 	@mixin banner-bg($image, $overlay: false) {
 		$background-image: (
 			'url("images/overlay.png")',
-			// 'linear-gradient(45deg, #{transparentize(_palette(gradient1), 0.35)}, #{transparentize(_palette(gradient2), 0.35)})',
 			'url("#{$image}")'
 		);
 
@@ -156,7 +155,7 @@ $palette: (
 		);
 
 		@if $overlay {
-			$background-image: join(('linear-gradient(top, #{_palette(accent4, bg)}, #{_palette(accent4, bg)})'), $background-image);
+			// $background-image: join(('linear-gradient(top, #{_palette(accent4, bg)}, #{_palette(accent4, bg)})'), $background-image);
 			$background-size: join((auto), $background-size);
 			$background-attachment: join((fixed), $background-attachment);
 			$background-repeat: join((repeat), $background-repeat);
@@ -194,6 +193,8 @@ $palette: (
 	@import 'components/slick';
 	@import 'components/slick-theme';
 
+
+
 // Layout.
 
 	@import 'layout/header';
@@ -204,8 +205,9 @@ $palette: (
 //Stackbit Banner
 	@import 'imports/banner';
 
+	@import 'components/slider';
+	@import 'components/headers-components';
+	@import 'components/services';
 
 
 
-	@import "~slick-carousel/slick/slick.css";
-	@import "~slick-carousel/slick/slick-theme.css";

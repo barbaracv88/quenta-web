@@ -7,9 +7,9 @@ export default class Service extends React.Component {
                 <img className="img_service" src = {this.props.img}/>
                 <div className="service_description">
                     <p className="breadcrumb"> {this.props.breadcrumb}</p>
-                    <p className="title_service"> {this.props.title}</p>
+                    <h3 className="title_service"> {this.props.title}</h3>
                     <p className="description"> {this.props.description}</p>
-                    <button className="button" label={this.props.buttonLabel}></button>
+                    <a> <button> MÁS INFORMACIÓN</button></a>
                 </div>
             </div>
                 );

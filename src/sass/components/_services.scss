@@ -1,9 +1,87 @@
-.service{
-    display: flex;
-    .img_service{
-      
+.services {
+
+margin-top: -25em;
+    .service {
+        margin: auto;
+        padding: 5em 10em 3em 10em;
+        display: flex;
+        align-items: center;
+
+        .service_description {
+            margin-left: 2em;
+
+            .breadcrumb {
+                font-size: 0.8em;
+                color: #D1153A;
+
+                margin-bottom: 1em;
+            }
+
+            .title_service {
+                font-size: 2em;
+                margin-bottom: 0.5em;
+            }
+
+            .description {
+                font-size: 1em;
+            }
+
+            button {
+                height: 4.3em;
+                color: #D1153A;
+                border: #D1153A 1px solid;
+
+                &:after {
+                    margin-left: 1.2em;
+                    content: ' \2192';
+                }
+
+                &:hover {
+                    color: #ffffff;
+                    background-color: #D1153A;
+                    -webkit-transition: all .8s ease;
+                    -moz-transition: all .8s ease;
+                    -ms-transition: all .8s ease;
+                    -o-transition: all .8s ease;
+                    transition: all .8s ease;
+                }
+            }
+        }
+
+        @include breakpoint('<=large') {
+            padding: 5em 3em 3em 3em;
+        }
+
+        @include breakpoint('<=medium') {
+            padding: 5em 3em 3em 3em;
+        }
+
+        @include breakpoint('<=small') {
+            padding: 2.5em 2em 0.5em 2em;
+        }
+
+        @include breakpoint('<=xsmall') {
+            padding: 2.5em 1.5em 0.5em 1.5em;
+
+        }
+
     }
-    .service_description{
-        
+
+    //CYBERSECURITY
+
+    .cybersecurity {
+        .img_service {
+            width: 27.6em;
+        }
+
+    }
+
+    //SAM
+
+    .sam {
+        .service {
+            flex-direction: row-reverse;
+
+        }
     }
 }

@@ -62,6 +62,8 @@
 
 				> .inner {
 					width: _size(inner-width, large);
+
+
 				}
 			}
 		}
@@ -88,6 +90,12 @@
 						padding-left: 0;
 						text-align: left;
 					}
+					.image-header {
+						background-image: url('../../images/pantalla-generica.png');
+						height: 23em;
+						width: 27em;
+	
+					}
 				}
 			}
 		}
@@ -103,12 +111,26 @@
 
 			.content {
 				@include padding(2.5em, 2em);
+				
+			}
+			.image-header {
+				background-image: url('../../images/pantalla-generica.png');
+				height: 19em;
+				width: 22em;
+
 			}
 		}
 
 		@include breakpoint('<=xsmall') {
 			.content {
 				@include padding(2.5em, 1.5em);
+				
+			}
+			.image-header {
+				background-image: url('../../images/pantalla-generica.png');
+				height: 15em;
+				width: 19em;
+
 			}
 		}
 	}

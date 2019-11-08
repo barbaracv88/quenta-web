@@ -1,9 +1,9 @@
 .services {
-
+    padding-bottom: 2em;
 margin-top: -25em;
     .service {
         margin: auto;
-        padding: 5em 10em 3em 10em;
+        padding: 1em 10em 1.2em 10em;
         display: flex;
         align-items: center;
 
@@ -48,22 +48,7 @@ margin-top: -25em;
             }
         }
 
-        @include breakpoint('<=large') {
-            padding: 5em 3em 3em 3em;
-        }
-
-        @include breakpoint('<=medium') {
-            padding: 5em 3em 3em 3em;
-        }
-
-        @include breakpoint('<=small') {
-            padding: 2.5em 2em 0.5em 2em;
-        }
-
-        @include breakpoint('<=xsmall') {
-            padding: 2.5em 1.5em 0.5em 1.5em;
-
-        }
+       
 
     }
 
@@ -83,5 +68,52 @@ margin-top: -25em;
             flex-direction: row-reverse;
 
         }
+    }
+
+    //APM
+    .icons{
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        .icon{
+ display: flex;
+            .img_icon{
+                height: 64px;
+                margin-right: 0.6em;
+
+            }
+            .description_icon{
+
+            }
+        }
+    }
+
+    @include breakpoint('<=large') {
+        margin-top: -29em;
+        .service {
+        padding: 1em 6em 1.2em 6em;
+        }
+    }
+
+    @include breakpoint('<=medium') {
+        margin-top: -6em;
+        .service {
+        padding: 1em 6em 1.2em 6em;
+    }
+    }
+
+    @include breakpoint('<=small') {
+        margin-top: -3em;
+        .service {
+        padding: 1em 3em 1.2em 3em;
+    }
+    }
+
+    @include breakpoint('<=xsmall') {
+        margin-top: -6em;
+        .service {
+        padding: 1em 2em 1.2em 2em;
+        flex-direction: column;
+    }
+
     }
 }

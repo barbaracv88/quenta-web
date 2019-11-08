@@ -29,6 +29,7 @@
 		top: 0;
 		width: 100%;
 		z-index: _misc(z-index-base);
+		padding-left: 47px;
 
 	
 
@@ -148,9 +149,9 @@
 			line-height: 5em;
 			position: absolute;
 
-			h1 {
-				margin-left: 2.5em;
-			}
+			// h1 {
+			// 	margin-left: 2.5em;
+			// }
 
 			nav {
 				margin-right: 2.5em;

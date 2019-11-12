@@ -1,156 +1,164 @@
-.services {
-    padding-bottom: 2em;
-    margin-top: -25em;
+// .services {
+//     padding-bottom: 2em;
+//     margin-top: -25em;
 
-    .service {
-        margin: auto;
-        padding: 1em 10em 3.2em 10em;
-        display: flex;
-        align-items: center;
+//     .service {
+//         margin: auto;
+//         padding: 1em 10em 3.2em 10em;
+//         display: flex;
+//         align-items: center;
 
-        .service_description {
-            margin-left: 2em;
+//         .service_description {
+//             margin-left: 2em;
 
-            .breadcrumb {
-                font-size: 0.8em;
-                color: #D1153A;
+//             .breadcrumb {
+//                 font-size: 0.8em;
+//                 color: #D1153A;
 
-                margin-bottom: 1em;
-            }
+//                 margin-bottom: 1em;
+//             }
 
-            .title_service {
-                font-size: 2em;
-                margin-bottom: 0.5em;
-            }
+//             .title_service {
+//                 font-size: 2em;
+//                 margin-bottom: 0.5em;
+//             }
 
-            .description {
-                font-size: 1em;
-            }
+//             .description {
+//                 font-size: 1em;
+//             }
 
-            button {
-                height: 4.3em;
-                color: #D1153A;
-                border: #D1153A 1px solid;
+//             button {
+//                 height: 4.3em;
+//                 color: #D1153A;
+//                 border: #D1153A 1px solid;
 
-                &:after {
-                    margin-left: 1.2em;
-                    content: ' \2192';
-                }
+//                 &:after {
+//                     margin-left: 1.2em;
+//                     content: ' \2192';
+//                 }
 
-                &:hover {
-                    color: #ffffff;
-                    background-color: #D1153A;
-                    -webkit-transition: all .8s ease;
-                    -moz-transition: all .8s ease;
-                    -ms-transition: all .8s ease;
-                    -o-transition: all .8s ease;
-                    transition: all .8s ease;
-                }
-            }
-        }
-
-
-
-    }
-
-    //CYBERSECURITY
-
-    .cybersecurity {
-        .img_service {
-            width: 27.6em;
-        }
-
-        .icons {
-            display: none;
-        }
-    }
-
-    //SAM
-
-    .sam {
-        .service {
-            flex-direction: row-reverse;
-
-            .icons {
-                display: flex;
-
-                .icon {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-right: 2.5em;
-
-                    .img_icon {
-                        height: 64px;
-                        margin-right: 0.5em;
-                        width: 64px;
-
-                    }
-
-                    .description_icon {
-                        text-align: center;
-                    }
-                    .icon4{
-                        display: none;
-                    }
-                }
-            }
-        }
-
-    }
-
-    //APM
-    .apm {
-        .icons {
-            display: grid;
-            grid-template-columns: 50% 50%;
-
-            .icon {
-                display: flex;
-
-                .img_icon {
-                    height: 64px;
-                    margin-right: 0.5em;
-
-                }
-
-            }
-        }
-    }
+//                 &:hover {
+//                     color: #ffffff;
+//                     background-color: #D1153A;
+//                     -webkit-transition: all .8s ease;
+//                     -moz-transition: all .8s ease;
+//                     -ms-transition: all .8s ease;
+//                     -o-transition: all .8s ease;
+//                     transition: all .8s ease;
+//                 }
+//             }
+//         }
 
 
-    @include breakpoint('<=large') {
-        margin-top: -29em;
 
-        .service {
-            padding: 1em 6em 1.2em 6em;
-        }
-    }
+//     }
 
-    @include breakpoint('<=medium') {
-        margin-top: -6em;
+//     //CYBERSECURITY
 
-        .service {
-            padding: 1em 6em 1.2em 6em;
-        }
-    }
+//     .cybersecurity {
+//         .img_service {
+//             width: 227.6em;
+//         }
 
-    @include breakpoint('<=small') {
-        margin-top: -3em;
+//         .icons {
+//             display: none;
+//         }
+//     }
 
-        .service {
-            padding: 1em 3em 1.2em 3em;
-            flex-direction: column;
-        }
-    }
+//     //SAM
 
-    @include breakpoint('<=xsmall') {
-        margin-top: -6em;
+//     .sam {
+//         .service {
+//             flex-direction: row-reverse;
 
-        .service {
-            padding: 1em 2em 1.2em 2em;
-            flex-direction: column;
-        }
+//             .icons {
+//                 display: flex;
 
-    }
-}
+//                 .icon {
+//                     display: flex;
+//                     flex-direction: column;
+//                     align-items: center;
+//                     margin-right: 2.5em;
+
+//                     .img_icon {
+//                         height: 64px;
+//                         margin-right: 0.5em;
+//                         width: 64px;
+
+//                     }
+
+//                     .description_icon {
+//                         text-align: center;
+//                     }
+//                     .icon4{
+//                         display: none;
+//                     }
+//                 }
+//             }
+//         }
+
+//     }
+
+//     //APM
+//     .apm {
+//         .icons {
+//             display: grid;
+//             grid-template-columns: 50% 50%;
+
+//             .icon {
+//                 display: flex;
+
+//                 .img_icon {
+//                     height: 64px;
+//                     margin-right: 0.5em;
+
+//                 }
+
+//             }
+//         }
+//     }
+
+
+//     @include breakpoint('<=large') {
+//         margin-top: -29em;
+
+//         .service {
+//             padding: 1em 3em 1.2em 3em;
+//         }
+//         .apm{
+//             .description{
+//                 width: 550px;
+//             }
+//         }
+//     }
+
+//     @include breakpoint('<=medium') {
+//         margin-top: 2em;
+
+//         .service {
+//             padding: 1em 3em 1.2em 3em;
+//             .img_service {
+//                 width: 18em;
+//             }
+//         }
+//     }
+
+//     @include breakpoint('<=small') {
+//         margin-top: -3em;
+
+//         .service {
+//             padding: 1em 3em 1.2em 3em;
+//             flex-direction: column;
+//         }
+//     }
+
+//     @include breakpoint('<=xsmall') {
+//         margin-top: -6em;
+
+//         .service {
+//             padding: 1em 2em 1.2em 2em;
+//             flex-direction: column;
+//         }
+
+//     }
+// }

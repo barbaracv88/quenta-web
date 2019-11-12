@@ -16,6 +16,7 @@ export default class Carrousel extends React.Component {
             centerPadding: "0px",
             slidesToShow: 4,
             speed: 500,
+            autoplay:true,
           
           
             responsive: [

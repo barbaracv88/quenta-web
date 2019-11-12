@@ -22,7 +22,7 @@
 			@include color-typography(accent4);
 			// @include color-button(accent4);
 			// @include color-section(accent4);
-			@include padding(0em, 13.9em);
+			@include padding(0em, 6.9em);
 			width: 94%;
 
 			> .inner {
@@ -37,10 +37,10 @@
 				}
 				.image-header {
 					background-image: url('../../images/pantalla-generica.png');
-					height: 41em;
+					height: 33em;
 					background-repeat: no-repeat; 
 					background-size: cover;
-					width: 44em;
+					width: 53em;
 
 				}
 				.actions {

@@ -1,9 +1,12 @@
 import React from 'react';
 import _ from 'lodash';
+import Alliances from '../components/Alliances';
 import Carrousel from '../components/Carrousel';
 import Services from '../components/Services';
 import components, {Layout} from '../components/index';
 import Banner from '../components/Banner';
+import Contacto from '../components/Contact';
+
 
 
 export default class Home extends React.Component {
@@ -18,7 +21,9 @@ export default class Home extends React.Component {
                         )
                     })}
                      <Services/>
+                     <Alliances/>
                      <Carrousel/>
+                     <Contacto/>
             </Layout>
         );
     }

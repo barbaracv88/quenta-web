@@ -1,0 +1,20 @@
+.alliances{
+    padding-top: 5em;
+    height: auto;
+    background-color: #FAF7F7;
+    .logos_alliances{
+        padding: 1em 10em 6.2em 10em;
+        height: auto;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100px 100px; 
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    .img_logo{
+        place-self: center;
+    }
+    }
+    .description{
+display: none;
+    }
+}

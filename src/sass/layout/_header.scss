@@ -16,8 +16,11 @@
 
 	@include keyframes('reveal-header') {
 		0% { top: -4em; opacity: 0; }
-		100% { top: 0; opacity: 1; }
+		100% { top: 0; opacity: 1; 
 	}
+	
+	
+}
 
 	#header {
 		background: _palette(accent4, bg-alt);
@@ -30,6 +33,7 @@
 		width: 100%;
 		z-index: _misc(z-index-base);
 		padding-left: 47px;
+		padding-top: 1em;
 
 	
 
@@ -38,14 +42,15 @@
 			text-decoration: none;
 		}
 
-		h1 {
+		#logo {
 			@include icon;
 			color: _palette(accent4, fg-bold);
 			display: block;
 			height: auto;
 			line-height: inherit;
-			-left: 1.5em;
-			width: 50%;
+			left: 1.5em;
+			width: 20%;
+			// padding-top: 1em;
 
 			a {
 				display: inline-block;
@@ -55,7 +60,7 @@
 			}
 			.logo{
 				height: 2em;
-				margin-top: 1.2em;
+				// margin-top: 1.2em;
 			}
 			// &:before {
 			// 	background: _palette(accent4, fg-bold);
@@ -76,9 +81,9 @@
 		nav {
 			height: inherit;
 			line-height: inherit;
-			margin-right: 1.5em;
+			margin-right: 3.5em;
 			position: absolute;
-			right: 0;
+			right: 3em;
 			top: 0;
 
 			ul {
@@ -88,7 +93,7 @@
 
 				li {
 					display: inline-block;
-					margin-left: 1.5em;
+					margin-left: 3.5em;
 
 					a {
 						font-weight: _font(weight-bold);
@@ -140,6 +145,9 @@
 
 		&.reveal {
 			@include vendor('animation', 'reveal-header 0.5s ease');
+			
+			
+	
 		}
 
 		&.alt {
@@ -154,7 +162,7 @@
 			// }
 
 			nav {
-				margin-right: 2.5em;
+				margin-right: 3.5em;
 			}
 		}
 	}

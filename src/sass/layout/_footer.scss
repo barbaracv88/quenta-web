@@ -7,14 +7,19 @@
 /* Footer */
 
 	#footer {
-		@include banner-bg('../../images/banner.jpg');
-		@include color-typography(accent4);
-		@include color-button(accent4);
-		@include color-section(accent4);
+		background-image: url(../../images/fondo-footer.png);
+    background-size: cover, cover;
+    color: #ffffff;
+    height: 18em;
+    background-size: cover cover;
+    background-repeat: repeat, no-repeat, no-repeat;
+    height: 32vh;
+   
 
 		.content {
-			@include padding(6.5em, 0);
-			background-color: _palette(accent4, bg);
+			padding-top: 6em;
+			// @include padding(6.5em, 0);
+			// background-color: _palette(accent4, bg);
 
 			> .inner {
 				@include vendor('display', 'flex');
@@ -82,7 +87,7 @@
 		.copyright {
 			font-size: 0.8em;
 			margin: 0;
-			padding: 8em 0;
+			// padding: 8em 0;
 			text-align: center;
 
 			br {

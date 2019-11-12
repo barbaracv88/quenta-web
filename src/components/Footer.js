@@ -61,13 +61,14 @@ export default class Footer extends React.Component {
                             }
                         </React.Fragment>}
                     </div>
-                </div>
-                <p className="copyright">{_.get(this.props, 'pageContext.site.data.footer.copyright.enabled') && <React.Fragment>{htmlToReact(_.get(this.props, 'pageContext.site.data.footer.copyright.text'))}<br /></React.Fragment>}
+                    <p className="copyright">{_.get(this.props, 'pageContext.site.data.footer.copyright.enabled') && <React.Fragment>{htmlToReact(_.get(this.props, 'pageContext.site.data.footer.copyright.text'))}<br /></React.Fragment>}
                     {
                     _.map(_.get(this.props, 'pageContext.menus.footer'), (item, item_idx) => (<React.Fragment key={item_idx}>
                         <Link key={item_idx} to={(_.get(item, 'url').startsWith('#') ? _.get(item, 'url') : safePrefix(_.get(item, 'url')))}>{_.get(item, 'title')}</Link>{(!(item_idx === item_len - 1)) && ' | '}
                     </React.Fragment>))}
                 </p>
+                </div>
+                
             </footer>
         );
     }

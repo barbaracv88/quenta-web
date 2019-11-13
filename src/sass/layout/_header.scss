@@ -62,20 +62,7 @@
 				height: 2em;
 				// margin-top: 1.2em;
 			}
-			// &:before {
-			// 	background: _palette(accent4, fg-bold);
-			// 	border-radius: 100%;
-			// 	color: _palette(accent1, bg);
-			// 	// content: '\f1b3';
-			// 	display: inline-block;
-			// 	font-size: 0.9em;
-			// 	height: 2em;
-			// 	line-height: 2em;
-			// 	margin-left: -0.5em;
-			// 	margin-right: 0.5em;
-			// 	text-align: center;
-			// 	width: 2em;
-			// }
+
 		}
 
 		nav {
@@ -221,10 +208,11 @@
 		#header {
 			height: 3em;
 			line-height: 2.95em;
+			padding-top: 0.6em;
 
-			h1 {
-				&:before {
-					font-size: 0.8em;
+			#logo {
+				.logo{
+					height: 1.6em;
 				}
 			}
 		}
@@ -253,3 +241,19 @@
 			}
 		}
 	}
+
+	@include breakpoint('<=xsmall') {
+		#header{
+			.inner {
+				-moz-flex-direction: row-reverse;
+				-webkit-flex-direction: row-reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+
+				.image-header {
+					height: 18em;
+					width: 20em;
+				}
+		}
+	}
+}

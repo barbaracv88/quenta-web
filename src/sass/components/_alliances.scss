@@ -12,9 +12,54 @@
         grid-row-gap: 15px;
     .img_logo{
         place-self: center;
+        transform:scale(1);
+        -ms-transform:scale(1); // IE 9 
+        -moz-transform:scale(1); // Firefox 
+        -webkit-transform:scale(1); // Safari and Chrome 
+        -o-transform:scale(1); // Opera 
+        -webkit-transition: all 500ms ease-in-out; // IE 9
+        -moz-transition: all 500ms ease-in-out; // Firefox
+        -ms-transition: all 500ms ease-in-out; // Safari and Chrome 
+        -o-transition: all 500ms ease-in-out; // Opera    
+        &:hover{
+            
+                transform:scale(1.2);
+                -ms-transform:scale(1.2); // IE 9 
+                -moz-transform:scale(1.2); // Firefox 
+                -webkit-transform:scale(1.2); // Safari and Chrome 
+                -o-transform:scale(1.2); // Opera
+        } 
     }
     }
     .description{
 display: none;
+    }
+    
+
+    @include breakpoint('<=medium') {
+        .logos_alliances {
+            padding: 1em 4em 6.2em 4em;
+        } 
+    }
+
+    @include breakpoint('<=small') {
+        .logos_alliances {
+            grid-template-columns: 33% 33% 33%;
+            .img_logo{
+                transform:scale(0.8);
+            }
+        } 
+    }
+    @include breakpoint('<=xsmall') {
+        .logos_alliances {
+            grid-template-columns: 50% 50%;
+            .img_logo:hover{
+                    transform:scale(1);
+                    -ms-transform:scale(1); // IE 9 
+                    -moz-transform:scale(1); // Firefox 
+                    -webkit-transform:scale(1); // Safari and Chrome 
+                    -o-transform:scale(1); // Opera
+            } 
+        } 
     }
 }

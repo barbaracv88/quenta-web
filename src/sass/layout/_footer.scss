@@ -7,7 +7,6 @@
 /* Footer */
 
 #footer {
-	// display: none;
 	background-image: url(../../images/fondo-footer.png);
 	background-size: cover, cover;
 	color: #ffffff;
@@ -27,7 +26,7 @@
 			margin: 0 auto;
 			width: 70em;
 
-			>* {
+			> * {
 				padding-left: (_size(element-margin) * 1.5);
 				width: 25%;
 			}
@@ -56,7 +55,7 @@
 			// 	padding: 11em 3em 3em 3em;
 			// }
 		}
-	}
+	
 
 	@include breakpoint('<=medium') {
 		>.inner {
@@ -75,11 +74,12 @@
 	}
 
 	@include breakpoint('<=small') {
-		@include padding(2.5em, 2em);
+		padding: 10.5em 2em 0.5em 2em;
+		
 	}
 
 	@include breakpoint('<=xsmall') {
-		@include padding(2.5em, 1.5em);
+		padding: 9.5em 1.5em 0em 1.5em;
 
 		>.inner {
 			>* {
@@ -120,4 +120,5 @@
 
 body.is-mobile & {
 	background-attachment: scroll;
+}
 }

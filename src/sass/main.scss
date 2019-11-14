@@ -196,10 +196,6 @@ $palette: (
 	@import 'components/alliances';
 	@import 'components/contacto';
 
-
-
-
-
 // Layout.
 
 	@import 'layout/header';
@@ -215,4 +211,6 @@ $palette: (
 	@import 'components/services';
 
 
-
+.parallax-inner{
+	transform:none;
+}

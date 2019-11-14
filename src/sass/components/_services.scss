@@ -3,11 +3,6 @@
     margin-top: -25em;
 
     .service {
-        margin: auto;
-        padding: 1em 10em 3.2em 10em;
-        display: flex;
-        align-items: center;
-
         .service_description {
             margin-left: 2em;
 
@@ -49,14 +44,21 @@
                 }
             }
         }
+    }
 
-
-
+    .cybersecurity,
+    .sam,
+    .apm {
+        display: flex;
+        margin: auto;
+        padding: 1em 10em 3.2em 10em;
+        align-items: center;
     }
 
     //CYBERSECURITY
 
     .cybersecurity {
+
         .img_service {
             width: 27.6em;
         }
@@ -69,8 +71,13 @@
     //SAM
 
     .sam {
+        flex-direction: row-reverse;
+        .img_service{
+            position: absolute;
+            width: 42.6em;
+            margin-left: -83px;
+        }
         .service {
-            flex-direction: row-reverse;
 
             .icons {
                 display: flex;
@@ -98,7 +105,6 @@
                 }
             }
         }
-
     }
 
     //APM
@@ -113,13 +119,10 @@
                 .img_icon {
                     height: 64px;
                     margin-right: 0.5em;
-
                 }
-
             }
         }
     }
-
 
     @include breakpoint('<=large') {
         margin-top: -29em;
@@ -152,7 +155,6 @@
             .service_description .title_service {
                 font-size: 1.7em;
             }
-
         }
     }
 
@@ -175,28 +177,33 @@
 
     @include breakpoint('<=xsmall') {
         margin-top: -15em;
-  
+
         .title-section {
             width: 70%;
         }
+
         .service {
             padding: 1em 2em 3.5em 2em;
             flex-direction: column;
-      .service_description {
-            margin-left: 0em;
-        
-            .description {
-                // width: 95%;
-            }
-        }
-        }
-        .sam{
-            .service{
-                flex-direction: row;
+
+            .service_description {
+                margin-left: 0em;
+
                 .description {
                     // width: 95%;
                 }
-                .icons{
+            }
+        }
+
+        .sam {
+            .service {
+                flex-direction: row;
+
+                .description {
+                    // width: 95%;
+                }
+
+                .icons {
                     flex-direction: column;
                 }
             }
@@ -204,18 +211,15 @@
 
         .apm .icons {
             grid-template-columns: 50% 50%;
+
             .icon {
                 padding: 0.3em;
             }
         }
     }
 
-
-
     @include breakpoint('<=xxsmall') {
         margin-top: -10em;
-
-       
 
         .icon {
             flex-direction: column;
@@ -224,13 +228,12 @@
                 width: 60%;
             }
         }
-        .sam{
-            .service{
+
+        .sam {
+            .service {
                 flex-direction: row;
-                .description {
-                    // width: 95%;
-                }
-                .icons{
+
+                .icons {
                     flex-direction: column;
                 }
             }

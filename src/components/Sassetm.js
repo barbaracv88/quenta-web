@@ -1,13 +1,53 @@
 import React from 'react';
 import Service from './Service';
+import Plx from 'react-plx';
 
+const parallaxSAM = [
+    {
+      start: 300,
+      end: 3000,
+      properties: [
+        {
+          startValue: 700,
+          endValue: -700,
+          property: 'translateY',
+        },
+      ],
+    },
+  ];
+  const parallaxSAM2 = [
+    {
+      start: 300,
+      end: 3000,
+      properties: [
+        {
+          startValue: 350,
+          endValue: -1500,
+          property: 'translateY',
+        },
+      ],
+    },
+  ];
 export default class Sassetm extends React.Component {
     render() {
         return (
         <div className="sam">
-            
+            <div>
+            <Plx
+                className='Parallax'
+                parallaxData={ parallaxSAM }
+                >
+                <img className="img_service_fondo" src="images/fondo-sam.png"></img>   
+                </Plx>    
+                <Plx
+                className='Parallax'
+                parallaxData={ parallaxSAM2 }
+                >
+            <img className="img_service" src="images/pantalla-sam.png"></img>    
+            </Plx>   
+            </div>
             <Service
-            img="images/sam.png"
+            // img="images/sam.png"
             breadcrumb="SERVICIOS  >  SAM"
             title = 'Software Asset Management'
             description="Proporcionamos servicios de Gestión de Activos Software (SAM) basados

@@ -1,13 +1,33 @@
 import React from 'react';
 import Service from './Service';
+import Plx from 'react-plx';
 
+const parallaxAPM = [
+    {
+      start:300,
+      end: 1600,
+      properties: [
+        {
+          startValue: 200,
+          endValue: -200,
+          property: 'translateY',
+        },
+      ],
+    },
+  ];
 export default class Apm extends React.Component {
     render() {
         return (
+      
         <div className="apm">
-            
+            <Plx
+                className='Parallax'
+                parallaxData={ parallaxAPM }
+                >
+                <img className="img_service" src="images/amp.png"></img>       
+            </Plx>
             <Service
-            img="images/amp.png"
+            // img="images/amp.png"
             breadcrumb="SERVICIOS  >  APM"
             title = 'Application Performance Management'
             description="Proporcionamos servicios de valor añadido basados en soluciones

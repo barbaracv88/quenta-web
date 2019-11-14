@@ -3,26 +3,61 @@ import _ from 'lodash';
 
 // import {markdownify, Link, safePrefix, classNames} from '../utils';
 // import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import Plx from 'react-plx';
+
+const parallaxData = [
+    {
+      start: 0,
+      end: 800,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 150,
+          property: 'translateY',
+        },
+      ],
+    },
+  ];
+  const parallaxDataText = [
+    {
+      start: 10,
+      end: 300,
+      properties: [
+        {
+          startValue: 0,
+          endValue: 90,
+          property: 'translateY',
+        },
+      ],
+    },
+  ];
 
 export default class Banner extends React.Component {
     render() {
         return (
-            // <ParallaxProvider>
                 
             <section id="banner">
               
                 <div className="content">
                     <div className="inner">
                         <header>
-                        {/* <Parallax y={[103, -40]}  > */}
+                        <Plx
+                        className='ParallaxHeader'
+                        parallaxData={ parallaxDataText }
+                        >
                             <h2>{_.get(this.props, 'pageContext.frontmatter.banner.title')}</h2>
                             {/* {markdownify(_.get(this.props, 'pageContext.frontmatter.banner.subtitle'))} */}
-                            {/* </Parallax> */}
+                        </Plx> 
                         </header>
-                        {/* <Parallax y={[90, -100]}> */}
+                        
+
+                        <Plx
+                        className='ParallaxHeaderImg'
+                        parallaxData={ parallaxData }
+                        >
                         <div className="image-header">
                             </div>
-                            {/* </Parallax> */}
+                            </Plx>
                         {/* {_.get(this.props, 'pageContext.frontmatter.banner.actions') && 
                             <ul className="actions">
                                 {_.map(_.get(this.props, 'pageContext.frontmatter.banner.actions'), (action, action_idx) => (
@@ -30,13 +65,13 @@ export default class Banner extends React.Component {
                                 ))}
                             </ul>
                         } */}
+                          
                     </div>
                 </div>
                
 
    
             </section>
-            // </ParallaxProvider>
          
         );
         

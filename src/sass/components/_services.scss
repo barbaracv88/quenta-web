@@ -25,6 +25,7 @@
 
             .description {
                 font-size: 1em;
+                width: auto;
             }
 
             button {
@@ -129,7 +130,7 @@
 
         .apm {
             .description {
-                width: 550px;
+                // width: 550px;
             }
         }
     }
@@ -145,7 +146,7 @@
             padding: 1em 3em 1.2em 3em;
 
             .img_service {
-                width: 18em;
+                width: 13em;
             }
 
             .service_description .title_service {
@@ -185,7 +186,7 @@
             margin-left: 0em;
         
             .description {
-                width: 95%;
+                // width: 95%;
             }
         }
         }
@@ -193,7 +194,7 @@
             .service{
                 flex-direction: row;
                 .description {
-                    width: 95%;
+                    // width: 95%;
                 }
                 .icons{
                     flex-direction: column;
@@ -227,7 +228,7 @@
             .service{
                 flex-direction: row;
                 .description {
-                    width: 95%;
+                    // width: 95%;
                 }
                 .icons{
                     flex-direction: column;

@@ -132,18 +132,36 @@
 
 	@include breakpoint('<=xsmall') {
 		.content {
-			padding: 2em 2.2em 0.5em 2.2em;
+			padding: 2em 1.2em 0.5em 1.2em;
 
 			h2 {
 				font-size: 1.8em;
 			}
-			> .inner .image-header {
-				height: 17em;
-				width: 20em;
-	
+			> .inner {
+				-moz-flex-direction: row-reverse;
+				-webkit-flex-direction: row-reverse;
+				-ms-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+				.image-header {
+					height: 17em;
+					width: 20em;
+					margin-right: 0.5em;
+				}
 			}
 		}
-
-		
+	}
+	@include breakpoint('<=xxsmall') {
+		height: 31em;
+		.content {
+			padding: 3em 2.2em 0.5em 2.2em;
+			> .inner {
+				header{
+					width: 100%;
+				}
+				.image-header {
+					display: none;
+				}
+			}
+		}
 	}
 }

@@ -242,18 +242,3 @@
 		}
 	}
 
-	@include breakpoint('<=xsmall') {
-		#header{
-			.inner {
-				-moz-flex-direction: row-reverse;
-				-webkit-flex-direction: row-reverse;
-				-ms-flex-direction: row-reverse;
-				flex-direction: row-reverse;
-
-				.image-header {
-					height: 18em;
-					width: 20em;
-				}
-		}
-	}
-}

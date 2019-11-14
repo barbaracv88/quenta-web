@@ -53,6 +53,7 @@ display: none;
     @include breakpoint('<=xsmall') {
         .logos_alliances {
             grid-template-columns: 50% 50%;
+            padding: 1em 4em 1.2em 4em;
             .img_logo:hover{
                     transform:scale(1);
                     -ms-transform:scale(1); // IE 9 
@@ -62,4 +63,17 @@ display: none;
             } 
         } 
     }
+    @include breakpoint('<=xxsmall') {
+        .logos_alliances {
+            .img_logo{
+                    transform:scale(0.6);
+                    -ms-transform:scale(0.6); // IE 9 
+                    -moz-transform:scale(0.6); // Firefox 
+                    -webkit-transform:scale(0.6); // Safari and Chrome 
+                    -o-transform:scale(0.6); // Opera
+            } 
+        }
+        
+    }
 }
+

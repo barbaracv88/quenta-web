@@ -90,7 +90,8 @@
                     .description_icon {
                         text-align: center;
                     }
-                    .icon4{
+
+                    .icon4 {
                         display: none;
                     }
                 }
@@ -125,8 +126,9 @@
         .service {
             padding: 1em 3em 1.2em 3em;
         }
-        .apm{
-            .description{
+
+        .apm {
+            .description {
                 width: 550px;
             }
         }
@@ -134,24 +136,28 @@
 
     @include breakpoint('<=medium') {
         margin-top: -16em;
-        .description{
+
+        .description {
             font-size: 18px;
         }
+
         .service {
             padding: 1em 3em 1.2em 3em;
+
             .img_service {
                 width: 18em;
             }
-            .service_description .title_service
-            {
+
+            .service_description .title_service {
                 font-size: 1.7em;
             }
-           
+
         }
     }
 
     @include breakpoint('<=small') {
         margin-top: -12em;
+
         .title-section {
             width: 45%;
         }
@@ -159,6 +165,7 @@
         .service {
             padding: 1em 3em 3.2em 3em;
             flex-direction: column;
+
             .img_service {
                 display: none;
             }
@@ -167,24 +174,67 @@
 
     @include breakpoint('<=xsmall') {
         margin-top: -15em;
-
+  
         .title-section {
             width: 70%;
         }
-
         .service {
             padding: 1em 2em 3.5em 2em;
             flex-direction: column;
+      .service_description {
+            margin-left: 0em;
+        
             .description {
                 width: 95%;
             }
         }
+        }
+        .sam{
+            .service{
+                flex-direction: row;
+                .description {
+                    width: 95%;
+                }
+                .icons{
+                    flex-direction: column;
+                }
+            }
+        }
+
         .apm .icons {
             grid-template-columns: 50% 50%;
-            .icon{
+            .icon {
                 padding: 0.3em;
+            }
+        }
+    }
+
+
+
+    @include breakpoint('<=xxsmall') {
+        margin-top: -10em;
+
+       
+
+        .icon {
+            flex-direction: column;
+
+            .img_icon {
+                width: 60%;
+            }
+        }
+        .sam{
+            .service{
+                flex-direction: row;
+                .description {
+                    width: 95%;
+                }
+                .icons{
+                    flex-direction: column;
+                }
             }
         }
 
     }
+
 }

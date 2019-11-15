@@ -4,11 +4,11 @@ import Plx from 'react-plx';
 
 const parallaxAPM = [
     {
-      start:300,
+      start:0,
       end: 1600,
       properties: [
         {
-          startValue: 200,
+          startValue: 100,
           endValue: -200,
           property: 'translateY',
         },

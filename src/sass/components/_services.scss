@@ -130,16 +130,13 @@
 
     @include breakpoint('<=large') {
         margin-top: -29em;
-
-        .service {
-            // padding: 1em 3em 1.2em 3em;
-        }
         .apm, .sam, .cybersecurity{
             padding: 1em 3em 1.2em 3em;
         }
-        .apm {
-            .description {
-                // width: 550px;
+
+        .sam{
+            .img_service{
+                width: 33.6em;
             }
         }
     }
@@ -155,15 +152,20 @@
 
         }
         .service {
-
-            .img_service {
-                width: 13em;
-            }
-
             .service_description .title_service {
                 font-size: 1.7em;
             }
         }
+        .apm, .sam, .cybersecurity{
+            .img_service{
+                width: 15em;
+                margin-left: 0;
+            }
+            .img_service_fondo{
+                width: 15em;
+            }
+        }
+
     }
 
     @include breakpoint('<=small') {
@@ -176,10 +178,8 @@
             padding: 1em 3em 3.2em 3em;
             flex-direction: column;
         }
-        .service {
-            .img_service {
-                display: none;
-            }
+        .img_service, .img_service_fondo {
+            display: none;
         }
     }
 
@@ -194,24 +194,13 @@
             flex-direction: column;
         }
         .service {
-
-
             .service_description {
                 margin-left: 0em;
-
-                .description {
-                    // width: 95%;
-                }
             }
         }
         .sam {
             flex-direction: row;
             .service {
-
-                .description {
-                    // width: 95%;
-                }
-
                 .icons {
                     flex-direction: column;
                 }

@@ -9,10 +9,11 @@
 #banner {
 	@include banner-bg('../../images/fondo-cabecera.png');
 	// position: relative;
-	min-height: 70vh;
-	height: 78em;
+	min-height: 105vh;
+	height: 105em;
 	background-position: top;
 	background-attachment: scroll;
+	margin-top: -11em;
 
 
 	.content {
@@ -41,7 +42,7 @@
 				height: 40em;
 				background-repeat: no-repeat;
 				background-size: cover;
-				width: 38em;
+				width: 40em;
 
 			}
 
@@ -71,6 +72,7 @@
 	}
 
 	@include breakpoint('<=medium') {
+		margin-top: 0em;
 		@include orientation(landscape) {
 			height: 49em;
 		}

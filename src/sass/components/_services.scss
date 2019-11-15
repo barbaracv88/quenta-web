@@ -1,6 +1,6 @@
 .services {
     padding-bottom: 2em;
-    margin-top: -25em;
+    margin-top: -37em;
 
     .service {
         .service_description {
@@ -20,7 +20,7 @@
 
             .description {
                 font-size: 1em;
-                width: auto;
+                width: 100%;
             }
 
             button {
@@ -129,7 +129,7 @@
     }
 
     @include breakpoint('<=large') {
-        margin-top: -29em;
+        margin-top: -41em;
         .apm, .sam, .cybersecurity{
             padding: 1em 3em 1.2em 3em;
         }
@@ -172,7 +172,7 @@
         margin-top: -12em;
 
         .title-section {
-            width: 45%;
+            width: 55%;
         }
         .apm, .sam, .cybersecurity{
             padding: 1em 3em 3.2em 3em;

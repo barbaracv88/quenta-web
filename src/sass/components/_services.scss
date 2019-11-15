@@ -67,6 +67,9 @@
             display: none;
         }
     }
+    .img_service_fondo{
+        width: 26.6em;
+    }
 
     //SAM
 
@@ -74,9 +77,10 @@
         flex-direction: row-reverse;
         .img_service{
             position: absolute;
-            width: 42.6em;
+            width: 38.6em;
             margin-left: -83px;
         }
+ 
         .service {
 
             .icons {
@@ -128,9 +132,11 @@
         margin-top: -29em;
 
         .service {
+            // padding: 1em 3em 1.2em 3em;
+        }
+        .apm, .sam, .cybersecurity{
             padding: 1em 3em 1.2em 3em;
         }
-
         .apm {
             .description {
                 // width: 550px;
@@ -144,9 +150,11 @@
         .description {
             font-size: 18px;
         }
-
-        .service {
+        .apm, .sam, .cybersecurity{
             padding: 1em 3em 1.2em 3em;
+
+        }
+        .service {
 
             .img_service {
                 width: 13em;
@@ -164,11 +172,11 @@
         .title-section {
             width: 45%;
         }
-
-        .service {
+        .apm, .sam, .cybersecurity{
             padding: 1em 3em 3.2em 3em;
             flex-direction: column;
-
+        }
+        .service {
             .img_service {
                 display: none;
             }
@@ -181,10 +189,12 @@
         .title-section {
             width: 70%;
         }
-
-        .service {
+        .apm, .sam, .cybersecurity{
             padding: 1em 2em 3.5em 2em;
             flex-direction: column;
+        }
+        .service {
+
 
             .service_description {
                 margin-left: 0em;
@@ -194,10 +204,9 @@
                 }
             }
         }
-
         .sam {
+            flex-direction: row;
             .service {
-                flex-direction: row;
 
                 .description {
                     // width: 95%;
@@ -230,8 +239,9 @@
         }
 
         .sam {
+            flex-direction: row;
+
             .service {
-                flex-direction: row;
 
                 .icons {
                     flex-direction: column;

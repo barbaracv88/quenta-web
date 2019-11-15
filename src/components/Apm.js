@@ -8,8 +8,8 @@ const parallaxAPM = [
       end: 1600,
       properties: [
         {
-          startValue: 100,
-          endValue: -200,
+          startValue: -150,
+          endValue: 100,
           property: 'translateY',
         },
       ],

@@ -5,7 +5,7 @@ import Plx from 'react-plx';
 const parallaxSAM = [
     {
       start: 100,
-      end: 3500,
+      end: 2900,
       properties: [
         {
           startValue: 450,
@@ -17,11 +17,11 @@ const parallaxSAM = [
   ];
   const parallaxSAM2 = [
     {
-      start: 600,
-      end: 4000,
+      start: 300,
+      end: 3500,
       properties: [
         {
-          startValue: 650,
+          startValue: 1050,
           endValue: -3100,
           property: 'translateY',
         },

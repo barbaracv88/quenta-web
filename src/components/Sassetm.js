@@ -4,12 +4,12 @@ import Plx from 'react-plx';
 
 const parallaxSAM = [
     {
-      start: 300,
-      end: 3000,
+      start: 100,
+      end: 3500,
       properties: [
         {
-          startValue: 700,
-          endValue: -700,
+          startValue: 450,
+          endValue: -400,
           property: 'translateY',
         },
       ],
@@ -17,12 +17,12 @@ const parallaxSAM = [
   ];
   const parallaxSAM2 = [
     {
-      start: 300,
-      end: 3000,
+      start: 600,
+      end: 4000,
       properties: [
         {
-          startValue: 350,
-          endValue: -1500,
+          startValue: 650,
+          endValue: -3100,
           property: 'translateY',
         },
       ],

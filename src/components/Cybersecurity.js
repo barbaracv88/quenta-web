@@ -5,11 +5,11 @@ import Plx from 'react-plx';
 const parallaxCiber = [
     {
         start: 0,
-        end: 4100,
+        end: 5100,
         properties: [
           {
-            startValue: 1000,
-            endValue: -1000,
+            startValue: 600,
+            endValue: -900,
             property: 'translateY',
           },
         ],

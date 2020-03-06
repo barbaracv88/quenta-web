@@ -17,7 +17,7 @@ $size: (
     element-height:		2.75em,
     element-margin:		2em,
     inner-width:		(
-        default:		70em,
+        default:		auto,
         large:			100%
     )
 );
@@ -27,7 +27,8 @@ $font: (
     family:				('Roboto', sans-serif),
     family-fixed:		('Courier New', monospace),
     weight:				400,
-    weight-bold:		500
+	weight-bold:		600,
+	weight-extrabold:		800
 );
 
 // Palette.
@@ -194,7 +195,7 @@ $palette: (
 	@import 'components/slick';
 	@import 'components/slick-theme';
 	@import 'components/alliances';
-	@import 'components/contacto';
+	@import 'components/contact';
 
 // Layout.
 
@@ -213,4 +214,10 @@ $palette: (
 
 .parallax-inner{
 	transform:none;
+}
+
+
+.i4ewOd-pzNkMb-haAclf {
+    background-color: rgb(77,106,121);
+    display: none;
 }

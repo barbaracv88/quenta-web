@@ -55,11 +55,11 @@ display: none;
             grid-template-columns: 50% 50%;
             padding: 1em 4em 1.2em 4em;
             .img_logo:hover{
-                    transform:scale(1);
-                    -ms-transform:scale(1); // IE 9 
-                    -moz-transform:scale(1); // Firefox 
-                    -webkit-transform:scale(1); // Safari and Chrome 
-                    -o-transform:scale(1); // Opera
+                    transform:scale(0.6);
+                    -ms-transform:scale(0.6); // IE 9 
+                    -moz-transform:scale(0.6); // Firefox 
+                    -webkit-transform:scale(0.6); // Safari and Chrome 
+                    -o-transform:scale(0.6); // Opera
             } 
         } 
     }

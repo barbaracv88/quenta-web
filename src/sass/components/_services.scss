@@ -113,6 +113,10 @@
 
     //APM
     .apm {
+
+        .img_service {
+            width: 27.6em;
+        }
         .icons {
             display: grid;
             grid-template-columns: 50% 50%;
@@ -171,7 +175,7 @@
     }
 
     @include breakpoint('<=small') {
-        margin-top: -12em;
+        margin-top: -16em;
 
         .title-section {
             width: 55%;

@@ -24,7 +24,7 @@
 		>.inner {
 			@include vendor('display', 'flex');
 			margin: 0 auto;
-			width: 70em;
+			width: 80em;
 
 			> * {
 				padding-left: (_size(element-margin) * 1.5);

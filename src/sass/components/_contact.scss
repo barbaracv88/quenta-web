@@ -1,38 +1,87 @@
-.contact {
+// .i4ewOd-pzNkMb-haAclf {
+//     background-color: #23B885 !important;
+// }
+//         .i4ewOd-pzNkMb-tJHJj {
+//             display: none;
+//         }
 
+//         .yePe5c-haAclf yePe5c-HzV7m yePe5c-purZT {
+//             display: none;
+//         }
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    p {
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
 
     .information {
+        width: 50%;
         display: flex;
+        flex-direction: column;
+        background: #000000d6;
+        color: white;
 
         .map {
-            height: 500px;
+            display: none;
+            height: 320px;
             width: 50%;
             background-color: gray;
         }
 
-        .facts {
-            margin: auto;
-            width: 50%;
 
-            .fact {
-                display: flex;
+        .directions {
+            display: flex;
+            flex-direction: row;
+            margin: 30px 60px 0px 60px;
+
+            .facts {
                 margin: auto;
-                width: 40%;
-                justify-content: space-between;
-                align-items: center;
-                margin: 2em auto 2em auto;
+                width: 50%;
 
-                img {
-                    height: 100%;
-                }
+                .fact {
+                    display: flex;
+                    flex-direction: column;
+                    margin: auto;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 2em auto 2em auto;
 
-                p {
-                    margin: 0;
-                    width: 50%;
-                    text-align: center;
+                    img {
+                        height: 100%;
+                        margin: 1em;
+                    }
+
+                    p {
+                        margin: 0;
+                        text-align: center;
+                    }
                 }
             }
         }
+
+        .fact_email {
+            width: 30%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 3rem;
+
+            img {
+                margin: 1rem;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
     }
 
     .title_contact {
@@ -44,14 +93,16 @@
     }
 
     .form {
+        width: 50%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         padding: 1em 10em 0 10em;
 
         .form_1,
         .form_2 {
             padding: 0 3em 0 3em;
-            width: 50%;
+            width: 100%;
         }
 
         label {
@@ -110,6 +161,7 @@
         .information .facts .fact {
             width: 66%;
         }
+
         .form {
             padding: 1em 4em 0em 4em;
 
@@ -124,10 +176,13 @@
         .information .facts .fact {
             flex-direction: column;
             width: 100%;
-            img, p{
+
+            img,
+            p {
                 margin-bottom: 1em;
             }
         }
+
         .form {
             padding: 1em 4em 0em 4em;
             flex-direction: column;
@@ -137,7 +192,8 @@
                 padding: 0 1em 0 1em;
                 width: 100%;
             }
-            .button{
+
+            .button {
                 margin-top: 3em;
             }
         }

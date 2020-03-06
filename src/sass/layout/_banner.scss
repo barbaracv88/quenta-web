@@ -23,7 +23,7 @@
 		@include color-typography(accent4);
 		// @include color-button(accent4);
 		// @include color-section(accent4);
-		@include padding(0em, 6.9em);
+		padding: 10em 6.9em 0.1em 6.9em;
 		width: 94%;
 
 		>.inner {
@@ -33,7 +33,7 @@
 			width: _size(inner-width, default);
 
 			header {
-				width: 75%;
+				width: 85%;
 
 			}
 
@@ -47,8 +47,8 @@
 			}
 
 			.actions {
-				padding-left: (_size(element-margin) * 1.5);
 				text-align: right;
+				margin-top: 60px;
 			}
 		}
 	}
@@ -61,7 +61,7 @@
 		min-height: 0;
 
 		.content {
-			@include padding(4em, 3em);
+			padding: 10em 6.9em 0.1em 6.9em;
 
 			>.inner {
 				width: _size(inner-width, large);
@@ -73,6 +73,7 @@
 
 	@include breakpoint('<=medium') {
 		margin-top: 0em;
+
 		@include orientation(landscape) {
 			height: 49em;
 		}
@@ -84,17 +85,16 @@
 		.content {
 			width: 100%;
 			margin: auto;
-			padding: 0em 5em 0em 5em;
+			padding: 4em 5em 0em 5em;
 
 			>.inner {
 				@include vendor('flex-direction', 'row');
 
 				header {
-					width: 50%;
+					width: 100%;
 				}
 
 				.actions {
-					width: 100%;
 					padding-left: 0;
 					text-align: left;
 				}
@@ -104,6 +104,10 @@
 					height: 23em;
 					width: 27em;
 
+				}
+
+				.actions {
+					margin-top: 35px;
 				}
 			}
 		}
@@ -115,18 +119,27 @@
 		}
 
 		@include orientation(portrait) {
-			height: 45em;
+			height: 48em;
 		}
 
 		.content {
-			@include padding(0em, 5em);
+			@include padding(1.5em, 3em);
 
 			>.inner {
-				.image-header {
-					height: 19em;
-					width: 22em;
+				header {
+					margin-top: 26px;
 
+					.image-header {
+						height: 19em;
+						width: 22em;
+
+					}
+
+					.actions {
+						margin-top: 35px;
+					}
 				}
+
 			}
 		}
 
@@ -134,32 +147,49 @@
 
 	@include breakpoint('<=xsmall') {
 		.content {
-			padding: 2em 1.2em 0.5em 1.2em;
+			padding: 1em 2.5em 0.5em 2.5em;
 
-			h2 {
-				font-size: 1.8em;
-			}
-			> .inner {
+			// h2 {
+			// 	font-size: 1.8em;
+			// }
+
+			>.inner {
 				-moz-flex-direction: row-reverse;
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				.image-header {
-					height: 17em;
-					width: 20em;
-					margin-right: 0.5em;
+
+				header {
+					.action {
+						margin-top: 30px;
+					}
+
+					.image-header {
+						height: 17em;
+						width: 20em;
+						margin-right: 0.5em;
+					}
+					.actions {
+						margin-top: 35px;
+					}
+
 				}
+
 			}
 		}
 	}
+
 	@include breakpoint('<=xxsmall') {
 		height: 31em;
+
 		.content {
 			padding: 3em 2.2em 0.5em 2.2em;
-			> .inner {
-				header{
+
+			>.inner {
+				header {
 					width: 100%;
 				}
+
 				.image-header {
 					display: none;
 				}

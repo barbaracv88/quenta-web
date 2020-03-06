@@ -1,31 +1,46 @@
 import React from 'react';
 import _ from 'lodash';
-
-// import {markdownify, Link, safePrefix, classNames} from '../utils';
-// import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+// import Typing from 'react-typing-animation';
+import Typical from 'react-typical'
 import Plx from 'react-plx';
+import { classNames, Link, safePrefix} from '../utils';
 
-const parallaxData = [
+
+
+// const parallaxData = [
+//     {
+//       start: 0,
+//       end: 800,
+//       properties: [
+//         {
+//           startValue: 0,
+//           endValue: 150,
+//           property: 'translateY',
+//         },
+//       ],
+//     },
+//   ];
+  const parallaxDataText = [
     {
       start: 0,
-      end: 800,
+      end: 600,
       properties: [
         {
           startValue: 0,
-          endValue: 150,
+          endValue: 220,
           property: 'translateY',
         },
       ],
     },
   ];
-  const parallaxDataText = [
+  const parallaxButtons = [
     {
-      start: 10,
-      end: 300,
+      start: 0,
+      end: 600,
       properties: [
         {
           startValue: 0,
-          endValue: 90,
+          endValue: 180,
           property: 'translateY',
         },
       ],
@@ -33,6 +48,10 @@ const parallaxData = [
   ];
 
 export default class Banner extends React.Component {
+  onStartedTyping() {
+    
+  }
+  
     render() {
         return (
                 
@@ -42,29 +61,78 @@ export default class Banner extends React.Component {
                     <div className="inner">
                         <header>
                         <Plx
-                        className='ParallaxHeader'
                         parallaxData={ parallaxDataText }
                         >
-                            <h2>{_.get(this.props, 'pageContext.frontmatter.banner.title')}</h2>
-                            {/* {markdownify(_.get(this.props, 'pageContext.frontmatter.banner.subtitle'))} */}
+                            <h2 className="title-header">{_.get(this.props, 'pageContext.frontmatter.banner.title')}</h2>  
+                            {/* <Typing speed={25}>
+                            <h2 className="title-header">{_.get(this.props, 'pageContext.frontmatter.banner.title')}</h2>   
+                          
+                            <h2 className="title-header">{_.get(this.props, 'pageContext.frontmatter.banner.2title')}</h2>  
+                            <Typing.Reset count={1} delay={500}/>            
+                            <h2 className="title-header">{_.get(this.props, 'pageContext.frontmatter.banner.3title')}</h2>  
+                            <Typing.Reset count={1} delay={500} />            
+                            <h2 className="title-header">{_.get(this.props, 'pageContext.frontmatter.banner.4title')}</h2>  
+                            </Typing> */}
+                            <h2 className="title-header">
+                            {_.get(this.props, 'pageContext.frontmatter.banner.2title')}
+                            <Typical
+                            loop={Infinity}
+                            wrapper="b"
+                            steps={[
+                              ' ' ,
+                              1000,
+                              ' compromiso' ,
+                              1500,
+                              ' objetivo',
+                              1500,
+                              ' valor',
+                              1800
+          
+                            ]}
+                            />
+                            </h2>
+                          
+                  
+                            <h2 className="subtitle-header">{_.get(this.props, 'pageContext.frontmatter.banner.subtitle')}</h2>
                         </Plx> 
+                        <Plx
+                        parallaxData={ parallaxButtons }
+                        >
+                            <div className="buttons_header">
+
+                         {_.get(this.props, 'pageContext.frontmatter.banner.actions') && 
+                            <ul className="actions">
+                                {_.map(_.get(this.props, 'pageContext.frontmatter.banner.actions'), (action, action_idx) => (
+                                    <li key={action_idx}>
+                                      <Link to={(_.get(action, 'url').startsWith('#') ? _.get(action, 'url') : safePrefix(_.get(action, 'url')))} 
+                                      className="button primary_banner">{_.get(action, 'label')}</Link></li>
+                                ))}
+                            </ul>
+                        }
+                         {_.get(this.props, 'pageContext.frontmatter.banner.actions') && 
+                            <ul className="actions">
+                                {_.map(_.get(this.props, 'pageContext.frontmatter.banner.actions'), (action, action_idx) => (
+                                    <li key={action_idx}>
+                                      <Link to={(_.get(action, 'url').startsWith('#') ? _.get(action, 'url') : safePrefix(_.get(action, 'url')))} 
+                                      className="button secondary_banner">{_.get(action, 'label2')}</Link></li>
+                                ))}
+                            </ul>
+                        }
+                        </div>
+                        </Plx>
                         </header>
                         
 
-                        <Plx
+                        {/* <Plx
                         className='ParallaxHeaderImg'
                         parallaxData={ parallaxData }
                         >
                         <div className="image-header">
                             </div>
-                            </Plx>
-                        {/* {_.get(this.props, 'pageContext.frontmatter.banner.actions') && 
-                            <ul className="actions">
-                                {_.map(_.get(this.props, 'pageContext.frontmatter.banner.actions'), (action, action_idx) => (
-                                    <li key={action_idx}><Link to={(_.get(action, 'url').startsWith('#') ? _.get(action, 'url') : safePrefix(_.get(action, 'url')))} className={classNames('button', {'primary': _.get(action, 'is_primary')}, {'scrolly': _.get(action, 'is_scrolly')}, {'huge': _.get(action, 'is_huge')})}>{_.get(action, 'label')}</Link></li>
-                                ))}
-                            </ul>
-                        } */}
+                            </Plx> */}
+
+
+               
                           
                     </div>
                 </div>

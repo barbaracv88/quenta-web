@@ -21,7 +21,7 @@ export default class Contacto extends React.Component {
                     <div className="facts">
                     <div className="fact">
                             <img src="images/direccion.png"></img>
-                            <p>Paseo de la Castellana, 141</p>
+                            <p>Paseo de la Castellanna, 141</p>
                         </div>
                         <div className="fact">
                             <img src="images/telefono.png"></img>

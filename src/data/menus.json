@@ -11,7 +11,7 @@
         {
             "identifier": "normal1",
             "title": "Application Performance Management",
-            "url": "/amp",
+            "url": "/apm2",
             "weight": 1
         },
         {

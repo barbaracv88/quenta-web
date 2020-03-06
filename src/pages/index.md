@@ -4,16 +4,9 @@ banner:
     - is_huge: true
       is_primary: false
       is_scrolly: false
-      label: MÁS INFORMACIÓN
-      label2: CONTACTO
+      label: Learn More
       url: /no-sidebar
-  title: 'Tu transformación,'
-  2title: 'nuestro'
-  3title: 'compromiso'
-  4title: 'objetivo'
-  5title: 'valor'
-  subtitle: 'Te acompañamos en todo el proceso de transformación de tu empresa'
-  
+  title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing'
 menus:
   main:
     title: Inicio

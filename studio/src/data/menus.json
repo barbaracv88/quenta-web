@@ -2,7 +2,7 @@
     "footer": [
         {
             "identifier": "normal8",
-            "title": "Made with Stackbit",
+            "title": "Contacto",
             "url": "https://www.stackbit.com",
             "weight": 4
         }
@@ -11,7 +11,7 @@
         {
             "identifier": "normal1",
             "title": "Application Performance Management",
-            "url": "/left-sidebar",
+            "url": "/apm",
             "weight": 1
         },
         {
@@ -23,7 +23,7 @@
         {
             "identifier": "normal3",
             "title": "IT Security Solutions & Cybersecurity",
-            "url": "/no-sidebar",
+            "url": "a",
             "weight": 3
         }
     ],

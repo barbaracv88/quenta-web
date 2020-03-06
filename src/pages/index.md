@@ -14,5 +14,5 @@ menus:
     weight: 1
 sections: []
 template: home
-title: Inicio
+title: Inici
 ---

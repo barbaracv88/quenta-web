@@ -6,8 +6,7 @@ banner:
       is_scrolly: false
       label: Learn More
       url: /no-sidebar
-  title: 'Tu transformación,'
-  2title: 'nuestro'
+  title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing'
 menus:
   main:
     title: Inicio

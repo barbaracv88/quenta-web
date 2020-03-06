@@ -11,7 +11,7 @@
         {
             "identifier": "normal1",
             "title": "Application Performance Management",
-            "url": "/serviceapm",
+            "url": "/apm",
             "weight": 1
         },
         {
@@ -23,7 +23,7 @@
         {
             "identifier": "normal3",
             "title": "IT Security Solutions & Cybersecurity",
-            "url": "/no-sidebar",
+            "url": "a",
             "weight": 3
         }
     ],

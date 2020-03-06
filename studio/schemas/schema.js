@@ -52,6 +52,6 @@ export default createSchema({
     site_menu_item,
     page_menus,
     page_menu_item,
-  
+ 
     ])
 })

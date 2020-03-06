@@ -11,7 +11,7 @@
         {
             "identifier": "normal1",
             "title": "Application Performance Management",
-            "url": "/apm2",
+            "url": "/serviceapm",
             "weight": 1
         },
         {

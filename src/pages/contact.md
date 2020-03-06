@@ -13,7 +13,7 @@ sidebar:
   side: left
 subtitle: Sed magna in pharetra ultricies dolor sit amet consequat adipiscing lorem.
 template: page
-title: Contact
+title: Contacto
 ---
 
 ### Dolore Amet Consequat

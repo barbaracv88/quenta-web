@@ -14,7 +14,7 @@ export default class Contacto extends React.Component {
                 <TitleSection
                 category="Contacto"
             />
-            <p>Si estás interesado en ampliar información o quieres trabajar con nosotros, no dudes en ponerte en contacto en:</p>
+            <p>Si está s interesado en ampliar información o quieres trabajar con nosotros, no dudes en ponerte en contacto en:</p>
             </div>
                 <div className="map"><iframe src="https://www.google.com/maps/d/u/1/embed?mid=1JC8YPXuRK-7EIRnQcuC_SAlipS8Pt5RQ" width="100%" height="320"></iframe></div>
                 <div className="directions">

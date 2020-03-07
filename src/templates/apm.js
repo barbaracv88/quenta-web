@@ -4,7 +4,7 @@ import _ from 'lodash';
 import {Layout} from '../components/index';
 import {markdownify, Link} from '../utils';
 
-class apm extends Component {
+class apm extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
@@ -15,10 +15,10 @@ class apm extends Component {
                             {markdownify(_.get(this.props, 'pageContext.frontmatter.subtitle'))}
                         </header>
      
-              hola!!
-   
-           
-        
+             
+                       
+                     
+                    
     
                     </div>
                 </section>

@@ -24,7 +24,7 @@ import site_menus from './site_menus.js';
 import site_menu_item from './site_menu_item.js';
 import page_menus from './page_menus.js';
 import page_menu_item from './page_menu_item.js';
-import apm from './apm.js';
+
 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -54,7 +54,7 @@ export default createSchema({
     site_menu_item,
     page_menus,
     page_menu_item,
-    apm,
+
  
     ])
 })

@@ -6,13 +6,12 @@ banner:
       is_scrolly: false
       label: Learn More
       url: /no-sidebar
-  title: 'Tu transformación,'
-  2title: 'nuestro'
+  title: 'a'
 menus:
   main:
     title: Inicio
     weight: 1
 sections: []
 template: home
-title: Inici
+title: Inicio
 ---

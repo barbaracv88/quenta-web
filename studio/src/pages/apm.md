@@ -1,6 +1,6 @@
 ---
 content_img:
   url: '#'
-template: page
+template: apm
 title: Apm Service
 ---

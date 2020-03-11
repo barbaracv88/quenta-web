@@ -74,7 +74,7 @@ export default class Banner extends React.Component {
                             <h2 className="title-header">{_.get(this.props, 'pageContext.frontmatter.banner.4title')}</h2>  
                             </Typing> */}
                             <h2 className="title-header">
-                            {_.get(this.props, 'pageContext.frontmatter.banner.2title')}
+                            nuestro
                             <Typical
                             loop={Infinity}
                             wrapper="b"
@@ -114,7 +114,7 @@ export default class Banner extends React.Component {
                                 {_.map(_.get(this.props, 'pageContext.frontmatter.banner.actions'), (action, action_idx) => (
                                     <li key={action_idx}>
                                       <Link to={(_.get(action, 'url').startsWith('#') ? _.get(action, 'url') : safePrefix(_.get(action, 'url')))} 
-                                      className="button secondary_banner">{_.get(action, 'label2')}</Link></li>
+                                      className="button secondary_banner">CONTACTO</Link></li>
                                 ))}
                             </ul>
                         }

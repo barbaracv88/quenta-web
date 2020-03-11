@@ -1,9 +1,6 @@
 ---
-menus:
-  main:
-    title: Apm
-    weight: 3
-subtitle: Sed magna in pharetra ultricies dolor sit amet consequat adipiscing lorem.
+content_img:
+  url: '#'
 template: apm
-title: Apm pagina
+title: Apm Service
 ---

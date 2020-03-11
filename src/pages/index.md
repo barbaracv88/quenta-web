@@ -4,9 +4,9 @@ banner:
     - is_huge: true
       is_primary: false
       is_scrolly: false
-      label: Learn More
+      label: MÁS INFORMACIÓN
       url: /no-sidebar
-  title: 'a'
+  title: 'Tu transformación,'
 menus:
   main:
     title: Inicio

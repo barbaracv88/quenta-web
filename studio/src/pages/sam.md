@@ -1,5 +1,5 @@
 ---
 
 template: sam
-title: Apm Service
+title: Sam Service
 ---

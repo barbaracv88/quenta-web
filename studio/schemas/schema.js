@@ -26,6 +26,7 @@ import page_menus from './page_menus.js';
 import page_menu_item from './page_menu_item.js';
 import apm from './apm.js';
 import sam from './sam.js';
+import cybersecurity from './cybersecurity.js';
 
 
 
@@ -57,7 +58,8 @@ export default createSchema({
     page_menus,
     page_menu_item,
     apm,
-    sam
+    sam,
+    cybersecurity
 
  
     ])

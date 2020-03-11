@@ -17,13 +17,13 @@
         {
             "identifier": "normal2",
             "title": "Software Asset Management2",
-            "url": "/right-sidebar",
+            "url": "/sam",
             "weight": 2
         },
         {
             "identifier": "normal3",
             "title": "IT Security Solutions & Cybersecurity",
-            "url": "a",
+            "url": "/cybersecurity",
             "weight": 3
         }
     ],

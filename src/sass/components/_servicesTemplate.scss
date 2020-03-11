@@ -242,7 +242,7 @@ h3 {
     .introduction2,
     .introduction3 {
         div {
-            padding: 90px;
+            padding: 70px 90px;
         }
     }
 }
@@ -258,7 +258,9 @@ h3 {
             margin-bottom: 7%;
         }
     }
-
+    .services-template {
+        padding: 90px;
+    }
     .section-icons {
         padding: 80px 90px 80px 90px;
 
@@ -277,7 +279,6 @@ h3 {
 
         .subtitle {
             font-size: 15px;
-            width: 80%;
             margin-bottom: 5%;
         }
     }
@@ -318,11 +319,13 @@ h3 {
 }
 
 
-@include breakpoint('<=small') {
+@include breakpoint('<=xsmall') {
     .header-template {
+        background-size: auto;
         .title-template {
             margin-bottom: 44px;
-            margin-top: 19%;
+            margin-top: 25%;
+            width: 90%;
         }
 
         .subtitle {
@@ -331,6 +334,7 @@ h3 {
     }
 
     .section-icons {
+        padding: 50px;
         display: flex;
         flex-direction: column;
 
@@ -340,6 +344,7 @@ h3 {
     }
 
     .services-template {
+        padding: 50px;
         h3 {
             font-size: 28px;
         }

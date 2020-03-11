@@ -1,7 +1,7 @@
 ---
 
 template: sam
-title: Sam pagina
+title: Sam service
 ---
 
 

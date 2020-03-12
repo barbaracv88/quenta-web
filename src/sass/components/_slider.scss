@@ -1,7 +1,7 @@
 .container {
 
   @include banner-bg('../../images/fondo-equipo.png', true);
-  padding: 5em 8em 3em 8em;
+  // padding: 5em 8em 3em 8em;
   position: relative;
   color: #ffffff;
 
@@ -101,7 +101,7 @@
   }
 
   @include breakpoint('<=small') {
-    padding: 2.5em 2em 0.5em 2em;
+    // padding: 2.5em 2em 0.5em 2em;
 
   }
 
@@ -113,6 +113,9 @@
       clip-path: circle(39% at center);
       margin: auto;
     }
+    .title-section .description {
+      font-size: 16px;
+  }
   }
 
 

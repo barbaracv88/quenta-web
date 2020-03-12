@@ -28,6 +28,7 @@ export default class Apm extends React.Component {
                 de Monitorización de Aplicaciones."
                 subtext="Realizamos un seguimiento, en tiempo real, de todas las transacciones 
                 de negocio en función de la experiencia del usuario (real o sintético), independientemente de la tecnología e infraestructura utilizada."
+
                 titletemplate2="Monitorización"
                 subtitle2={["Las soluciones de APM de Quenta Solutions ofrecen una monitorización unificada", <strong> para todo el entorno Full Stack:</strong>]}
                 li1={["Monitorización de infraestructura,", <strong> logs y métricas de red.</strong>]}
@@ -57,11 +58,11 @@ export default class Apm extends React.Component {
 
                 // img2="images/introduction2.jpg"
                 titletemplate3="Automatización"
-                subtitle2="Resolvemos los problemas de rendimiento de forma rápida y automatizada antes que ocasionen un grave impacto en el negocio, a través de establecimiento de alertas basadas en anomalías del rendimiento, integración con entornos basados en Cloud, automatización de tareas manuales y repetitivas, etc."
+                subtitle3="Resolvemos los problemas de rendimiento de forma rápida y automatizada antes que ocasionen un grave impacto en el negocio, a través de establecimiento de alertas basadas en anomalías del rendimiento, integración con entornos basados en Cloud, automatización de tareas manuales y repetitivas, etc."
 
                 // img3="images/introduction3.jpg"
                 titletemplate4="Análisis"
-                subtitle3="Cubrimos tanto el Análisis Operacional, pudiendo comparar
+                subtitle4="Cubrimos tanto el Análisis Operacional, pudiendo comparar
                 el impacto de los cambios de versión en el tiempo o analizando 
                 la escalabilidad de la infraestructura y el consumo de recursos, como el Análisis de Aplicaciones correlando métricas de aplicación con el negocio, detectando tendencias y patrones en la ejecución de los servicios para poder tomar decisiones en base 
                 a la información obtenida.."

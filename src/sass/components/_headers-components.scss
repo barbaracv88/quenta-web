@@ -56,13 +56,6 @@
     margin-right: (_size(element-margin) * +0.5);
     &:hover{
         color: #4d4d4d !important;
-        // background: rgba(23,136,83,1);
-        // background: -moz-linear-gradient(left, rgba(23,136,83,1) 0%, rgba(23,116,84,1) 51%, rgba(26,102,96,1) 100%);
-        // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(23,136,83,1)), color-stop(51%, rgba(23,116,84,1)), color-stop(100%, rgba(26,102,96,1)));
-        // background: -webkit-linear-gradient(left, rgba(23,136,83,1) 0%, rgba(23,116,84,1) 51%, rgba(26,102,96,1) 100%);
-        // background: -o-linear-gradient(left, rgba(23,136,83,1) 0%, rgba(23,116,84,1) 51%, rgba(26,102,96,1) 100%);
-        // background: -ms-linear-gradient(left, rgba(23,136,83,1) 0%, rgba(23,116,84,1) 51%, rgba(26,102,96,1) 100%);
-        // background: linear-gradient(to right, rgba(23,136,83,1) 0%, rgba(23,116,84,1) 51%, rgba(26,102,96,1) 100%);
         -webkit-transition: all .8s ease;
         -moz-transition: all .8s ease;
         -ms-transition: all .8s ease;
@@ -83,15 +76,29 @@
 }
 
 
+@include breakpoint('<=large') {
+    .title-header {
+        font-size: 4em;
+    }
+}
 @include breakpoint('<=medium') {
     .title-header {
         font-size: 3.5em;
     }
+
 }
 
 @include breakpoint('<=small') {
     .title-header {
-        font-size: 2.6em;
+        font-size: 2em;
+    }
+
+
+}
+@include breakpoint('<=xxsmall') {
+
+    .buttons_header{
+        display: none;
     }
 
 }

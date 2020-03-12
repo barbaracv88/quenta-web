@@ -10,192 +10,247 @@
 //         }
 .contact {
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    text-align: left;
+    // padding: 5em 8em 3em 8em;
 
-    p {
-        text-align: center;
-        margin: auto;
-        width: 80%;
-    }
 
-    .information {
-        width: 50%;
+    .dates-contact {
+
         display: flex;
-        flex-direction: column;
-        background: #000000d6;
-        color: white;
 
-        .map {
-            display: none;
-            height: 320px;
+        .information {
             width: 50%;
-            background-color: gray;
-        }
+            color: #000;
 
-
-        .directions {
-            display: flex;
-            flex-direction: row;
-            margin: 30px 60px 0px 60px;
-
-            .facts {
-                margin: auto;
+            .map {
+                display: none;
+                height: 320px;
                 width: 50%;
+                background-color: gray;
+            }
 
-                .fact {
-                    display: flex;
-                    flex-direction: column;
-                    margin: auto;
-                    width: 100%;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin: 2em auto 2em auto;
 
-                    img {
-                        height: 100%;
-                        margin: 1em;
-                    }
+            .directions {
 
-                    p {
-                        margin: 0;
-                        text-align: center;
+
+                .facts {
+                    width: 50%;
+                    margin-top: 30px;
+
+                    .fact {
+
+
+                        img {
+                            height: 100%;
+                            margin: 1em;
+                        }
+
+                        p {
+                            margin: 0;
+                        }
                     }
                 }
             }
+
+            .fact_email {
+
+                margin-top: 30px;
+
+                img {
+                    margin: 1rem;
+                }
+
+
+            }
+
         }
 
-        .fact_email {
-            width: 30%;
+        .title_contact {
+            width: 80%;
+
+            .description {
+                display: none;
+            }
+        }
+
+        .item1 {
+            grid-area: name;
+        }
+
+        .item2 {
+            grid-area: email;
+        }
+
+        .item3 {
+            grid-area: tlf;
+        }
+
+        .item4 {
+            grid-area: mens;
+        }
+
+        .item5 {
+            grid-area: env;
+        }
+
+        .form {
+            width: 50%;
+            grid-template-columns: 50% 50%;
+            display: grid;
+            grid-template-rows: auto;
+            grid-column-gap: 27px;
+            grid-row-gap: 27px;
+            grid-template-areas:
+                "name email"
+                "tlf ."
+                "mens mens"
+                "env env";
+
+            .form_1,
+            .form_2 {
+                width: 100%;
+            }
+
+            label {
+                font-size: 1em;
+            }
+
+            input,
+            textarea {
+                border: 0.5 #E3E3E3 solid;
+                border-radius: 0;
+                background-color: white;
+            }
+
+            input {
+                height: 50px;
+
+            }
+
+            input[type="text"]:focus,
+            input[type="password"]:focus,
+            input[type="email"]:focus,
+            select:focus,
+            textarea:focus {
+                border-color: #23B683;
+                box-shadow: 0 0 0 1px #23B683;
+            }
+
+            textarea {
+                height: 100px;
+            }
+
+
+
+        }
+
+        .button {
             margin: auto;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            margin-top: 3rem;
-
-            img {
-                margin: 1rem;
-            }
-
-            p {
-                text-align: center;
-            }
-        }
-
-    }
-
-    .title_contact {
-        margin: 5em 0 0 0;
-
-        .description {
-            display: none;
-        }
-    }
-
-    .form {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 1em 10em 0 10em;
-
-        .form_1,
-        .form_2 {
-            padding: 0 3em 0 3em;
             width: 100%;
+            padding: 0px;
+
         }
 
-        label {
-            font-size: 1em;
-        }
-
-        input,
-        textarea {
+        button {
+            margin: auto;
+            height: 59px;
+            width: 100%;
+            font-size: 1.1em;
+            color: white;
             border: none;
-            background-color: #E3E3E3;
-            border-radius: 0;
+            background: #8A153A;
+
+            &:hover {
+                background: #700e2d;
+            }
         }
 
-        input {
-            height: 3em;
-            margin-bottom: 2.5em;
-
-        }
-
-        textarea {
-            height: 79%;
-        }
-
-        @include breakpoint('<=medium') {
-            padding: 1em 5em 0em 5em;
-
-        }
 
     }
 
-    .button {
-        margin: auto;
-        width: 18.4em;
-    }
 
-    button {
-        margin: auto;
-        height: 3em;
-        width: 14.3em;
-        font-size: 1.1em;
-        color: white;
-        padding-bottom: 3em;
-        border: none;
-        background: rgba(35, 213, 130, 1);
-        background: -moz-linear-gradient(left, rgba(35, 213, 130, 1) 0%, rgba(35, 146, 131, 1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(35, 213, 130, 1)), color-stop(100%, rgba(35, 146, 131, 1)));
-        background: -webkit-linear-gradient(left, rgba(35, 213, 130, 1) 0%, rgba(35, 146, 131, 1) 100%);
-        background: -o-linear-gradient(left, rgba(35, 213, 130, 1) 0%, rgba(35, 146, 131, 1) 100%);
-        background: -ms-linear-gradient(left, rgba(35, 213, 130, 1) 0%, rgba(35, 146, 131, 1) 100%);
-        background: linear-gradient(to right, rgba(35, 213, 130, 1) 0%, rgba(35, 146, 131, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#23d582', endColorstr='#239283', GradientType=1);
 
-    }
 
     @include breakpoint('<=small') {
+        // padding:
+        //     2.5em 1.5em 0.5em 1.5em;
+
         .information .facts .fact {
             width: 66%;
         }
 
         .form {
-            padding: 1em 4em 0em 4em;
-
-            .form_1,
-            .form_2 {
-                padding: 0 1em 0 1em;
-            }
+            padding: 0;
         }
     }
 
     @include breakpoint('<=xsmall') {
-        .information .facts .fact {
-            flex-direction: column;
-            width: 100%;
+        // padding:
+        //     2.5em 1.5em 0.5em 1.5em;
 
-            img,
-            p {
-                margin-bottom: 1em;
+
+        .dates-contact {
+            .information {
+                text-align: center;
+
+                .directions .facts {
+                    width: 100%;
+
+                    .fact {
+                        flex-direction: column;
+                        width: 100%;
+
+                        img,
+                        p {
+                            margin-bottom: 1em;
+                        }
+                    }
+                }
             }
-        }
 
-        .form {
-            padding: 1em 4em 0em 4em;
-            flex-direction: column;
 
-            .form_1,
-            .form_2 {
-                padding: 0 1em 0 1em;
+            .form {
+                padding: 1em 0em 0em 0em;
+
                 width: 100%;
-            }
+                grid-template-columns: 100%;
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-areas:
+                    "name"
+                    "email"
+                    "tlf"
+                    "mens"
+                    "env";
 
-            .button {
-                margin-top: 3em;
+
+                .form_1,
+                .form_2 {
+                    padding: 0;
+                    width: 100%;
+                }
+
+                .button {
+                    margin-top: 3em;
+                }
             }
         }
     }
+}
+
+@include breakpoint('<=medium') {
+    .contact .dates-contact {
+        display: inline;
+
+        .information,
+        .title_contact,
+        .facts {
+            width: 100%;
+        }
+
+        .form {
+            width: 100%;
+        }
+    }
+
 }

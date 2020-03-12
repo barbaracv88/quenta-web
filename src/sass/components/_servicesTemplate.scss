@@ -29,13 +29,15 @@
 
 .introduction,
 .introduction2,
-.introduction3 {
+.introduction3,
+.introduction4 {
     display: flex;
     height: auto;
 
     .img-introduction,
     .img-introduction2,
-    .img-introduction3 {
+    .img-introduction3,
+    .img-introduction4 {
         width: 50%;
         height: auto;
         background-size: cover;
@@ -160,6 +162,10 @@ h3 {
     .img-introduction3 {
         background-image: url(../../images/img-apm.jpg);
     }
+    .introduction4{
+        display: none;
+    }
+    
 
     .services-template {
         background-color: #F9F8F8;
@@ -185,13 +191,15 @@ h3 {
     .img-introduction3 {
         background-image: url(../../images/img-apm.jpg);
     }
+.introduction4{
+    display: none;
+}
 
     .section-icons {
         display: none;
     }
 
     .background-color {
-
         background: linear-gradient(45deg, rgba(255, 21, 58, 1) 0%, rgba(207, 21, 58, 1) 24%, rgba(138, 21, 58, 1) 100%);
 
         .introduction2 {
@@ -212,7 +220,6 @@ h3 {
 
         .introduction3 {
             display: none;
-
         }
 
         .services-template {
@@ -222,16 +229,93 @@ h3 {
         }
     }
 
-    .grey1 {
+    .list1 {
         background-color: #F9F8F8;
     }
-    #footer{
+
+    #footer {
         margin-top: -191px;
     }
 }
 
 
+// CYBERSECURITY
 
+
+.cybersecurity-template {
+    .introduction {
+        flex-direction: row-reverse;
+
+        .img-introduction {
+            background-image: url(../../images/img-apm.jpg);
+        }
+
+        .text-introduction {
+            margin-bottom: 0px;
+        }
+    }
+
+    .list2,
+    .section-icons {
+        display: none;
+    }
+
+    .background-color {
+        display: flex;
+        background-color: #F9F8F8;
+        padding: 80px 148px 80px 148px;
+
+        .introduction2,
+        .introduction3 {
+            justify-content: flex-end;
+            width: 50%;
+
+            .img-introduction2,
+            .img-introduction3 {
+                display: none;
+            }
+
+            div {
+                width: 90%;
+                justify-content: flex-start;
+                padding: 0;
+            }
+        }
+    }
+
+    .li6-optional,
+    .li7-optional,
+    .li8-optional {
+        display: none;
+    }
+
+    .list1 {
+        background: linear-gradient(45deg, rgba(255, 21, 58, 1) 0%, rgba(207, 21, 58, 1) 24%, rgba(138, 21, 58, 1) 100%);
+        color: white;
+
+        h3 {
+            color: white;
+        }
+
+        .line {
+            background-color: white;
+        }
+    }
+
+}
+
+
+.introduction4{
+    padding: 80px 148px 80px 148px;
+    .img-introduction4 {
+        background-image: url(../../images/img-apm.jpg);
+    }
+}
+
+
+
+
+// MEDIAQUERYS
 
 @include breakpoint('<=large') {
     .section-icons .icon {
@@ -240,7 +324,8 @@ h3 {
 
     .introduction,
     .introduction2,
-    .introduction3 {
+    .introduction3,
+    .introduction4 {
         div {
             padding: 70px 90px;
         }
@@ -258,14 +343,49 @@ h3 {
             margin-bottom: 7%;
         }
     }
+
     .services-template {
         padding: 90px;
     }
+
     .section-icons {
         padding: 80px 90px 80px 90px;
 
         .icon {
             width: 100px;
+        }
+    }
+
+
+
+    // .cybersecurity-template .introduction {
+    //     flex-direction: column;
+    // }
+    .cybersecurity-template .background-color {
+        .introduction2, .introduction3, .introduction4{
+            width: 100%;
+            padding: 50px 50px 0 50px;
+        }
+        display: block;
+        padding: 0;
+
+    }
+    .cybersecurity-template {
+      .introduction4{
+            width: 100%;
+            padding: 50px 50px 0 50px;
+
+            div{
+                padding: 0;
+                width: 100%;
+            }
+            .img-introduction4{
+                margin-right: 55px;
+                padding: 80px;
+                width: 100%;
+                margin-bottom: 38px;
+
+            }
         }
     }
 }
@@ -301,7 +421,8 @@ h3 {
 
     .introduction div,
     .introduction2 div,
-    .introduction3 div {
+    .introduction3 div,
+    .introduction4 div {
         padding: 50px;
 
         .text-introduction {
@@ -322,6 +443,7 @@ h3 {
 @include breakpoint('<=xsmall') {
     .header-template {
         background-size: auto;
+
         .title-template {
             margin-bottom: 44px;
             margin-top: 25%;
@@ -345,6 +467,7 @@ h3 {
 
     .services-template {
         padding: 50px;
+
         h3 {
             font-size: 28px;
         }
@@ -357,20 +480,49 @@ h3 {
 
     .introduction,
     .introduction2,
-    .introduction3 {
+    .introduction3,
+    .introduction4 {
         flex-direction: column;
+        
 
         .img-introduction,
         .img-introduction2,
-        .img-introduction3 {
+        .img-introduction3,
+        .introduction4 {
             width: 100%;
             height: 200px;
         }
-
         div {
             padding: 50px;
             width: 100%;
+        }
+    }
+    
+    .cybersecurity-template .introduction {
+        flex-direction: column;
+    }
+    .cybersecurity-template .background-color {
+        .introduction2, .introduction3, .introduction4{
+            width: 100%;
+            padding: 50px 50px 0 50px;
+        }
+        display: block;
+        padding: 0;
 
+    }
+    .cybersecurity-template {
+      .introduction4{
+            width: 100%;
+            padding: 50px 50px 0 50px;
+
+            div{
+                padding: 0;
+            }
+            .img-introduction4{
+                padding: 80px;
+                width: 100%;
+                margin-bottom: 38px;
+            }
         }
     }
 

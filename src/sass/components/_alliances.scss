@@ -3,7 +3,7 @@
     height: auto;
     background-color: #FAF7F7;
     .logos_alliances{
-        padding: 1em 10em 6.2em 10em;
+        padding: 1em 0em 6.2em 0em;
         height: auto;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
@@ -38,7 +38,7 @@ display: none;
 
     @include breakpoint('<=medium') {
         .logos_alliances {
-            padding: 1em 4em 6.2em 4em;
+            padding: 1em 0em 6.2em 0em;
         } 
     }
 
@@ -51,9 +51,13 @@ display: none;
         } 
     }
     @include breakpoint('<=xsmall') {
+
         .logos_alliances {
-            grid-template-columns: 50% 50%;
-            padding: 1em 4em 1.2em 4em;
+            grid-template-columns: 100%;
+            // padding: 1em 4em 1.2em 4em;
+            .img_logo {
+                width: 90%;
+            }
             .img_logo:hover{
                     transform:scale(0.6);
                     -ms-transform:scale(0.6); // IE 9 

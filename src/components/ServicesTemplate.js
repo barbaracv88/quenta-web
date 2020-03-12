@@ -16,7 +16,7 @@ export default class ServicesTemplate extends Component {
                     </div>
 
                 </div>
-                <div className="services-template grey1">
+                <div className="services-template list1">
                     <h3>{this.props.titletemplate2}</h3>
                     <div className="line"></div>
                     <p className="subtitle">{this.props.subtitle2}</p>
@@ -26,8 +26,8 @@ export default class ServicesTemplate extends Component {
                         <li>{this.props.li3}</li>
                         <li>{this.props.li4}</li>
                         <li>{this.props.li5}</li>
-                        <li>{this.props.li6}</li>
-                        <li>{this.props.li7}</li>
+                        <li className="li6-optional">{this.props.li6}</li>
+                        <li className="li7-optional">{this.props.li7}</li>
                         <li className="li8-optional">{this.props.li8}</li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@ export default class ServicesTemplate extends Component {
                         <div>
                             <h3>{this.props.titletemplate3}</h3>
                             <span className="line"></span>
-                            <p className="subtitle">{this.props.subtitle2}</p>
+                            <p className="subtitle">{this.props.subtitle3}</p>
                         </div>
                     </div>
                     <div className="introduction3">
@@ -68,7 +68,7 @@ export default class ServicesTemplate extends Component {
                         <div>
                             <h3>{this.props.titletemplate4}</h3>
                             <span className="line"></span>
-                            <p className="subtitle">{this.props.subtitle3}</p>
+                            <p className="subtitle">{this.props.subtitle4}</p>
                         </div>
                     </div>
                     <div className="services-template list2">
@@ -83,6 +83,15 @@ export default class ServicesTemplate extends Component {
                         <li className="li8-optional">{this.props.li81}</li>
                     </ul>
                     </div>
+                    </div>
+
+                    <div className="introduction4">
+                    <div className="img-introduction4"></div>
+                        <div>
+                            <h3>{this.props.titletemplate5}</h3>
+                            <span className="line"></span>
+                            <p className="subtitle">{this.props.subtitle5}</p>
+                        </div>
                     </div>
 
             </div>

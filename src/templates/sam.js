@@ -40,7 +40,7 @@ export default class sam extends React.Component {
 
                 // img2="images/introduction2.jpg"
                 titletemplate3="Servicios de asesoría legal y jurídica TIC"
-                subtitle2="Quenta Solutions proporciona servicios de asesoría Legal y Jurídica como apoyo a las compañías ante las auditorías de los fabricantes software, desde la notificación de incio de la auditoría o en cualquier fase en la que se encuentre. Los servicios de asesoría legal y jurídica TIC de Quenta Solutions incluyen:"
+                subtitle3="Quenta Solutions proporciona servicios de asesoría Legal y Jurídica como apoyo a las compañías ante las auditorías de los fabricantes software, desde la notificación de incio de la auditoría o en cualquier fase en la que se encuentre. Los servicios de asesoría legal y jurídica TIC de Quenta Solutions incluyen:"
 
                 li11="Conocimiento exhaustivo de las condiciones de licenciamiento de cada fabricante."
                 li61="Confrontación del régimen de derechos y obligaciones con las pretensiones de los fabricantes."

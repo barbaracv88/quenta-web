@@ -121,7 +121,9 @@
 		@include orientation(portrait) {
 			height: 48em;
 		}
-
+		#banner {
+			height: 38em;
+		}
 		.content {
 			@include padding(1.5em, 3em);
 

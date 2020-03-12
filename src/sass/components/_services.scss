@@ -4,7 +4,7 @@
 
     .service {
         .service_description {
-            margin-left: 2em;
+            // margin-left: 2em;
 
             .breadcrumb {
                 font-size: 0.8em;
@@ -51,7 +51,7 @@
     .apm {
         display: flex;
         margin: auto;
-        padding: 1em 10em 3.2em 10em;
+        padding: 1em 0 3.2em 0;
         align-items: center;
     }
 
@@ -78,7 +78,7 @@
         .img_service{
             position: absolute;
             width: 38.6em;
-            margin-left: -83px;
+            margin-left: -195px;
         }
  
         .service {
@@ -136,7 +136,6 @@
     @include breakpoint('<=large') {
         margin-top: -41em;
         .apm, .sam, .cybersecurity{
-            padding: 1em 3em 1.2em 3em;
         }
 
         .sam{
@@ -153,7 +152,6 @@
             font-size: 18px;
         }
         .apm, .sam, .cybersecurity{
-            padding: 1em 3em 1.2em 3em;
 
         }
         .service {
@@ -182,7 +180,6 @@
             width: 55%;
         }
         .apm, .sam, .cybersecurity{
-            padding: 1em 3em 3.2em 3em;
             flex-direction: column;
         }
         .img_service, .img_service_fondo {
@@ -197,7 +194,6 @@
             width: 70%;
         }
         .apm, .sam, .cybersecurity{
-            padding: 1em 2em 3.5em 2em;
             flex-direction: column;
         }
         .service {
@@ -215,12 +211,22 @@
         }
 
         .apm .icons {
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 100%;
 
             .icon {
                 padding: 0.3em;
+                flex-direction: column;
+                .img_icon {
+                    height: auto;
+                    width: 16%;
+                    margin: auto;
+                }
+                .description_icon{
+                    text-align: center;
+                }
             }
         }
+       
     }
 
     @include breakpoint('<=xxsmall') {
@@ -229,9 +235,7 @@
         .icon {
             flex-direction: column;
 
-            .img_icon {
-                width: 60%;
-            }
+
         }
 
         .sam {
@@ -248,3 +252,6 @@
     }
 
 }
+
+
+

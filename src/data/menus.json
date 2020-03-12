@@ -23,7 +23,7 @@
         {
             "identifier": "normal3",
             "title": "IT Security Solutions & Cybersecurity",
-            "url": "/cybersecurity",
+            "url": "cybersecurity",
             "weight": 3
         }
     ],

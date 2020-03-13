@@ -30,7 +30,7 @@ export default class Service extends React.Component {
                         </div>
 
                     </div>
-                    <a> <button> MÁS INFORMACIÓN</button></a>
+                    <a href = {this.props.link}>  <button> MÁS INFORMACIÓN</button></a>
                 </div>
             </div>
                 );

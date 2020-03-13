@@ -114,7 +114,7 @@ export default class Banner extends React.Component {
                                 {_.map(_.get(this.props, 'pageContext.frontmatter.banner.actions'), (action, action_idx) => (
                                     <li key={action_idx}>
                                       <Link to={(_.get(action, 'url').startsWith('#') ? _.get(action, 'url') : safePrefix(_.get(action, 'url')))} 
-                                      className="button secondary_banner">CONTACTO</Link></li>
+                                      className="button secondary_banner">¿HABLAMOS?</Link></li>
                                 ))}
                             </ul>
                         }

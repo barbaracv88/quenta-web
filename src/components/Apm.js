@@ -47,6 +47,7 @@ export default class Apm extends React.Component {
             description_icon4="Control sobre Contenedores
             y Microservicios
             "
+            link="/apm/"
             />
         </div>
       

@@ -8,7 +8,7 @@ const parallaxSAM = [
       end: 2900,
       properties: [
         {
-          startValue: 450,
+          startValue: 550,
           endValue: -400,
           property: 'translateY',
         },
@@ -18,11 +18,11 @@ const parallaxSAM = [
   const parallaxSAM2 = [
     {
       start: 300,
-      end: 3500,
+      end: 2500,
       properties: [
         {
-          startValue: 1050,
-          endValue: -3100,
+          startValue: 280,
+          endValue: -1400,
           property: 'translateY',
         },
       ],
@@ -61,7 +61,9 @@ export default class Sassetm extends React.Component {
             img_icon3="images/strategy.png"
             description_icon3="Strategy
             And Protection"
+            link="/sam/"
             />
+            
         </div>
       
         )

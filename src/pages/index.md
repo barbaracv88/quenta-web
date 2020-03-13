@@ -1,16 +1,12 @@
 ---
 banner:
   actions:
-    - is_huge: true
-      is_primary: false
-      is_scrolly: false
-      label: MÁS INFORMACIÓN
-      url: /no-sidebar
+    - is_scrolly: true
+      label: ¿Hablamos?
+      url: '#contacto'
   title: 'Tu transformación,'
 menus:
-  main:
-    title: Inicio
-    weight: 1
+  main: {}
 sections: []
 template: home
 title: Inicio

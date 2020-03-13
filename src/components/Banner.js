@@ -100,15 +100,7 @@ export default class Banner extends React.Component {
                         >
                             <div className="buttons_header">
 
-                         {_.get(this.props, 'pageContext.frontmatter.banner.actions') && 
-                            <ul className="actions">
-                                {_.map(_.get(this.props, 'pageContext.frontmatter.banner.actions'), (action, action_idx) => (
-                                    <li key={action_idx}>
-                                      <Link to={(_.get(action, 'url').startsWith('#') ? _.get(action, 'url') : safePrefix(_.get(action, 'url')))} 
-                                      className="button primary_banner">{_.get(action, 'label')}</Link></li>
-                                ))}
-                            </ul>
-                        }
+                     
                          {_.get(this.props, 'pageContext.frontmatter.banner.actions') && 
                             <ul className="actions">
                                 {_.map(_.get(this.props, 'pageContext.frontmatter.banner.actions'), (action, action_idx) => (

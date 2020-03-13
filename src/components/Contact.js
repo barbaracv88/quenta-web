@@ -8,7 +8,7 @@ export default class Contacto extends React.Component {
     render() {
         return (
             
-            <div className="contact">
+            <div className="contact" id="contacto">
                 <div className="title_contact">
                 <TitleSection
                 category="Podemos ayudarte"

@@ -21,7 +21,7 @@ export default class Carrousel extends React.Component {
           
             responsive: [
               {
-                breakpoint: 1024,
+                breakpoint: 1440,
                 settings: {
                   slidesToShow: 3,
                   centerPadding: "-10px"

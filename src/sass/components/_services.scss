@@ -78,7 +78,7 @@
         .img_service{
             position: absolute;
             width: 38.6em;
-            margin-left: -195px;
+            margin-left: -91px;
         }
  
         .service {
@@ -132,7 +132,14 @@
             }
         }
     }
-
+    @include breakpoint('<=xlarge') {
+        .sam{
+            .img_service{
+                width: 34.6em;
+                margin-left: -64px;
+            }
+        }
+    }
     @include breakpoint('<=large') {
         margin-top: -41em;
         .apm, .sam, .cybersecurity{

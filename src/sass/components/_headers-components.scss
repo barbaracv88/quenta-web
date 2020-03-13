@@ -44,7 +44,7 @@
     display: flex;
 }
 .primary_banner {
-
+display: none;
     background: rgba(35, 146, 131, 1);
     background: -moz-linear-gradient(left, rgba(35, 146, 131, 1) 0%, rgba(35, 182, 131, 1) 53%, rgba(35, 213, 131, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(35, 146, 131, 1)), color-stop(53%, rgba(35, 182, 131, 1)), color-stop(100%, rgba(35, 213, 131, 1)));

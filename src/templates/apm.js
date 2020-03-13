@@ -65,7 +65,7 @@ export default class Apm extends React.Component {
                 subtitle4="Cubrimos tanto el Análisis Operacional, pudiendo comparar
                 el impacto de los cambios de versión en el tiempo o analizando 
                 la escalabilidad de la infraestructura y el consumo de recursos, como el Análisis de Aplicaciones correlando métricas de aplicación con el negocio, detectando tendencias y patrones en la ejecución de los servicios para poder tomar decisiones en base 
-                a la información obtenida.."
+                a la información obtenida."
                 />
             </Layout>
             </div>

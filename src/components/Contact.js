@@ -68,7 +68,7 @@ export default class Contacto extends React.Component {
                     <div className="form_2 item4">
                         <textarea id="msg" placeholder="Mensaje"></textarea>
                     </div>
-                    <div class="button item5">
+                    <div className="button item5">
                     <button type="submit item5">Envíar</button>
                     </div>
 

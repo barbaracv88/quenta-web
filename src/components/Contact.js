@@ -56,7 +56,7 @@ export default class Contacto extends React.Component {
 
 
                     <div className="item1">
-                        <input type="text" id="name" name="name" placeholder="Nombre (requerido)" value="contact" />
+                        <input type="text" id="name" name="name" placeholder="Nombre (requerido)"/>
                     </div>
                     <div className="item2">
                         <input type="email" id="mail" name="email" placeholder="Email (requerido)" />

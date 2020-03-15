@@ -31,8 +31,7 @@ export default class Apm extends React.Component {
             // img="images/amp.png"
             breadcrumb="SERVICIOS  >  APM"
             title = 'Application Performance Management'
-            description="Proporcionamos servicios de valor añadido basados en soluciones
-            de Monitorización de Aplicaciones (APM) que permiten a las compañías realizar un seguimiento, en tiempo real, de todas las transacciones
+            description="Proporcionamos servicios de valor añadido basados en soluciones de Monitorización de Aplicaciones (APM) que permiten a las compañías realizar un seguimiento, en tiempo real, de todas las transacciones
             de negocio en función de la experiencia del usuario (real o sintético), independientemente de la tecnología e infraestructura utilizada."
             img_icon1="images/apm-icon1.png"
             description_icon1="Rendimiento de entornos

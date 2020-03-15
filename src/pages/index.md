@@ -3,7 +3,7 @@ banner:
   actions:
     - is_scrolly: true
       label: ¿Hablamos?
-      url: '#contacto'
+      url: contact
   title: 'Tu transformación,'
 menus:
   main: {}

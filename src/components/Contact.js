@@ -56,17 +56,17 @@ export default class Contacto extends React.Component {
 
 
                     <div className="item1">
-                        <input type="text" id="name" placeholder="Nombre (requerido)" />
+                        <input type="text" id="name" name="name" placeholder="Nombre (requerido)" />
                     </div>
                     <div className="item2">
-                        <input type="email" id="mail" placeholder="Email (requerido)" />
+                        <input type="email" id="mail" name="email" placeholder="Email (requerido)" />
                     </div>
                     
                     <div className="item3">
                         <input type="text" id="tlf" placeholder="Teléfono" />
                     </div>
                     <div className="form_2 item4">
-                        <textarea id="msg" placeholder="Mensaje"></textarea>
+                        <textarea id="msg" name="message" placeholder="Mensaje"></textarea>
                     </div>
                     <div className="button item5">
                     <button type="submit">Envíar</button>

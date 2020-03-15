@@ -31,7 +31,7 @@
         {
             "identifier": "layouts",
             "title": "Servicios",
-            "url": "#servicios",
+            "url": "servicios",
             "weight": 2
         }
     ],

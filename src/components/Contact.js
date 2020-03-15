@@ -52,11 +52,11 @@ export default class Contacto extends React.Component {
                         </div>
                 </div>
   
-            <form method="post" className="form" name="contact" netlify form-name="contact">
+            <form method="POST" className="form" name="contact" data-netlify="true">
 
 
                     <div className="item1">
-                        <input type="text" id="name" name="name" placeholder="Nombre (requerido)" />
+                        <input type="text" id="name" name="name" placeholder="Nombre (requerido)" value="contact" />
                     </div>
                     <div className="item2">
                         <input type="email" id="mail" name="email" placeholder="Email (requerido)" />
@@ -69,7 +69,7 @@ export default class Contacto extends React.Component {
                         <textarea id="msg" name="message" placeholder="Mensaje"></textarea>
                     </div>
                     <div className="button item5">
-                    <button type="submit">Envíar</button>
+                    <button type="submit" value="Submit">Envíar</button>
                     </div>
 
 

@@ -52,7 +52,7 @@ export default class Contacto extends React.Component {
                         </div>
                 </div>
   
-            <form action="" method="post" className="form" data-netlify="true" name="contact">
+            <form method="post" className="form" name="contact" netlify>
 
 
                     <div className="item1">

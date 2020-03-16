@@ -41,6 +41,7 @@
       padding-bottom: 10px;
       font-weight: lighter;
       position: relative;
+      margin-left: 26px;
       &:before {
         content : "";
         position: absolute;
@@ -55,6 +56,7 @@
 
     .position {
       font-weight: bold;
+      margin-left: 26px;
 
     }
 
@@ -96,6 +98,10 @@
     padding: 5em 3em 3em 3em;
     .employee {
       width: 300px;
+      .position, .name{
+        margin-left: 0px;
+      }
+     
   }
 
   }

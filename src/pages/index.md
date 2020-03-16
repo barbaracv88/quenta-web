@@ -3,10 +3,11 @@ banner:
   actions:
     - is_scrolly: true
       label: ¿Hablamos?
-      url: contact
+      url: '#contact'
   title: 'Tu transformación,'
 menus:
-  main: {}
+  main:
+    weight: 1
 sections: []
 template: home
 title: Inicio

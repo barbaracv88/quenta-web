@@ -32,7 +32,7 @@ export default class Home extends React.Component {
                         buttonStyle={{ color: "#fff", fontSize: "13px", background: "#23B683" }}
                         expires={150}
                     >
-                        Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en <a href="/privacy/">Aviso Legal</a> y la <a href="/privacy/">Política de Privacidad</a>. {" "}
+                        Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en <a href="/aviso-legal/">Aviso Legal</a> , <a href="/privacy/">Política de Privacidad</a> y la <a href="/cookies/">Política de Cookies</a>. {" "}
                         <span style={{ fontSize: "10px" }}>
                         
                         </span>

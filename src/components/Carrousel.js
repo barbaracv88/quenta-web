@@ -56,10 +56,12 @@ export default class Carrousel extends React.Component {
                 <div>
                 <Employee
                 rrss_1="images/rrss-42.png"
+                href1="https://www.linkedin.com/in/arancha-s%C3%A1nchez-guti%C3%A9rrez-7391712b/"
+                href2="mailto:arancha.sanchez@quenta.es"
                 rrss_2="images/rrss-43.png"
-                image="images/retrato.jpg"
-                name="Andres Gómez 1"
-                position="CEO"
+                image="images/arancha.jpg"
+                name="Arancha Sánchez Gutiérrez "
+                position="Key Account Manager"
                 />
                 </div>
                 <div>

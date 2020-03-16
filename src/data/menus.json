@@ -1,12 +1,5 @@
 {
-    "footer": [
-        {
-            "identifier": "normal8",
-            "title": "Contacto",
-            "url": "https://www.stackbit.com",
-            "weight": 4
-        }
-    ],
+    "footer": [],
     "layouts": [
         {
             "identifier": "normal1",
@@ -31,8 +24,8 @@
         {
             "identifier": "layouts",
             "title": "Servicios",
-            "url": "servicios",
-            "weight": 2
+            "url": "#",
+            "weight": 3
         }
     ],
     "submenu": [

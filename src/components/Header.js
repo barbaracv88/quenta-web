@@ -8,7 +8,7 @@ export default class Header extends React.Component {
     render() {
         let menu = _.get(this.props, 'pageContext.menus.main');
         return (
-            <header id="header" className={classNames({'alt': _.get(this.props, 'pageContext.frontmatter.template') === _.get(this.props, 'pageContext.site.siteMetadata.landing_template')})}>
+            <header id="header" className={classNames({'reveal': _.get(this.props, 'pageContext.frontmatter.template') === _.get(this.props, 'pageContext.site.siteMetadata.landing_template')})}>
                 <div id="logo">
              
                    <a href="/"><img className="logo" src="../images/logo-quenta.png"></img></a> 

@@ -121,9 +121,9 @@
 		@include orientation(portrait) {
 			height: 48em;
 		}
-		#banner {
+		
 			height: 38em;
-		}
+		
 		.content {
 			@include padding(1.5em, 3em);
 
@@ -148,6 +148,9 @@
 	}
 
 	@include breakpoint('<=xsmall') {
+		
+			height: 38em;
+		
 		.content {
 			padding: 1em 2.5em 0.5em 2.5em;
 

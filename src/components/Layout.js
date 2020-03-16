@@ -5,6 +5,8 @@ import _ from 'lodash';
 import {safePrefix} from '../utils';
 import Header from './Header';
 import Footer from './Footer';
+import CookieConsent from "react-cookie-consent";
+
 
 export default class Body extends React.Component {
     render() {
@@ -23,6 +25,19 @@ export default class Body extends React.Component {
                     <Header {...this.props} />
                     {this.props.children}
                     <Footer {...this.props} />
+                    <CookieConsent
+                        location="bottom"
+                        buttonText="Acepto el uso de cookies"
+                        cookieName="Cookies"
+                        style={{ background: "#2B373B" }}
+                        buttonStyle={{ color: "#fff", fontSize: "13px", background: "#23B683" }}
+                        expires={150}
+                    >
+                        Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en <a href="/aviso-legal/">Aviso Legal</a> , <a href="/privacy/">Política de Privacidad</a> y la <a href="/cookies/">Política de Cookies</a>. {" "}
+                        <span style={{ fontSize: "10px" }}>
+                        
+                        </span>
+                    </CookieConsent>
             </React.Fragment>
         );
     }

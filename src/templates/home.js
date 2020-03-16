@@ -6,7 +6,6 @@ import Services from '../components/Services';
 import components, {Layout} from '../components/index';
 import Banner from '../components/Banner';
 import Contacto from '../components/Contact';
-import CookieConsent from "react-cookie-consent";
 
 
 export default class Home extends React.Component {
@@ -24,19 +23,7 @@ export default class Home extends React.Component {
                      <Alliances/>
                      <Carrousel/>
                      <Contacto/>
-                     <CookieConsent
-                        location="bottom"
-                        buttonText="Acepto el uso de cookies"
-                        cookieName="Cookies"
-                        style={{ background: "#2B373B" }}
-                        buttonStyle={{ color: "#fff", fontSize: "13px", background: "#23B683" }}
-                        expires={150}
-                    >
-                        Necesitamos usar cookies para que funcione todo, si permanece aquí acepta su uso, más información en <a href="/aviso-legal/">Aviso Legal</a> , <a href="/privacy/">Política de Privacidad</a> y la <a href="/cookies/">Política de Cookies</a>. {" "}
-                        <span style={{ fontSize: "10px" }}>
-                        
-                        </span>
-                    </CookieConsent>
+                
             </Layout>
         );
     }

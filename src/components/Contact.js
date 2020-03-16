@@ -51,7 +51,7 @@ export default class Contacto extends React.Component {
                         </div>
                 </div>
   
-            <form method="POST" className="form" name="contact" data-netlify="true" action="thank-you">
+            <form method="POST" className="form" name="contact" data-netlify="true">
 
                     <div className="item1">
                     <input type="hidden" name="form-name" value="my-form" />

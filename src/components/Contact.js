@@ -51,14 +51,14 @@ export default class Contacto extends React.Component {
                         </div>
                 </div>
   
-            <form method="POST" className="form" name="contact" data-netlify="true" action="thank-you">
+            <form method="POST" className="form" name="contact" data-netlify="true" action="thank-you" data-netlify-recaptcha="true">
 
 
                     <div className="item1">
-                        <input type="text" id="name" name="name" placeholder="Nombre (requerido)"/>
+                        <input type="text" id="name" name="name" placeholder="Nombre (requerido)" required/>
                     </div>
                     <div className="item2">
-                        <input type="email" id="mail" name="email" placeholder="Email (requerido)" />
+                        <input type="email" id="mail" name="email" placeholder="Email (requerido)" required />
                     </div>
                     
                     <div className="item3">
@@ -67,6 +67,7 @@ export default class Contacto extends React.Component {
                     <div className="form_2 item4">
                         <textarea id="msg" name="message" placeholder="Mensaje"></textarea>
                     </div>
+                    <div data-netlify-recaptcha="true"></div>
                     <div className="button item5">
                     <button type="submit" value="Submit">Envíar</button>
                     </div>

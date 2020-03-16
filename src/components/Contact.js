@@ -56,7 +56,7 @@ export default class Contacto extends React.Component {
                     <div className="item1">
                         <input type="text" id="name" name="name" placeholder="Nombre (requerido)" required/>
                     </div>
-                    {/* <div className="item2">
+                    <div className="item2">
                         <input type="email" id="mail" name="email" placeholder="Email (requerido)" required />
                     </div>
                     
@@ -65,7 +65,7 @@ export default class Contacto extends React.Component {
                     </div>
                     <div className="form_2 item4">
                         <textarea id="msg" name="message" placeholder="Mensaje"></textarea>
-                    </div> */}
+                    </div>
 
                     <div className="button item5">
                     <button type="submit" value="Submit">Envíar</button>

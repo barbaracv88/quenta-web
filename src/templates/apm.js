@@ -39,18 +39,18 @@ export default class Apm extends React.Component {
                 li6="Conocer el tiempo de respuesta del 100% de las transacciones de negocio."
                 li7="Trazabilidad End-to-End, de usuarios-transacciones-infraestructura a través de todas las capas y tecnologías."
 
-                img_icon1="images/one.svg"
+                img_icon1="../images/one.svg"
                 description_icon1="Aplicaciones basadas en las arquitecturas y frameworks más utilizados."
-                img_icon2="images/two.svg"
+                img_icon2="../images/two.svg"
                 description_icon2="Aplicaciones para 
                 plataformas móviles 
                 basadas en iOS y Android."
-                img_icon3="images/three.svg"
+                img_icon3="../images/three.svg"
                 description_icon3="Aplicaciones virtualizadas basadas en Citrix."
-                img_icon4="images/four.svg"
+                img_icon4="../images/four.svg"
                 description_icon4="Visibilidad detallada 
                 del lado del back-end."
-                img_icon5="images/five.svg"
+                img_icon5="../images/five.svg"
                 description_icon5="Experiencia de usuario 
                 que permite identificar 
                 su interacción 

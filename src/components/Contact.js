@@ -62,14 +62,18 @@ export default class Contacto extends React.Component {
                     </div>
                     
                     <div className="item3">
-                        <input type="text" id="tlf" name="telephone" placeholder="Teléfono" />
+                        <input type="text" id="tlf" name="telephosne" placeholder="Teléfono" />
                     </div>
                     <div className="form_2 item4">
                         <textarea id="msg" name="message" placeholder="Mensaje"></textarea>
                     </div>
 
+
                     <div className="button item5">
                     <button type="submit" value="Submit">Envíar</button>
+                    </div>
+                    <div className="item6">
+                    <input type="checkbox" name="condiciones" id="acepto" required/><label for="acepto" >He leído y aceto la <a href="/privacy/">política de privacidad</a></label>
                     </div>
 
                 </form>

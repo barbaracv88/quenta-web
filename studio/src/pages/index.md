@@ -1,16 +1,12 @@
 ---
 banner:
   actions:
-    - is_huge: true
-      is_primary: false
-      is_scrolly: false
-      label: MÁS INFORMACIÓN
-      url: /apm
+    - is_scrolly: true
+      label: ¿Hablamos?
+      url: '#contact'
   title: 'Tu transformación,'
-  2title: 'nuestro'
 menus:
   main:
-    title: Inicio
     weight: 1
 sections: []
 template: home

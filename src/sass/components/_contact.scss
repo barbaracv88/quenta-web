@@ -92,6 +92,9 @@
         .item5 {
             grid-area: env;
         }
+        .item6 {
+            grid-area: check;
+        }
 
         .form {
             width: 50%;
@@ -104,7 +107,8 @@
                 "name email"
                 "tlf ."
                 "mens mens"
-                "env env";
+                "env env"
+                "check .";
 
             .form_1,
             .form_2 {

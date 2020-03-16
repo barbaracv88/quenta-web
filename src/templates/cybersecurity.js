@@ -32,7 +32,7 @@ export default class Cybersecurity extends React.Component {
                 Como resultado de este análisis, se proporcionan informes técnicos y ejecutivos de resultados, incluyendo el estado de seguridad de los objetivos evaluados, para prevenir y mitigar los peligrosos ciberataques, identificando las distintas posibilidades para mejorar la seguridad."
 
                 // img3="images/introduction3.jpg"
-                titletemplate4="Test de ntrusión o pentesting"
+                titletemplate4="Test de intrusión o pentesting"
                 subtitle4="El objetivo de Quenta Solutions es demostrar cómo un atacante real sería capaz de comprometer su objetivo (aplicación, sistema, red, infraestructura...) tomando el control del mismo, comprometiendo su disponibilidad y la información que contiene.
 
                 En un test de intrusión se identifican las principales técnicas empleadas por los atacantes para borrar cualquier rastro del ataque y obtener datos adicionales con los que perpetrar ataques en sistemas adyacentes."

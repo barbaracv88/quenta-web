@@ -24,7 +24,7 @@ export default class Apm extends React.Component {
                 className='Parallax'
                 parallaxData={ parallaxAPM }
                 >
-                <img className="img_service" src="images/pantalla-generica.png"></img>     
+                <img className="img_service" src="images/pantalla-generica.png" alt=""></img>     
                   
             </Plx>
             <Service

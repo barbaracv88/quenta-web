@@ -13,19 +13,19 @@ export default class Service extends React.Component {
                     <p className="description"> {this.props.description}</p>
                     <div className="icons">
                         <div className="icon">
-                            <img className="img_icon" src = {this.props.img_icon1}></img>
+                            <img className="img_icon" src = {this.props.img_icon1} alt=""></img>
                             <p className="description_icon">{this.props.description_icon1}</p>
                         </div>
                         <div className="icon">
-                        <img className="img_icon" src = {this.props.img_icon2}></img>
+                        <img className="img_icon" src = {this.props.img_icon2} alt=""></img>
                             <p className="description_icon">{this.props.description_icon2}</p>
                         </div>
                         <div className="icon">
-                        <img className="img_icon" src = {this.props.img_icon3}></img>
+                        <img className="img_icon" src = {this.props.img_icon3} alt=""></img>
                             <p className="description_icon">{this.props.description_icon3}</p>
                         </div>
                         <div className="icon">
-                        <img className="img_icon  icon4" src = {this.props.img_icon4}></img>
+                        <img className="img_icon  icon4" src = {this.props.img_icon4} alt=""></img>
                             <p className="description_icon">{this.props.description_icon4}</p>
                         </div>
 

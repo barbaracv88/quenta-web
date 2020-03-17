@@ -25,7 +25,7 @@ export default class Cybersecurity extends React.Component {
                 className='Parallax'
                 parallaxData={ parallaxCiber }
                 >
-                <img className="img_service" src="images/csec.png"></img>       
+                <img className="img_service" src="images/csec.png" alt=""></img>       
             </Plx>
 
             <Service

@@ -100,15 +100,7 @@ export default class Carrousel extends React.Component {
                 position="CEO"
                 />
                 </div>
-                <div>
-                <Employee
-                rrss_1="images/rrss-42.png"
-                rrss_2="images/rrss-43.png"
-                image="images/retrato.jpg"
-                name="Andres Gómez "
-                position="CEO"
-                />
-                </div>
+              
               </Slider>
             </div>
           );

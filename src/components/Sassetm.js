@@ -22,7 +22,7 @@ const parallaxSAM = [
       properties: [
         {
           startValue: 280,
-          endValue: -1400,
+          endValue: -1000,
           property: 'translateY',
         },
       ],

@@ -51,7 +51,7 @@ export default class Contacto extends React.Component {
                         </div>
                 </div>
   
-            <form name="contact" netlify-honeypot="bot-field" data-netlify="true" netlify method="post" action="thank-you">
+            <form name="contact" netlify-honeypot="bot-field" data-netlify="true" netlify method="post" action="thank-you" className="form">
 
                     <div className="item1">
                     <input type="hidden" name="form-name" value="contact" />

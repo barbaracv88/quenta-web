@@ -51,11 +51,11 @@ export default class Contacto extends React.Component {
                         </div>
                 </div>
   
-            <form method="POST" className="form" name="contact" data-netlify="true">
+            <form name="contact" netlify-honeypot="bot-field" data-netlify="true" netlify method="post" action="thank-you">
 
                     <div className="item1">
-                    <input type="hidden" name="form-name" value="my-form" />
-                        <input type="text" id="name" name="name" placeholder="Nombre (requerido)" required/>
+                    <input type="hidden" name="form-name" value="contact" />
+                    <input type="text" id="name" name="name" placeholder="Nombre (requerido)" required/>
                     </div>
                     <div className="item2">
                         <input type="email" id="mail" name="email" placeholder="Email (requerido)" required />

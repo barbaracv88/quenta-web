@@ -60,7 +60,7 @@ export default class Carrousel extends React.Component {
                 href2="mailto:arancha.sanchez@quenta.es"
                 rrss_2="images/rrss-43.png"
                 image="images/arancha.jpg"
-                name="Arancha Sánchez Gutiérrez "
+                name="Arancha Sánchez"
                 position="Key Account Manager"
                 />
                 </div>
@@ -68,39 +68,30 @@ export default class Carrousel extends React.Component {
                 <Employee
                 rrss_1="images/rrss-42.png"
                 rrss_2="images/rrss-43.png"
-                image="images/retrato.jpg"
-                name="Andres Gómez "
-                position="CEO"
+                image="images/antonio.jpg"
+                name="Antonio Villarroel"
+                position="System Engineer"
                 />
                 </div>
                 <div>
                 <Employee
                 rrss_1="images/rrss-42.png"
                 rrss_2="images/rrss-43.png"
-                image="images/retrato.jpg"
-                name="Andres Gómez "
-                position="CEO"
+                image="images/javier.jpg"
+                name="Javier Rodríguez"
+                position="Managing Director"
                 />
                 </div>
                 <div>
                 <Employee
                 rrss_1="images/rrss-42.png"
                 rrss_2="images/rrss-43.png"
-                image="images/retrato.jpg"
-                name="Andres Gómez "
-                position="CEO"
+                image="images/ivan.jpg"
+                name="Iván Pastor"
+                position="Service Manager"
                 />
                 </div>
-                <div>
-                <Employee
-                rrss_1="images/rrss-42.png"
-                rrss_2="images/rrss-43.png"
-                image="images/retrato.jpg"
-                name="Andres Gómez "
-                position="CEO"
-                />
-                </div>
-              
+
               </Slider>
             </div>
           );

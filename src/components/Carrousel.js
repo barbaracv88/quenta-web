@@ -69,6 +69,7 @@ export default class Carrousel extends React.Component {
               </div>
 
               <div className="employee"> 
+              <div>
                   <a href="https://www.linkedin.com/in/antonio-villarroel-a3074724/?originalSubdomain=es"  target="_blank">
                     <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
                   </a>
@@ -79,9 +80,11 @@ export default class Carrousel extends React.Component {
                   <img className="img_employee" src = "images/antonio.jpg" alt=""></img>
                   <p className="name">Antonio Villarroel</p>
                   <p className="position">System Engineer</p>
+                  </div>
               </div>
 
               <div className="employee"> 
+              <div>
                   <a href="https://www.linkedin.com/in/juanjavierrodriguez/"  target="_blank">
                     <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
                   </a>
@@ -92,9 +95,11 @@ export default class Carrousel extends React.Component {
                   <img className="img_employee" src = "images/javier.jpg" alt=""></img>
                   <p className="name">Javier Rodríguez</p>
                   <p className="position">Managing Director</p>
+                  </div>
               </div>
 
               <div className="employee"> 
+              <div>
                   <a href="https://www.linkedin.com/in/iv%C3%A1n-pastor-58320920/"  target="_blank">
                     <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
                   </a>
@@ -106,9 +111,11 @@ export default class Carrousel extends React.Component {
                   <img className="img_employee" src = "images/ivan.jpg" alt=""></img>
                   <p className="name">Iván Pastor</p>
                   <p className="position">Service Manager</p>
+                  </div>
               </div>
 
               <div className="employee"> 
+              <div>
                   <a href="https://www.linkedin.com/in/mar%C3%ADa-dolores-bola%C3%B1os-ortega-07a3334a/"  target="_blank">
                     <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
                   </a>
@@ -119,6 +126,7 @@ export default class Carrousel extends React.Component {
                   <img className="img_employee" src = "images/maria.jpg" alt=""></img>
                   <p className="name">María Bolaños</p>
                   <p className="position">Business Consultant</p>
+                  </div>
               </div>
 
               </Slider>

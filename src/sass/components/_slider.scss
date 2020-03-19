@@ -15,13 +15,14 @@
     width: 270px;
     font-size: 19px;
 
+
     .mail {
       margin-top: 58px;
-      margin-left: 221px;
+      margin-left: 261px;
     }
 
     .linkedin {
-      margin-left: 193px;
+      margin-left: 237px;
     }
 
     .rrss {
@@ -112,7 +113,13 @@
 
   @include breakpoint('<=small') {
     // padding: 2.5em 2em 0.5em 2em;
+    .employee .mail {
+      margin-left: 221px;
+    }
 
+    .employee .linkedin {
+      margin-left: 193px;
+    }
   }
 
   @include breakpoint('<=xsmall') {
@@ -124,6 +131,13 @@
     }
     .title-section .description {
       font-size: 16px;
+  }
+  .container .employee .mail {
+    margin-left: 221px;
+  }
+
+  .container .employee .linkedin {
+    margin-left: 193px;
   }
   }
 

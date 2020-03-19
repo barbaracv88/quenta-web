@@ -24,18 +24,24 @@ export default class Carrousel extends React.Component {
                 breakpoint: 1440,
                 settings: {
                   slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
                 }
               },
               {
                 breakpoint: 800,
                 settings: {
                   slidesToShow: 2,
+                  slidesToScroll: 2,
+                  infinite: true,
                 }
               },
               {
                 breakpoint: 480,
                 settings: {
-                  slidesToShow: 1
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
                 }
               }
             ]

@@ -16,7 +16,7 @@ export default class Carrousel extends React.Component {
             centerPadding: "0px",
             slidesToShow: 4,
             speed: 500,
-
+            autoplay:true,
           
           
             responsive: [
@@ -95,6 +95,17 @@ export default class Carrousel extends React.Component {
                 image="images/ivan.jpg"
                 name="Iván Pastor"
                 position="Service Manager"
+                />
+                </div>
+                <div>
+                <Employee
+                rrss_1="images/rrss-42.png"
+                href1="https://www.linkedin.com/in/mar%C3%ADa-dolores-bola%C3%B1os-ortega-07a3334a/"
+                href2="mailto:maria.bolaños@quenta.es"
+                rrss_2="images/rrss-43.png"
+                image="images/maria.jpg"
+                name="María Bolaños"
+                position="Business Consultant"
                 />
                 </div>
 

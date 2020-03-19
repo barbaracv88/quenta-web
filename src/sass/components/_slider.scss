@@ -94,52 +94,52 @@
 
   }
 
-  @include breakpoint('<=large') {
-    padding: 5em 3em 3em 3em;
+  // @include breakpoint('<=large') {
+  //   padding: 5em 3em 3em 3em;
 
-  }
+  // }
 
-  @include breakpoint('<=medium') {
-    padding: 5em 3em 3em 3em;
-    .employee {
-      width: 300px;
-      .position, .name{
-        margin-left: 0px;
-      }
+  // @include breakpoint('<=medium') {
+  //   padding: 5em 3em 3em 3em;
+  //   .employee {
+  //     width: 300px;
+  //     .position, .name{
+  //       margin-left: 0px;
+  //     }
      
-  }
+  // }
 
-  }
+  // }
 
-  @include breakpoint('<=small') {
-    // padding: 2.5em 2em 0.5em 2em;
-    .employee .mail {
-      margin-left: 221px;
-    }
+  // @include breakpoint('<=small') {
+  //   // padding: 2.5em 2em 0.5em 2em;
+  //   .employee .mail {
+  //     margin-left: 221px;
+  //   }
 
-    .employee .linkedin {
-      margin-left: 193px;
-    }
-  }
+  //   .employee .linkedin {
+  //     margin-left: 193px;
+  //   }
+  // }
 
-  @include breakpoint('<=xsmall') {
-    padding: 2.5em 1.5em 0.5em 1.5em;
+  // @include breakpoint('<=xsmall') {
+  //   padding: 2.5em 1.5em 0.5em 1.5em;
 
-    .img_employee {
-      max-height: 100px;
-      margin: auto;
-    }
-    .title-section .description {
-      font-size: 16px;
-  }
-  .container .employee .mail {
-    margin-left: 221px;
-  }
+  //   .img_employee {
+  //     max-height: 100px;
+  //     margin: auto;
+  //   }
+  //   .title-section .description {
+  //     font-size: 16px;
+  // }
+  // .container .employee .mail {
+  //   margin-left: 221px;
+  // }
 
-  .container .employee .linkedin {
-    margin-left: 193px;
-  }
-  }
+  // .container .employee .linkedin {
+  //   margin-left: 193px;
+  // }
+  // }
 
 
 &:focus{

@@ -24,14 +24,12 @@ export default class Carrousel extends React.Component {
                 breakpoint: 1440,
                 settings: {
                   slidesToShow: 3,
-                  centerPadding: "-10px"
                 }
               },
               {
                 breakpoint: 800,
                 settings: {
                   slidesToShow: 2,
-                  centerPadding: "-10px"
                 }
               },
               {

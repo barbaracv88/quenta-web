@@ -20,14 +20,14 @@ export default class Carrousel extends React.Component {
           
           
             responsive: [
-              {
-                breakpoint: 1440,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
-                  infinite: true,
-                }
-              },
+              // {
+              //   breakpoint: 1440,
+              //   settings: {
+              //     slidesToShow: 3,
+              //     slidesToScroll: 3,
+              //     infinite: true,
+              //   }
+              // },
               {
                 breakpoint: 800,
                 settings: {

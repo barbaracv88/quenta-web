@@ -19,28 +19,28 @@ export default class Carrousel extends React.Component {
             // autoplay:true,
           
           
-            // responsive: [
-            //   {
-            //     breakpoint: 1440,
-            //     settings: {
-            //       slidesToShow: 3,
-            //       centerPadding: "-10px"
-            //     }
-            //   },
-            //   {
-            //     breakpoint: 800,
-            //     settings: {
-            //       slidesToShow: 2,
-            //       centerPadding: "-10px"
-            //     }
-            //   },
-            //   {
-            //     breakpoint: 480,
-            //     settings: {
-            //       slidesToShow: 1
-            //     }
-            //   }
-            // ]
+            responsive: [
+              {
+                breakpoint: 1440,
+                settings: {
+                  slidesToShow: 3,
+                  centerPadding: "-10px"
+                }
+              },
+              {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 2,
+                  centerPadding: "-10px"
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1
+                }
+              }
+            ]
           };
           return (
          
@@ -61,11 +61,11 @@ export default class Carrousel extends React.Component {
                   <a href="mailto:arancha.sanchez@quenta.es">
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                   </a>
-                       
+                  </div>   
                   <img className="img_employee" src = "images/arancha.jpg" alt=""></img>
                   <p className="name">Arancha Sánchez</p>
                   <p className="position">Key Account Manager</p>
-                  </div>
+                  
               </div>
 
               <div className="employee"> 
@@ -76,11 +76,11 @@ export default class Carrousel extends React.Component {
                   <a href="mailto:ajvillarroel.work@quenta.es">
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                   </a>
-                       
+                  </div>   
                   <img className="img_employee" src = "images/antonio.jpg" alt=""></img>
                   <p className="name">Antonio Villarroel</p>
                   <p className="position">System Engineer</p>
-                  </div>
+                 
               </div>
 
               <div className="employee"> 
@@ -91,11 +91,11 @@ export default class Carrousel extends React.Component {
                   <a href="mailto:javier.rodriguez@quenta.es">
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                   </a>
-                       
+                  </div>   
                   <img className="img_employee" src = "images/javier.jpg" alt=""></img>
                   <p className="name">Javier Rodríguez</p>
                   <p className="position">Managing Director</p>
-                  </div>
+                  
               </div>
 
               <div className="employee"> 
@@ -107,11 +107,11 @@ export default class Carrousel extends React.Component {
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                    
                   </a>
-                       
+                </div>
                   <img className="img_employee" src = "images/ivan.jpg" alt=""></img>
                   <p className="name">Iván Pastor</p>
                   <p className="position">Service Manager</p>
-                  </div>
+                
               </div>
 
               <div className="employee"> 
@@ -122,11 +122,11 @@ export default class Carrousel extends React.Component {
                   <a href="mailto:maria.bolaños@quenta.es">
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                   </a>
-                       
+                  </div>     
                   <img className="img_employee" src = "images/maria.jpg" alt=""></img>
                   <p className="name">María Bolaños</p>
                   <p className="position">Business Consultant</p>
-                  </div>
+                  
               </div>
 
               </Slider>

@@ -19,28 +19,28 @@ export default class Carrousel extends React.Component {
             // autoplay:true,
           
           
-            responsive: [
-              {
-                breakpoint: 1440,
-                settings: {
-                  slidesToShow: 3,
-                  centerPadding: "-10px"
-                }
-              },
-              {
-                breakpoint: 800,
-                settings: {
-                  slidesToShow: 2,
-                  centerPadding: "-10px"
-                }
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1
-                }
-              }
-            ]
+            // responsive: [
+            //   {
+            //     breakpoint: 1440,
+            //     settings: {
+            //       slidesToShow: 3,
+            //       centerPadding: "-10px"
+            //     }
+            //   },
+            //   {
+            //     breakpoint: 800,
+            //     settings: {
+            //       slidesToShow: 2,
+            //       centerPadding: "-10px"
+            //     }
+            //   },
+            //   {
+            //     breakpoint: 480,
+            //     settings: {
+            //       slidesToShow: 1
+            //     }
+            //   }
+            // ]
           };
           return (
          

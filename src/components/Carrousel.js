@@ -14,26 +14,28 @@ export default class Carrousel extends React.Component {
             infinite: true,
             centerPadding: "0px",
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             speed: 500,
-            // autoplay:true,
+            mobileFirst:true,
+            variableHeight: true,
+            initialSlide: 0,
+            autoplay:true,
           
           
             responsive: [
-              // {
-              //   breakpoint: 1440,
-              //   settings: {
-              //     slidesToShow: 3,
-              //     slidesToScroll: 3,
-              //     infinite: true,
-              //   }
-              // },
+              {
+                breakpoint: 1440,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  infinite: true,
+                }
+              },
               {
                 breakpoint: 800,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 2,
-                  infinite: true,
+                  slidesToScroll: 1,
                 }
               },
               {
@@ -41,7 +43,6 @@ export default class Carrousel extends React.Component {
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
-                  infinite: true,
                 }
               }
             ]

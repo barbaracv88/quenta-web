@@ -28,7 +28,7 @@ export default class Carrousel extends React.Component {
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 1,
-                  infinite: true,
+                  centerMode: false,
                 }
               },
               {
@@ -36,6 +36,8 @@ export default class Carrousel extends React.Component {
                 settings: {
                   slidesToShow: 2,
                   slidesToScroll: 1,
+                  centerMode: false,
+
                 }
               },
               {
@@ -43,6 +45,8 @@ export default class Carrousel extends React.Component {
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
+                  centerMode: false,
+
                 }
               }
             ]

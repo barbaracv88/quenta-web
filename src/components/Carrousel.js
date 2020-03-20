@@ -69,8 +69,9 @@ export default class Carrousel extends React.Component {
                   <a href="mailto:arancha.sanchez@quenta.es">
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                   </a>
-                    <a>
-                  <img className="img_employee" src = "images/arancha.jpg" alt=""></img>                  
+                    
+                  <img className="img_employee" src = "images/arancha.jpg" alt=""></img>    
+                  <a>              
                   <p className="name">Arancha Sánchez</p>
                   <p className="position">Key Account Manager</p>
                   </a>
@@ -84,8 +85,9 @@ export default class Carrousel extends React.Component {
                   <a href="mailto:ajvillarroel.work@quenta.es">
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                   </a>
-                  <a>
+                  
                   <img className="img_employee" src = "images/antonio.jpg" alt=""></img>
+                  <a>
                   <p className="name">Antonio Villarroel</p>                 
                   <p className="position">System Engineer</p>
                   </a>
@@ -98,8 +100,9 @@ export default class Carrousel extends React.Component {
                   <a href="mailto:javier.rodriguez@quenta.es">
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                   </a>
-                   <a>
+                  
                   <img className="img_employee" src = "images/javier.jpg" alt=""></img>
+                  <a>
                   <p className="name">Javier Rodríguez</p>
                   <p className="position">Managing Director</p>
                   </a>
@@ -112,8 +115,9 @@ export default class Carrousel extends React.Component {
                   <a href="mailto:ivan.pastor@quenta.es">
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                   </a>
-                <a>
+                
                   <img className="img_employee" src = "images/ivan.jpg" alt=""></img>
+                  <a>
                   <p className="name">Iván Pastor</p>
                   <p className="position">Service Manager</p>
                   </a>
@@ -126,8 +130,9 @@ export default class Carrousel extends React.Component {
                   <a href="mailto:maria.bolaños@quenta.es">
                     <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
                   </a>
-                     <a>
+                     
                   <img className="img_employee" src = "images/maria.jpg" alt=""></img>
+                  <a>
                   <p className="name">María Bolaños</p>     
                   <p className="position">Business Consultant</p>
                   </a>

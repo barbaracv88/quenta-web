@@ -63,59 +63,74 @@ export default class Carrousel extends React.Component {
                 </div>
               <Slider {...settings}>
               <div className="employee"> 
-              <div>
-                 
-                    
-                  <img className="img_employee" src = "images/arancha.jpg" alt=""></img>
-                  
+                  <a href="https://www.linkedin.com/in/arancha-s%C3%A1nchez-guti%C3%A9rrez-7391712b/"  target="_blank">
+                    <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
+                  </a>
+                  <a href="mailto:arancha.sanchez@quenta.es">
+                    <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
+                  </a>
+                    <a>
+                  <img className="img_employee" src = "images/arancha.jpg" alt=""></img>                  
                   <p className="name">Arancha Sánchez</p>
-                  </div> 
                   <p className="position">Key Account Manager</p>
-                  
+                  </a>
               </div>
 
               <div className="employee"> 
-              <div>
-              
-                  
+
+                  <a href="https://www.linkedin.com/in/antonio-villarroel-a3074724/?originalSubdomain=es"  target="_blank">
+                    <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
+                  </a>
+                  <a href="mailto:ajvillarroel.work@quenta.es">
+                    <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
+                  </a>
+                  <a>
                   <img className="img_employee" src = "images/antonio.jpg" alt=""></img>
-                  
-                  <p className="name">Antonio Villarroel</p>
-                  </div>   
+                  <p className="name">Antonio Villarroel</p>                 
                   <p className="position">System Engineer</p>
-                 
+                  </a>
               </div>
 
               <div className="employee"> 
-              <div>
-              
-                   
+                  <a href="https://www.linkedin.com/in/juanjavierrodriguez/"  target="_blank">
+                    <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
+                  </a>
+                  <a href="mailto:javier.rodriguez@quenta.es">
+                    <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
+                  </a>
+                   <a>
                   <img className="img_employee" src = "images/javier.jpg" alt=""></img>
                   <p className="name">Javier Rodríguez</p>
-                  </div> 
                   <p className="position">Managing Director</p>
-                  
+                  </a>
               </div>
 
               <div className="employee"> 
-              <div>
-              
+                  <a href="https://www.linkedin.com/in/iv%C3%A1n-pastor-58320920/"  target="_blank">
+                    <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
+                  </a>
+                  <a href="mailto:ivan.pastor@quenta.es">
+                    <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
+                  </a>
+                <a>
                   <img className="img_employee" src = "images/ivan.jpg" alt=""></img>
                   <p className="name">Iván Pastor</p>
-                  </div>
                   <p className="position">Service Manager</p>
-                
+                  </a>
               </div>
 
               <div className="employee"> 
-              <div>
-            
-                     
+                  <a href="https://www.linkedin.com/in/mar%C3%ADa-dolores-bola%C3%B1os-ortega-07a3334a/"  target="_blank">
+                    <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
+                  </a>
+                  <a href="mailto:maria.bolaños@quenta.es">
+                    <img className="rrss mail" src = "images/rrss-43.png" alt=""></img>
+                  </a>
+                     <a>
                   <img className="img_employee" src = "images/maria.jpg" alt=""></img>
-                  <p className="name">María Bolaños</p>
-                  </div>  
+                  <p className="name">María Bolaños</p>     
                   <p className="position">Business Consultant</p>
-                  
+                  </a>
               </div>
 
               </Slider>

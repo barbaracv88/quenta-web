@@ -22,7 +22,7 @@ export default class Carrousel extends React.Component {
                   />
                 </div>
 <Carousel
-//   autoPlay={2000}
+  autoPlay={3000}
   animationSpeed={1000}
   slidesPerPage={3}
   infinite

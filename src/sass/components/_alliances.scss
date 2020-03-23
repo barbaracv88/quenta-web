@@ -55,6 +55,7 @@ display: none;
 
         .logos_alliances {
             grid-template-columns: 100%;
+            grid-row-gap: 45px;
             // padding: 1em 4em 1.2em 4em;
             .img_logo {
                 width: 90%;

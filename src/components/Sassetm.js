@@ -17,12 +17,12 @@ const parallaxSAM = [
   ];
   const parallaxSAM2 = [
     {
-      start: 300,
-      end: 2500,
+      start: 1000,
+      end: 1800,
       properties: [
         {
-          startValue: 280,
-          endValue: -1000,
+          startValue: 180,
+          endValue: -800,
           property: 'translateY',
         },
       ],
@@ -33,12 +33,9 @@ export default class Sassetm extends React.Component {
         return (
         <div className="sam">
             <div>
-            <Plx
-                className='Parallax'
-                parallaxData={ parallaxSAM }
-                >
+
                 <img className="img_service_fondo" src="images/fondo-sam.png"></img>   
-                </Plx>    
+           
                 <Plx
                 className='Parallax'
                 parallaxData={ parallaxSAM2 }

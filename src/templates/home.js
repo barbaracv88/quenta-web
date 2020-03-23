@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import Alliances from '../components/Alliances';
-import Carrousel from '../components/Carrousel';
+import Carrousel from '../components/Carrousel2';
 import Services from '../components/Services';
 import components, {Layout} from '../components/index';
 import Banner from '../components/Banner';

@@ -61,13 +61,16 @@
 
         .img_service {
             width: 27.6em;
+            margin-right: 35px;
         }
 
         .icons {
             display: none;
+
         }
     }
-    .img_service_fondo{
+
+    .img_service_fondo {
         width: 26.6em;
     }
 
@@ -75,12 +78,13 @@
 
     .sam {
         flex-direction: row-reverse;
-        .img_service{
+
+        .img_service {
             position: absolute;
             width: 38.6em;
             margin-left: -91px;
         }
- 
+
         .service {
 
             .icons {
@@ -117,6 +121,7 @@
         .img_service {
             width: 27.6em;
         }
+
         .icons {
             display: grid;
             grid-template-columns: 50% 50%;
@@ -124,10 +129,11 @@
 
             .icon {
                 display: flex;
-                .description_icon{
+
+                .description_icon {
                     margin-top: 14px;
                 }
-            
+
 
                 .img_icon {
                     height: 64px;
@@ -136,20 +142,22 @@
             }
         }
     }
+
     @include breakpoint('<=xlarge') {
-        .sam{
-            .img_service{
+        .sam {
+            .img_service {
                 width: 34.6em;
                 margin-left: -64px;
             }
         }
     }
+
     @include breakpoint('<=large') {
         margin-top: -41em;
 
 
-        .sam{
-            .img_service{
+        .sam {
+            .img_service {
                 width: 33.6em;
             }
         }
@@ -167,13 +175,17 @@
                 font-size: 1.7em;
             }
         }
-        .apm, .sam, .cybersecurity{
-            .img_service{
+
+        .apm,
+        .sam,
+        .cybersecurity {
+            .img_service {
                 width: 15em;
                 margin-left: 0;
                 margin-top: -200px
             }
-            .img_service_fondo{
+
+            .img_service_fondo {
                 width: 15em;
                 margin-top: -200px
             }
@@ -187,11 +199,38 @@
         .title-section {
             width: 55%;
         }
-        .apm, .sam, .cybersecurity{
+
+        .apm,
+        .sam,
+        .cybersecurity {
             flex-direction: column;
         }
-        .img_service, .img_service_fondo {
+
+        .img_service,
+        .img_service_fondo {
             display: none;
+        }
+        .cybersecurity .icons {
+            display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+            .icon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 2.5em;
+
+                .img_icon {
+                    height: 64px;
+                    margin-right: 0.5em;
+                    width: 64px;
+                }
+
+                .description_icon {
+                    text-align: center;
+                }
+
+            }
         }
     }
 
@@ -201,40 +240,73 @@
         .title-section {
             width: 70%;
         }
-        .apm, .sam, .cybersecurity{
+
+        .apm,
+        .sam,
+        .cybersecurity {
             flex-direction: column;
         }
+
         .service {
             .service_description {
                 margin-left: 0em;
             }
         }
+
         .sam {
             flex-direction: row;
+
             .service {
-                .icons {
-                    flex-direction: column;
+                .icons{
+                    display: grid;
+                    grid-template-columns: 33% 33% 33%;
+        
+                    .icon {
+                        padding: 0.3em;
+                        flex-direction: column;
+                        margin: auto;
+                        margin-top: 0;
+        
+                        .img_icon {
+                            margin: auto;
+                            margin-bottom: 5px;
+                        }
+        
+                        .description_icon {
+                            text-align: center;
+                                height: 40%;
+                            
+                        }
+                    }
                 }
             }
         }
 
-        .apm .icons {
-            grid-template-columns: 100%;
+        .apm .icons, .cybersecurity .icons{
+            display: grid;
+            grid-template-columns: 50% 50%;
 
             .icon {
                 padding: 0.3em;
                 flex-direction: column;
+                margin: auto;
+
                 .img_icon {
-                    height: auto;
-                    width: 16%;
                     margin: auto;
                 }
-                .description_icon{
+
+                .description_icon {
                     text-align: center;
+                        height: 40%;
+                        width: 120px;
+                        margin-top: 10px;
+                    
                 }
             }
         }
-       
+        
+
+
     }
 
     @include breakpoint('<=xxsmall') {
@@ -246,20 +318,7 @@
 
         }
 
-        .sam {
-            flex-direction: row;
-
-            .service {
-
-                .icons {
-                    flex-direction: column;
-                }
-            }
-        }
 
     }
 
 }
-
-
-

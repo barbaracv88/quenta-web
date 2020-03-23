@@ -25,7 +25,7 @@ export default class Cybersecurity extends React.Component {
                 className='Parallax'
                 parallaxData={ parallaxCiber }
                 >
-                <img className="img_service" src="images/csec.png" alt=""></img>       
+                <img className="img_service" src="images/csec-06.png" alt=""></img>       
             </Plx>
 
             <Service
@@ -34,6 +34,14 @@ export default class Cybersecurity extends React.Component {
             title = 'Cybersecurity & IT Security Solutions'
             description="Proporcionamos servicios especializados en el ámbito de la ciberseguridad basados en auditorías técnicas, pentesting, auditorías de código y gestión de las vulnerabilidades."
             link="/cybersecurity/"
+            img_icon1="images/icon-cyber-02.png"
+            description_icon1="Pentesting"
+            img_icon2="images/icon-cyber-05.png"
+            description_icon2="Code Audit"
+            img_icon3="images/icon-cyber-04.png"
+            description_icon3="Vulnerability Management"
+            img_icon4="images/icon-cyber-03.png"
+            description_icon4="Cibersecurity Office"
             />
         </div>
       

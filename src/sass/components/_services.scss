@@ -124,6 +124,10 @@
 
             .icon {
                 display: flex;
+                .description_icon{
+                    margin-top: 14px;
+                }
+            
 
                 .img_icon {
                     height: 64px;
@@ -142,8 +146,7 @@
     }
     @include breakpoint('<=large') {
         margin-top: -41em;
-        .apm, .sam, .cybersecurity{
-        }
+
 
         .sam{
             .img_service{
@@ -158,9 +161,7 @@
         .description {
             font-size: 18px;
         }
-        .apm, .sam, .cybersecurity{
 
-        }
         .service {
             .service_description .title_service {
                 font-size: 1.7em;

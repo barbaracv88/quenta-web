@@ -26,7 +26,7 @@ export default class sam extends React.Component {
                 // img="images/img-apm.jpg"
                 textintroduction="Quenta Solutions proporciona servicios de Gestión de Activos Software capaces de realizar una efectiva gestión y optimización de los activos software de una compañía."
                 subtext="De manera activa y continuada en el tiempo, proporcionamos un reporting dinámico, permitiendo así reducir los costes y las inversiones en licencias software, garantizando el cumplimiento de uso."
-                titletemplate2="¿Con que podemos ayudarte?"
+                titletemplate2="¿Con qué podemos ayudarte?"
                 li1="El Cumplimiento del Uso de todas las Licencias Software de manera continuada."
                 li2="Disminuir el riesgo de auditorías de todos los fabricantes software."
                 li3="Reducir el gasto y optimizar los costes en Licencias Software."

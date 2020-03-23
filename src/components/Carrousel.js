@@ -89,7 +89,7 @@ export default class Carrousel extends React.Component {
                   <img className="img_employee" src = "images/antonio.jpg" alt=""></img>
                   <a>
                   <p className="name">Antonio Villarroel</p>                 
-                  <p className="position">System Engineer</p>
+                  <p className="position">Principal Consultant</p>
                   </a>
               </div>
 
@@ -132,10 +132,10 @@ export default class Carrousel extends React.Component {
                   </a>
                      
                   <img className="img_employee" src = "images/maria.jpg" alt=""></img>
-                  <a>
+               
                   <p className="name">María Bolaños</p>     
                   <p className="position">Business Consultant</p>
-                  </a>
+                 
               </div>
 
               </Slider>

@@ -7,10 +7,11 @@
         height: auto;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 100px 100px; 
+        grid-template-rows: 100px 100px 100px 100px; 
         grid-column-gap: 10px;
         grid-row-gap: 15px;
     .img_logo{
+        width: 200px;
         place-self: center;
         transform:scale(1);
         -ms-transform:scale(1); // IE 9 

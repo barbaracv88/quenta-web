@@ -23,6 +23,7 @@ La política de Calidad de QUENTA SOLUTIONS, de acuerdo con la Norma UNE-EN-ISO 
 ▪ Compromiso de cumplir todos los requisitos del Sistema de Gestión y todos los requisitos aplicables (reglamentarios y legales aplicables a nuestra actividad, requisitos normativos, contractuales y de otra índole)
 
 ▪ Compromiso de mejora continua del sistema de gestión.
+
 ▪ Compromiso de controlar de manera eficiente todos los procesos y sus posibles efectos sobre la Calidad y Seguridad de nuestro servicio, haciendo hincapié en:
 
       o Relaciones con el cliente

@@ -35,7 +35,7 @@ export default class Apm extends React.Component {
                 li2="Análisis de experiencia digital de usuario en tiempo real."
                 li3="Monitorización de Microservicios y contenedores."
                 li4="Detección automática de problemas con Root Cause Analysis basado en IA."
-                li5={["Monitorización de", <strong>aplicaciones basadas en servicios: Salesforce, Office 365, MS Dynamics, etc</strong>]}
+                li5={["Monitorización de ", <strong>aplicaciones basadas en servicios: Salesforce, Office 365, MS Dynamics, etc</strong>]}
                 li6="Conocer el tiempo de respuesta del 100% de las transacciones de negocio."
                 li7="Trazabilidad End-to-End, de usuarios-transacciones-infraestructura a través de todas las capas y tecnologías."
 

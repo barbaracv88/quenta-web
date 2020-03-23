@@ -24,22 +24,22 @@ export default class Contacto extends React.Component {
                     <div className="facts">
                     <div className="fact">
                             {/* <img src="images/direccion.png"></img> */}
-                            <p>Paseo de la Castellanaa, 141</p>
+                            <p>Paseo de la Castellana 141, Edificio Cuzco IV, Planta 19, 28046 Madrid</p>
                         </div>
                         <div className="fact">
                             {/* <img src="images/telefono.png"></img> */}
-                            <p>91-7498013</p>
+                            <p>910 498 013</p>
                         </div>
 
                     </div>
                     <div className="facts">
                     <div className="fact">
                             {/* <img src="images/direccion.png"></img> */}
-                            <p>C/ Cidro nº 3, 3º 2</p>
+                            <p>Calle Cidro 2, Planta 2, Oficina 3, 28044 Madrid</p>
                         </div>
                         <div className="fact">
                             {/* <img src="images/telefono.png"></img> */}
-                            <p>91-6565656</p>
+                            <p>910 516 779</p>
                         </div>
 
                     </div>
@@ -47,7 +47,7 @@ export default class Contacto extends React.Component {
                     </div>
                     <div className="fact_email">
                             {/* <img src="images/email.png"></img> */}
-                            <p>quenta@quenta.es</p>
+                            <p>info@quenta.es</p>
                         </div>
                 </div>
   

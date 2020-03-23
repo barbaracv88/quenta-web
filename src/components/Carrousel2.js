@@ -28,9 +28,11 @@ export default class Carrousel extends React.Component {
   infinite
   arrows
   breakpoints={{
+    394: {
+      arrows: false
+    },
     640: {
       slidesPerPage: 1,
-      
     },
     900: {
       slidesPerPage: 2,

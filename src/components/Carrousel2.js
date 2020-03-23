@@ -22,18 +22,19 @@ export default class Carrousel extends React.Component {
                   />
                 </div>
 <Carousel
-  autoPlay={2000}
+//   autoPlay={2000}
   animationSpeed={1000}
   slidesPerPage={3}
   infinite
+  arrows
   breakpoints={{
     640: {
       slidesPerPage: 1,
-      arrows: false
+      
     },
     900: {
       slidesPerPage: 2,
-      arrows: false
+     
     }
   }}
 >

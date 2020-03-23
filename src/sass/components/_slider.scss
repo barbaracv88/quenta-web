@@ -12,7 +12,8 @@
   .employee {
     margin: auto;
     text-align: center;
-    width: 270px;
+    // width: 270px;
+    width: auto;
     font-size: 19px;
 
 
@@ -143,4 +144,16 @@
 
 
 
+}
+
+
+.BrainhubCarousel__arrows {
+  position: relative;
+  padding: 21px;
+  border: none;
+  overflow: hidden;
+  outline: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: #5bd3a5;
 }

@@ -39,7 +39,11 @@ display: none;
 
     @include breakpoint('<=medium') {
         .logos_alliances {
-            padding: 1em 0em 6.2em 0em;
+            grid-template-columns: 33% 33% 33%;
+            .img_logo {
+                width: 160px;
+            }
+            // padding: 1em 0em 6.2em 0em;
         } 
     }
 

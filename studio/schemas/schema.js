@@ -27,6 +27,7 @@ import page_menu_item from './page_menu_item.js';
 import apm from './apm.js';
 import sam from './sam.js';
 import cybersecurity from './cybersecurity.js';
+import localeText from './localeText.js'
 
 
 
@@ -59,7 +60,8 @@ export default createSchema({
     page_menu_item,
     apm,
     sam,
-    cybersecurity
+    cybersecurity,
+    localeText
 
  
     ])

@@ -34,7 +34,8 @@
 		z-index: _misc(z-index-base);
 		padding-left: 47px;
 		padding-top: 1em;
-
+		display: flex;
+		justify-content: space-between;
 	
 
 		a {
@@ -72,6 +73,7 @@
 			position: absolute;
 			right: 3em;
 			top: 0;
+			// right: 153px;
 
 			ul {
 				list-style: none;
@@ -138,7 +140,7 @@
 			@include vendor('animation', 'none');
 			background: transparent;
 			height: 5em;
-			line-height: 5em;
+			line-height: 4em;
 			position: absolute;
 
 			// h1 {
@@ -195,6 +197,15 @@
 				margin-left: -0.25em;
 			}
 		}
+	}
+
+
+	.select-leng{
+		width: 122px;
+		margin-right: 50px;
+		height: 29px;
+		background-color: #cf153a;
+		display: none;
 	}
 
 	@include breakpoint('<=medium') {

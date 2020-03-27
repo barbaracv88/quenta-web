@@ -5,9 +5,24 @@ import ServiceTemplate from './../components/ServicesTemplate';
 import {Layout} from '../components/index';
 import {markdownify, Link} from '../utils';
 
+import {
+    LanguageProvider,
+    LanguageContext
+  } from "../components/Language/LanguageContext";
+import { allLangs } from "../components/Language/Langs/langs";
+
+
 export default class Apm extends React.Component {
     render() {
         return (
+
+
+            <LanguageProvider>
+            <LanguageContext.Consumer>
+              {language => (
+    
+
+
             <div className="apm-template">
             <Layout {...this.props}>
             {/* <section id="main" className="wrapper">
@@ -20,8 +35,8 @@ export default class Apm extends React.Component {
                     </div>
                 </section> */}
                 <ServiceTemplate
-                titletemplate1="Application Performance Management"
-                subtitle="Identificamos los problemas de Rendimiento de las Aplicaciones de forma rápida y automatizada."
+                  titletemplate1={allLangs[language.name].exploreHeader}
+                                  subtitle="Identificamos los problemas de Rendimiento de las Aplicaciones de forma rápida y automatizada."
                 // img="images/img-apm.jpg"
                 textintroduction="Quenta Solutions proporciona servicios 
                 de valor añadido basados en soluciones 
@@ -69,6 +84,12 @@ export default class Apm extends React.Component {
                 />
             </Layout>
             </div>
+
+
+
+)}
+</LanguageContext.Consumer>
+</LanguageProvider>
         );
     }
 }

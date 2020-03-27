@@ -7,6 +7,7 @@ import { classNames, Link, safePrefix} from '../utils';
 
 
 
+
 // const parallaxData = [
 //     {
 //       start: 0,
@@ -115,18 +116,13 @@ export default class Banner extends React.Component {
                         </header>
                         
 
-                        {/* <Plx
-                        className='ParallaxHeaderImg'
-                        parallaxData={ parallaxData }
-                        >
-                        <div className="image-header">
-                            </div>
-                            </Plx> */}
-
-
-               
-                          
                     </div>
+           
+         <div className="App">
+        <header className="App-header">
+        </header>
+      </div>
+
                 </div>
                
 

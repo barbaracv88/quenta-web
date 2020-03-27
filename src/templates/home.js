@@ -6,11 +6,13 @@ import Services from '../components/Services';
 import components, {Layout} from '../components/index';
 import Banner from '../components/Banner';
 import Contacto from '../components/Contact';
+import {LanguageProvider} from "../components/Language/LanguageContext"
 
 
 export default class Home extends React.Component {
     render() {
         return (
+            <LanguageProvider>
             <Layout {...this.props}>
                     <Banner {...this.props} />
                     {_.map(_.get(this.props, 'pageContext.frontmatter.sections'), (section, section_idx) => {
@@ -25,6 +27,7 @@ export default class Home extends React.Component {
                      <Contacto/>
                 
             </Layout>
+            </LanguageProvider>
         );
     }
 }

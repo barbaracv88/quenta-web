@@ -76,6 +76,14 @@ display: none;
 }
 
 
+
+
+select:focus, textarea:focus {
+    border-color: #cf153a;
+    box-shadow: 0 0 0 1px #cf153a;
+}
+
+
 @include breakpoint('<=large') {
     .title-header {
         font-size: 4em;

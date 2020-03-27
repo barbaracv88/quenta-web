@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel, { Dots } from '@brainhubeu/react-carousel';
+import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import TitleSection from '../components/TitleSection';
@@ -44,7 +44,7 @@ export default class Carrousel extends React.Component {
 
              
               <div className="employee"> 
-                  <a href="https://www.linkedin.com/in/arancha-s%C3%A1nchez-guti%C3%A9rrez-7391712b/"  target="_blank">
+                  <a href="https://www.linkedin.com/in/arancha-s%C3%A1nchez-guti%C3%A9rrez-7391712b/"  target="_blank" rel="noopener noreferrer">
                     <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
                   </a>
                   <a href="mailto:arancha.sanchez@quenta.es">
@@ -60,7 +60,7 @@ export default class Carrousel extends React.Component {
 
               <div className="employee"> 
 
-                  <a href="https://www.linkedin.com/in/antonio-villarroel-a3074724/?originalSubdomain=es"  target="_blank">
+                  <a href="https://www.linkedin.com/in/antonio-villarroel-a3074724/?originalSubdomain=es"  target="_blank" rel="noopener noreferrer">
                     <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
                   </a>
                   <a href="mailto:ajvillarroel.work@quenta.es">
@@ -75,7 +75,7 @@ export default class Carrousel extends React.Component {
               </div>
 
               <div className="employee"> 
-                  <a href="https://www.linkedin.com/in/juanjavierrodriguez/"  target="_blank">
+                  <a href="https://www.linkedin.com/in/juanjavierrodriguez/"  target="_blank" rel="noopener noreferrer">
                     <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
                   </a>
                   <a href="mailto:javier.rodriguez@quenta.es">
@@ -90,7 +90,7 @@ export default class Carrousel extends React.Component {
               </div>
 
               <div className="employee"> 
-                  <a href="https://www.linkedin.com/in/iv%C3%A1n-pastor-58320920/"  target="_blank">
+                  <a href="https://www.linkedin.com/in/iv%C3%A1n-pastor-58320920/"  target="_blank" rel="noopener noreferrer">
                     <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
                   </a>
                   <a href="mailto:ivan.pastor@quenta.es">
@@ -105,7 +105,7 @@ export default class Carrousel extends React.Component {
               </div>
 
               <div className="employee"> 
-                  <a href="https://www.linkedin.com/in/mar%C3%ADa-dolores-bola%C3%B1os-ortega-07a3334a/"  target="_blank">
+                  <a href="https://www.linkedin.com/in/mar%C3%ADa-dolores-bola%C3%B1os-ortega-07a3334a/"  target="_blank"  rel="noopener noreferrer">
                     <img className="rrss linkedin" src = "images/rrss-42.png" alt=""></img>
                   </a>
                   <a href="mailto:maria.bolaños@quenta.es">

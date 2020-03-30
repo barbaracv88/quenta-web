@@ -73,7 +73,7 @@
 			position: absolute;
 			right: 3em;
 			top: 0;
-			// right: 153px;
+			right: 153px;
 
 			ul {
 				list-style: none;
@@ -205,7 +205,6 @@
 		margin-right: 50px;
 		height: 29px;
 		background-color: #cf153a;
-		display: none;
 	}
 
 	@include breakpoint('<=medium') {

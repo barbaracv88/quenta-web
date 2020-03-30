@@ -1,5 +1,5 @@
 const en = {
-    exploreHeader: 'Application Performance Management',
+    exploreHeader: 'Application Performance Management2',
     welcomeDescription: 'This is a demo app for multi-language website with React Context API',
     clickMe: 'Click Me',
     aboutMe: 'For more info about the author',

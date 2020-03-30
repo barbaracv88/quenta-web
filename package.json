@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.13.14",
+    "@sanity/cli": "^1.149.6",
     "@stackbit/gatsby-plugin-menus": "0.0.4",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",

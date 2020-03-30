@@ -6,7 +6,11 @@ import Plx from 'react-plx';
 import { classNames, Link, safePrefix} from '../utils';
 
 
-
+import {
+  LanguageProvider,
+  LanguageContext
+} from "../components/Language/LanguageContext";
+import { allLangs } from "../components/Language/Langs/langs";
 
 // const parallaxData = [
 //     {
@@ -55,7 +59,11 @@ export default class Banner extends React.Component {
   
     render() {
         return (
-                
+               
+          <LanguageProvider>
+          <LanguageContext.Consumer>
+            {language => (
+
             <section id="banner">
               
                 <div className="content">
@@ -75,7 +83,7 @@ export default class Banner extends React.Component {
                             <h2 className="title-header">{_.get(this.props, 'pageContext.frontmatter.banner.4title')}</h2>  
                             </Typing> */}
                             <h2 className="title-header">
-                            nuestro
+                            {allLangs[language.name].header1}
                             <Typical
                             loop={Infinity}
                             wrapper="b"
@@ -129,6 +137,11 @@ export default class Banner extends React.Component {
    
             </section>
          
+         )}
+         </LanguageContext.Consumer>
+         </LanguageProvider>
+
+
         );
         
     }

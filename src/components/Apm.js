@@ -2,6 +2,16 @@ import React from 'react';
 import Service from './Service';
 import Plx from 'react-plx';
 
+
+
+import {
+  LanguageProvider,
+  LanguageContext
+} from "../components/Language/LanguageContext";
+import { allLangs } from "../components/Language/Langs/langs";
+
+
+
 const parallaxAPM = [
     {
       start:0,
@@ -18,6 +28,14 @@ const parallaxAPM = [
 export default class Apm extends React.Component {
     render() {
         return (
+
+
+
+
+
+          <LanguageProvider>
+          <LanguageContext.Consumer>
+            {language => (
       
         <div className="apm">
             <Plx
@@ -30,7 +48,7 @@ export default class Apm extends React.Component {
             <Service
             // img="images/amp.png"
             breadcrumb="SERVICIOS  >  APM"
-            title = 'Application Performance Management'
+            title = {allLangs[language.name].header1}
             description="Proporcionamos servicios de valor añadido basados en soluciones de Monitorización de Aplicaciones (APM) que permiten a las compañías realizar un seguimiento, en tiempo real, de todas las transacciones
             de negocio en función de la experiencia del usuario (real o sintético), independientemente de la tecnología e infraestructura utilizada."
             img_icon1="images/apm-icon1.png"
@@ -50,6 +68,12 @@ export default class Apm extends React.Component {
             />
         </div>
       
+
+      )}
+      </LanguageContext.Consumer>
+      </LanguageProvider>
+
+
         )
     }
 }

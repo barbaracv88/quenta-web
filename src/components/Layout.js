@@ -6,11 +6,14 @@ import {safePrefix} from '../utils';
 import Header from './Header';
 import Footer from './Footer';
 import CookieConsent from "react-cookie-consent";
+import {LanguageProvider} from "../components/Language/LanguageContext"
+
 
 
 export default class Body extends React.Component {
     render() {
         return (
+            <LanguageProvider>
             <React.Fragment>
                 <Helmet>
                     <title>{_.get(this.props, 'pageContext.frontmatter.title') && _.get(this.props, 'pageContext.frontmatter.title') + ' - '}{_.get(this.props, 'pageContext.site.siteMetadata.title')}</title>
@@ -39,6 +42,7 @@ export default class Body extends React.Component {
                         </span>
                     </CookieConsent>
             </React.Fragment>
+            </LanguageProvider>
         );
     }
 }

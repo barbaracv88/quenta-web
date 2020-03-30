@@ -35,7 +35,7 @@ export default class Apm extends React.Component {
                     </div>
                 </section> */}
                 <ServiceTemplate
-                  titletemplate1={allLangs[language.name].exploreHeader}
+                  titletemplate1={allLangs[language.name].header1}
                                   subtitle="Identificamos los problemas de Rendimiento de las Aplicaciones de forma rápida y automatizada."
                 // img="images/img-apm.jpg"
                 textintroduction="Quenta Solutions proporciona servicios 

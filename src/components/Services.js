@@ -3,11 +3,14 @@ import TitleSection from '../components/TitleSection';
 import Cybersecurity from '../components/Cybersecurity';
 import Sassetm from '../components/Sassetm';
 import Apm from '../components/Apm';
+import {LanguageProvider} from "../components/Language/LanguageContext"
+
 
 
 export default class Services extends React.Component {
     render() {
         return (
+            <LanguageProvider>
             <div className="services" name="services">
 
 
@@ -19,6 +22,7 @@ export default class Services extends React.Component {
                     <Sassetm/>
                      <Cybersecurity/>
             </div>
+            </LanguageProvider>
                 );
             }
 }

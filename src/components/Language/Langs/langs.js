@@ -8,6 +8,6 @@ export const allLangs = {
 };
 
 export const languageOptions = [
-  { id: 'es', text: 'Español' },
-  { id: 'en', text: 'English'},
+  { id: 'es', text: 'ES' },
+  { id: 'en', text: 'EN'},
 ];

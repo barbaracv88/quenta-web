@@ -33,11 +33,11 @@ export default class Page extends React.Component {
                                         }
                                         <h3>{_.get(post, 'frontmatter.title')}</h3>
                                         {markdownify(_.get(post, 'frontmatter.excerpt'))}
-                                        <footer>
+                                        {/* <footer>
                                             <ul className="actions">
                                                 <li><Link to={safePrefix(_.get(post, 'url'))} className="button">Learn More</Link></li>
                                             </ul>
-                                        </footer>
+                                        </footer> */}
                                     </section>
                                     {(!(post_idx === post_len - 1)) && 
                                         <hr key={post_idx} />

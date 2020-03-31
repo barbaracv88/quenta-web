@@ -18,7 +18,7 @@ export default class Apm extends React.Component {
         <LanguageContext.Consumer>
           {language => (
             <div className="apm-template">
-              <Layout {...this.props}>
+              <Layout {...this.props} language={language}>
                 {/* <section id="main" className="wrapper">
                     <div className="inner">
                         <header className="major">

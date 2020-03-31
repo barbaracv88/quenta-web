@@ -3,11 +3,18 @@ import _ from 'lodash';
 
 import {markdownify, Link, safePrefix, classNames, htmlToReact} from '../utils';
 
+import { allLangs } from "../components/Language/Langs/langs";
+
+
 export default class Footer extends React.Component {
     render() {
+        const { language } = this.props;
+
+
         let item_list = _.get(this.props, 'pageContext.menus.footer');
         let item_len = _.size(item_list);
         return (
+
             <footer id="footer">
                 <div className="content">
                     <div className="inner">
@@ -61,15 +68,24 @@ export default class Footer extends React.Component {
                             }
                         </React.Fragment>}
                     </div>
-                    <p className="copyright">{_.get(this.props, 'pageContext.site.data.footer.copyright.enabled') && <React.Fragment>{htmlToReact(_.get(this.props, 'pageContext.site.data.footer.copyright.text'))}<br /></React.Fragment>}
+                    <p className="copyright">
+                    {/* {_.get(this.props, 'pageContext.site.data.footer.copyright.enabled') && <React.Fragment>{htmlToReact(_.get(this.props, 'pageContext.site.data.footer.copyright.text'))}<br /></React.Fragment>}
                     {
                     _.map(_.get(this.props, 'pageContext.menus.footer'), (item, item_idx) => (<React.Fragment key={item_idx}>
                         <Link key={item_idx} to={(_.get(item, 'url').startsWith('#') ? _.get(item, 'url') : safePrefix(_.get(item, 'url')))}>{_.get(item, 'title')}</Link>{(!(item_idx === item_len - 1)) && ' | '}
-                    </React.Fragment>))}
+                    </React.Fragment>))} */}
+
+                    {allLangs[language.name].textFooter}
+                   <a href="/privacy/"> {allLangs[language.name].link1} </a>  | 
+                    <a href="/aviso-legal/" > {allLangs[language.name].link2} </a>  | 
+                    <a href="/seguridad-informacion/" > {allLangs[language.name].link3} </a>  | 
+                    <a href="/cookies/" > {allLangs[language.name].link4} </a>  | 
+                    <a href="/politica-calidad/" > {allLangs[language.name].link5} </a>
                 </p>
                 </div>
                 
             </footer>
+
         );
     }
 }

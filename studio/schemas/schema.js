@@ -27,6 +27,7 @@ import page_menu_item from './page_menu_item.js';
 import apm from './apm.js';
 import sam from './sam.js';
 import cybersecurity from './cybersecurity.js';
+// import privacy from './privacy.js';
 import localeText from './localeText.js'
 
 
@@ -61,6 +62,7 @@ export default createSchema({
     apm,
     sam,
     cybersecurity,
+    // privacy,
     localeText
 
  

@@ -7,19 +7,7 @@ import { classNames, Link, safePrefix } from "../utils";
 
 import { allLangs } from "../components/Language/Langs/langs";
 
-// const parallaxData = [
-//     {
-//       start: 0,
-//       end: 800,
-//       properties: [
-//         {
-//           startValue: 0,
-//           endValue: 150,
-//           property: 'translateY',
-//         },
-//       ],
-//     },
-//   ];
+
 const parallaxDataText = [
   {
     start: 0,
@@ -59,7 +47,7 @@ export default class Banner extends React.Component {
             <header>
               <Plx parallaxData={parallaxDataText}>
                 <h2 className="title-header">
-                  {_.get(this.props, "pageContext.frontmatter.banner.title")}
+                {allLangs[language.name].header}
                 </h2>
                 {/* <Typing speed={25}>
                             <h2 className="title-header">{_.get(this.props, 'pageContext.frontmatter.banner.title')}</h2>   
@@ -76,13 +64,13 @@ export default class Banner extends React.Component {
                     loop={Infinity}
                     wrapper="b"
                     steps={[
-                      " ",
+                      ' ',
                       1000,
-                      " compromiso",
+                      ' compromiso',
                       1500,
-                      " objetivo",
+                      ' objetivo',
                       1500,
-                      " valor",
+                      ' valor',
                       1800
                     ]}
                   />

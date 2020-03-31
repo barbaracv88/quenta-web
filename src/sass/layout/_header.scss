@@ -201,10 +201,11 @@
 
 
 	.select-leng{
-		width: 122px;
-		margin-right: 50px;
+		width: 69px;
+		margin-right: 51px;
 		height: 29px;
 		background-color: #cf153a;
+		font-size: 13px;
 	}
 
 	@include breakpoint('<=medium') {

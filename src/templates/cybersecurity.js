@@ -19,7 +19,7 @@ export default class Cybersecurity extends React.Component {
             <LanguageContext.Consumer>
               {language => (
             <div className="cybersecurity-template">
-            <Layout {...this.props}>
+            <Layout {...this.props} language={language}>
             {/* <section id="main" className="wrapper">
                     <div className="inner">
                         <header className="major">
@@ -33,7 +33,7 @@ export default class Cybersecurity extends React.Component {
                 titletemplate1="IT Security Solutions & Cybersecurity"
                 subtitle={allLangs[language.name].subtitelCyber}
                 // img="images/img-apm.jpg"
-                textintroduction={allLangs[language.name].ciber1}
+                textintroduction={allLangs[language.name].cyber1}
             
 
                 // img2="images/introduction2.jpg"

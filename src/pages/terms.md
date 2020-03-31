@@ -1,0 +1,5 @@
+---
+
+template: terms
+title: Terms
+---

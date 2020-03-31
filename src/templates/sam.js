@@ -22,7 +22,7 @@ export default class sam extends React.Component {
               {language => (
 
             <div className="sam-template">
-<Layout {...this.props}>
+<Layout {...this.props} language={language}>
             {/* <section id="main" className="wrapper">
                     <div className="inner">
                         <header className="major">
@@ -39,14 +39,14 @@ export default class sam extends React.Component {
                 textintroduction={allLangs[language.name].sam1}
                 subtext={allLangs[language.name].sam2}
                 titletemplate2={allLangs[language.name].infoSam}
-                li1={allLangs[language.name].li1}
-                li2={allLangs[language.name].li2}
-                li3={allLangs[language.name].li3}
-                li4={allLangs[language.name].li4}
-                li5={allLangs[language.name].li5}
-                li6={allLangs[language.name].li6}
-                li7={allLangs[language.name].li7}
-                li8={allLangs[language.name].li8}
+                li1={allLangs[language.name].li11}
+                li2={allLangs[language.name].li21}
+                li3={allLangs[language.name].li31}
+                li4={allLangs[language.name].li41}
+                li5={allLangs[language.name].li51}
+                li6={allLangs[language.name].li61}
+                li7={allLangs[language.name].li71}
+                li8={allLangs[language.name].li81}
 
 
 

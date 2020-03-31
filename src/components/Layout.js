@@ -8,12 +8,13 @@ import Footer from './Footer';
 import CookieConsent from "react-cookie-consent";
 
 
+
 export default class Body extends React.Component {
     render() {
         const { language } = this.props;
 
         return (
-            <React.Fragment>
+            <React.Fragment language={language} >
                 <Helmet>
                     <title>{_.get(this.props, 'pageContext.frontmatter.title') && _.get(this.props, 'pageContext.frontmatter.title') + ' - '}{_.get(this.props, 'pageContext.site.siteMetadata.title')}</title>
                     <meta charSet="utf-8"/>

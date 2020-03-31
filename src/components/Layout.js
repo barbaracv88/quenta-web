@@ -27,9 +27,7 @@ export default class Body extends React.Component {
                 </Helmet>
                     <Header {...this.props} />
                     {this.props.children}
-                    <Footer {...this.props} 
-                    language={language} 
-                    />
+       
                     <CookieConsent
                         location="bottom"
                         buttonText="Acepto el uso de cookies"

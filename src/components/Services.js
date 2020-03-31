@@ -3,6 +3,8 @@ import TitleSection from "../components/TitleSection";
 import Cybersecurity from "../components/Cybersecurity";
 import Sassetm from "../components/Sassetm";
 import Apm from "../components/Apm";
+import Footer from "../components/Footer";
+
 import { allLangs } from "../components/Language/Langs/langs";
 
 export default class Services extends React.Component {
@@ -18,6 +20,9 @@ export default class Services extends React.Component {
         <Apm language={language} />
         <Sassetm language={language} />
         <Cybersecurity language={language} />
+        <Footer 
+                    language={language} 
+                    />
       </div>
     );
   }

@@ -40,7 +40,7 @@ export default class Home extends React.Component {
               <Alliances language={language} />
               <Carrousel language={language} />
               <Contacto language={language} />
-            </Layout>
+            </Layout >
           )}
         </LanguageContext.Consumer>
       </LanguageProvider>

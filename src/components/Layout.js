@@ -7,12 +7,11 @@ import Header from './Header';
 import Footer from './Footer';
 import CookieConsent from "react-cookie-consent";
 
-import { allLangs } from "../components/Language/Langs/langs";
-
 
 export default class Body extends React.Component {
     render() {
         const { language } = this.props;
+
         return (
             <React.Fragment>
                 <Helmet>
@@ -27,7 +26,9 @@ export default class Body extends React.Component {
                 </Helmet>
                     <Header {...this.props} />
                     {this.props.children}
-       
+                    <Footer {...this.props} 
+                    language={language}
+                    />
                     <CookieConsent
                         location="bottom"
                         buttonText="Acepto el uso de cookies"

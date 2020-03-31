@@ -2,6 +2,9 @@ import React from 'react';
 import Service from './Service';
 import Plx from 'react-plx';
 
+import { allLangs } from "../components/Language/Langs/langs";
+
+
 const parallaxCiber = [
     {
         start: 0,
@@ -18,6 +21,7 @@ const parallaxCiber = [
 
 export default class Cybersecurity extends React.Component {
     render() {
+      const { language } = this.props;
         return (
         <div className="cybersecurity">
                 
@@ -29,10 +33,11 @@ export default class Cybersecurity extends React.Component {
             </Plx>
 
             <Service
+            language={language} 
             // img="images/csec.png"
-            breadcrumb="SERVICIOS  >  CSEC"
+            breadcrumb={allLangs[language.name].breadcrumb3}
             title = 'Cybersecurity & IT Security Solutions'
-            description="Proporcionamos servicios especializados en el ámbito de la ciberseguridad basados en auditorías técnicas, pentesting, auditorías de código y gestión de las vulnerabilidades."
+            description={allLangs[language.name].description3}
             link="/cybersecurity/"
             img_icon1="images/icon-cyber-02.png"
             description_icon1="Pentesting"

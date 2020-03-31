@@ -30,24 +30,19 @@ export default class Apm extends React.Component {
           ></img>
         </Plx>
         <Service
+        language={language} 
           // img="images/amp.png"
-          breadcrumb="SERVICIOS  >  APM"
-          title={allLangs[language.name].header1}
-          description="Proporcionamos servicios de valor añadido basados en soluciones de Monitorización de Aplicaciones (APM) que permiten a las compañías realizar un seguimiento, en tiempo real, de todas las transacciones
-            de negocio en función de la experiencia del usuario (real o sintético), independientemente de la tecnología e infraestructura utilizada."
+          breadcrumb={allLangs[language.name].breadcrumb1}
+          title="Application Performance Management"
+          description={allLangs[language.name].description1}
           img_icon1="images/apm-icon1.png"
-          description_icon1="Rendimiento de entornos
-            Cloud y virtulizados"
+          description_icon1={allLangs[language.name].description_icon1}
           img_icon2="images/apm-icon2.png"
-          description_icon2="Monitorización IT
-            FullStack"
+          description_icon2={allLangs[language.name].description_icon2}
           img_icon3="images/apm-icon3.png"
-          description_icon3="Consultoría de negocio
-            basada en APM"
+          description_icon3={allLangs[language.name].description_icon3}
           img_icon4="images/apm-icon4.png"
-          description_icon4="Control sobre Contenedores
-            y Microservicios
-            "
+          description_icon4={allLangs[language.name].description_icon4}
           link="/apm/"
         />
       </div>

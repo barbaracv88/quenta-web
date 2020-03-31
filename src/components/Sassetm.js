@@ -2,6 +2,9 @@ import React from 'react';
 import Service from './Service';
 import Plx from 'react-plx';
 
+import { allLangs } from "../components/Language/Langs/langs";
+
+
 const parallaxSAM = [
     {
       start: 100,
@@ -30,6 +33,8 @@ const parallaxSAM = [
   ];
 export default class Sassetm extends React.Component {
     render() {
+      const { language } = this.props;
+
         return (
         <div className="sam">
             <div>
@@ -44,13 +49,11 @@ export default class Sassetm extends React.Component {
             </Plx>   
             </div>
             <Service
+            language={language} 
             // img="images/sam.png"
-            breadcrumb="SERVICIOS  >  SAM"
+            breadcrumb={allLangs[language.name].breadcrumb2}
             title = 'Software Asset Management'
-            description="Proporcionamos servicios de Gestión de Activos Software (SAM) basados
-            en un conjunto de procesos de negocio y procedimientos capaces
-            de realizar una efectiva gestión y optimización de los activos software
-            de una compañía, a través de todas las fases de gestión de su ciclo de vida."
+            description={allLangs[language.name].description2}
             img_icon1="images/assessment.png"
             description_icon1="Assessment"
             img_icon2="images/management.png"

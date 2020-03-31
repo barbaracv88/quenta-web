@@ -114,7 +114,7 @@ export default class Banner extends React.Component {
                               }
                               className="button secondary_banner"
                             >
-                              ¿HABLAMOS?
+                              {allLangs[language.name].headerButton}
                             </Link>
                           </li>
                         )

@@ -11,8 +11,8 @@ export default class Services extends React.Component {
     return (
       <div className="services" name="services">
         <TitleSection
-          category="Nuestros servicios"
-          description="Te ayudamos a conseguir tus objetivos, en tus proyectos tecnológicos."
+          category={allLangs[language.name].title1}
+          description={allLangs[language.name].subtitle1}
           language={language}
         />
         <Apm language={language} />

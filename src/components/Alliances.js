@@ -2,15 +2,16 @@ import React from 'react';
 import Logos from './Logos';
 import TitleSection from '../components/TitleSection';
 
-
+import { allLangs } from "../components/Language/Langs/langs";
 
 export default class Alliances extends React.Component {
     render() {
+    const { language } = this.props;
         return (
 
           <div className="alliances">
                        <TitleSection
-    category="Nuestras alianzas"
+    category={allLangs[language.name].title2}
 />
 <div className="logos_alliances">
     <Logos

@@ -29,60 +29,36 @@ export default class Apm extends React.Component {
                     </div>
                 </section> */}
                 <ServiceTemplate
-                  titletemplate1={allLangs[language.name].header1}
-                  subtitle="Identificamos los problemas de Rendimiento de las Aplicaciones de forma rápida y automatizada."
+                  titletemplate1="Application Performance Management"
+                  subtitle={allLangs[language.name].subtitleApm}
                   // img="images/img-apm.jpg"
-                  textintroduction="Quenta Solutions proporciona servicios 
-                de valor añadido basados en soluciones 
-                de Monitorización de Aplicaciones."
-                  subtext="Realizamos un seguimiento, en tiempo real, de todas las transacciones 
-                de negocio en función de la experiencia del usuario (real o sintético), independientemente de la tecnología e infraestructura utilizada."
-                  titletemplate2="Monitorización"
-                  subtitle2={[
-                    "Las soluciones de APM de Quenta Solutions ofrecen una monitorización unificada",
-                    <strong> para todo el entorno Full Stack:</strong>
-                  ]}
-                  li1={[
-                    "Monitorización de infraestructura,",
-                    <strong> logs y métricas de red.</strong>
-                  ]}
-                  li2="Análisis de experiencia digital de usuario en tiempo real."
-                  li3="Monitorización de Microservicios y contenedores."
-                  li4="Detección automática de problemas con Root Cause Analysis basado en IA."
-                  li5={[
-                    "Monitorización de ",
-                    <strong>
-                      aplicaciones basadas en servicios: Salesforce, Office 365,
-                      MS Dynamics, etc
-                    </strong>
-                  ]}
-                  li6="Conocer el tiempo de respuesta del 100% de las transacciones de negocio."
-                  li7="Trazabilidad End-to-End, de usuarios-transacciones-infraestructura a través de todas las capas y tecnologías."
+                  textintroduction={allLangs[language.name].apm1}
+                  subtext={allLangs[language.name].apm2}
+                  titletemplate2={allLangs[language.name].monit}
+                  subtitle2={allLangs[language.name].subMonit}
+                  li1={allLangs[language.name].li1}
+                  li2={allLangs[language.name].li2}
+                  li3={allLangs[language.name].li3}
+                  li4={allLangs[language.name].li4}
+                  li5={allLangs[language.name].li5}
+                  li6={allLangs[language.name].li6}
+                  li7={allLangs[language.name].li7}
                   img_icon1="../images/one.svg"
-                  description_icon1="Aplicaciones basadas en las arquitecturas y frameworks más utilizados."
+                  description_icon1={allLangs[language.name].icons1}
                   img_icon2="../images/two.svg"
-                  description_icon2="Aplicaciones para 
-                plataformas móviles 
-                basadas en iOS y Android."
+                  description_icon2={allLangs[language.name].icons2}
                   img_icon3="../images/three.svg"
-                  description_icon3="Aplicaciones virtualizadas basadas en Citrix."
+                  description_icon3={allLangs[language.name].icons3}
                   img_icon4="../images/four.svg"
-                  description_icon4="Visibilidad detallada 
-                del lado del back-end."
+                  description_icon4={allLangs[language.name].icons4}
                   img_icon5="../images/five.svg"
-                  description_icon5="Experiencia de usuario 
-                que permite identificar 
-                su interacción 
-                con las aplicaciones."
+                  description_icon5={allLangs[language.name].icons5}
                   // img2="images/introduction2.jpg"
-                  titletemplate3="Automatización"
-                  subtitle3="Resolvemos los problemas de rendimiento de forma rápida y automatizada antes que ocasionen un grave impacto en el negocio, a través de establecimiento de alertas basadas en anomalías del rendimiento, integración con entornos basados en Cloud, automatización de tareas manuales y repetitivas, etc."
+                  titletemplate3={allLangs[language.name].automat}
+                  subtitle3={allLangs[language.name].automatText}
                   // img3="images/introduction3.jpg"
-                  titletemplate4="Análisis"
-                  subtitle4="Cubrimos tanto el Análisis Operacional, pudiendo comparar
-                el impacto de los cambios de versión en el tiempo o analizando 
-                la escalabilidad de la infraestructura y el consumo de recursos, como el Análisis de Aplicaciones correlando métricas de aplicación con el negocio, detectando tendencias y patrones en la ejecución de los servicios para poder tomar decisiones en base 
-                a la información obtenida."
+                  titletemplate4={allLangs[language.name].analisis}
+                  subtitle4={allLangs[language.name].analisisText}
                 />
               </Layout>
             </div>

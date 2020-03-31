@@ -5,20 +5,22 @@ import '@brainhubeu/react-carousel/lib/style.css';import 'pure-react-carousel/di
 import TitleSection from '../components/TitleSection';
 
 
+import { allLangs } from "../components/Language/Langs/langs";
 
 
 
 export default class Carrousel extends React.Component {
     render() {
   
+      const { language } = this.props;
+
           return (
             <div className="container">
 
 <div>
                   <TitleSection
-                      category="Nuestro equipo"
-                      description="En Quenta Solutions contamos con más de 25 años de experiencia en Consultoría de Negocio y Servicios Gestionados de IT,
-                      lo que nos permite tener una Visión Completa del Negocio para abordar proyectos de Modernización, Innovación y Expansión."
+                      category={allLangs[language.name].title3}
+                      description={allLangs[language.name].subTitle3}
                   />
                 </div>
 <Carousel

@@ -2,23 +2,28 @@ import React from 'react';
 import TitleSection from '../components/TitleSection';
 
 
+import { allLangs } from "../components/Language/Langs/langs";
 
 
 export default class Contacto extends React.Component {
     render() {
+
+        const { language } = this.props;
+
+
         return (
             
             <div className="contact" >
                 <div className="title_contact">
                 <TitleSection
-                category="Podemos ayudarte"
+                category={allLangs[language.name].title4}
             />
             </div>
             <div className="dates-contact">
             <div className="information">
 
                 <div className="title_contact">
-                <p>Si estás interesado en ampliar información o quieres trabajar con nosotros, no dudes en ponerte en contacto en:</p>
+                <p>{allLangs[language.name].textContact}</p>
             </div>
                 <div className="directions">
                     <div className="facts">
@@ -70,10 +75,10 @@ export default class Contacto extends React.Component {
 
 
                     <div className="button item5">
-                    <button type="submit" value="Submit">Envíar</button>
+                    <button type="submit" value="Submit">{allLangs[language.name].buttonContact}</button>
                     </div>
                     <div className="item6">
-                    <input type="checkbox" name="condiciones" id="acepto" required/><label htmlFor="acepto" >He leído y acepto la <a href="/privacy/">política de privacidad</a></label>
+                    <input type="checkbox" name="condiciones" id="acepto" required/><label htmlFor="acepto" >{allLangs[language.name].terms1}<a href="/privacy/">{allLangs[language.name].terms2}</a></label>
                     </div>
 
                 </form>

@@ -74,13 +74,13 @@ export default class Footer extends React.Component {
                     _.map(_.get(this.props, 'pageContext.menus.footer'), (item, item_idx) => (<React.Fragment key={item_idx}>
                         <Link key={item_idx} to={(_.get(item, 'url').startsWith('#') ? _.get(item, 'url') : safePrefix(_.get(item, 'url')))}>{_.get(item, 'title')}</Link>{(!(item_idx === item_len - 1)) && ' | '}
                     </React.Fragment>))} */}
-
+{/* 
                     {allLangs[language.name].textFooter}
                    <a href="/privacy/"> {allLangs[language.name].link1} </a>  | 
                     <a href="/aviso-legal/" > {allLangs[language.name].link2} </a>  | 
                     <a href="/seguridad-informacion/" > {allLangs[language.name].link3} </a>  | 
                     <a href="/cookies/" > {allLangs[language.name].link4} </a>  | 
-                    <a href="/politica-calidad/" > {allLangs[language.name].link5} </a>
+                    <a href="/politica-calidad/" > {allLangs[language.name].link5} </a> */}
                 </p>
                 </div>
                 

@@ -7,10 +7,12 @@ import Header from './Header';
 import Footer from './Footer';
 import CookieConsent from "react-cookie-consent";
 
+import { allLangs } from "../components/Language/Langs/langs";
+
 
 export default class Body extends React.Component {
     render() {
-const { language } = this.props;
+        const { language } = this.props;
         return (
             <React.Fragment>
                 <Helmet>
@@ -23,9 +25,11 @@ const { language } = this.props;
                     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
                     <body className={((_.get(this.props, 'pageContext.frontmatter.template') === _.get(this.props, 'pageContext.site.siteMetadata.landing_template')) ? 'landing ' : '')} />
                 </Helmet>
-                    <Header {...this.props} language={language} />
+                    <Header {...this.props} />
                     {this.props.children}
-                    <Footer {...this.props} language={language}/>
+                    <Footer {...this.props} 
+                    language={language} 
+                    />
                     <CookieConsent
                         location="bottom"
                         buttonText="Acepto el uso de cookies"

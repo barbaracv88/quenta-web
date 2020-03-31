@@ -10,7 +10,7 @@ import CookieConsent from "react-cookie-consent";
 
 export default class Body extends React.Component {
     render() {
-
+        const { language } = this.props;
         return (
             <React.Fragment>
                 <Helmet>
@@ -26,6 +26,7 @@ export default class Body extends React.Component {
                     <Header {...this.props} />
                     {this.props.children}
                     <Footer {...this.props} 
+                    language={language}
                     
                     />
                     <CookieConsent

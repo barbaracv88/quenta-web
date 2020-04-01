@@ -18,7 +18,7 @@ export default class Home extends React.Component {
         <LanguageContext.Consumer>
           {language => (
             <Layout {...this.props} language={language} >
-              <Banner {...this.props} language={language} />
+    <Banner {...this.props} language={language} />
               {_.map(
                 _.get(this.props, "pageContext.frontmatter.sections"),
                 (section, section_idx) => {
@@ -41,9 +41,9 @@ export default class Home extends React.Component {
               <Carrousel language={language} />
               <Contacto language={language} />
             </Layout >
-          )}
-        </LanguageContext.Consumer>
-      </LanguageProvider>
-    );
-  }
+     )}
+     </LanguageContext.Consumer>
+   </LanguageProvider>
+ );
+}
 }

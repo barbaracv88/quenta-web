@@ -6,10 +6,19 @@ import {markdownify, Link} from '../utils';
 
 /* eslint-disable */
 
+import {
+    LanguageProvider,
+    LanguageContext
+  } from "../components/Language/LanguageContext";
+  import { allLangs } from "../components/Language/Langs/langs";
+
 export default class Elements extends React.Component {
     render() {
         return (
-            <Layout {...this.props}>
+            <LanguageProvider>
+            <LanguageContext.Consumer>
+              {language => (
+            <Layout {...this.props} language={language}>
                 <section id="main" className="wrapper">
                     <div className="inner">
                         <header className="major">
@@ -308,6 +317,9 @@ export default class Elements extends React.Component {
                     </div>
                 </section>
             </Layout>
+                  )}
+                  </LanguageContext.Consumer>
+                </LanguageProvider>
         );
     }
 }

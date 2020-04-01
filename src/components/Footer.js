@@ -16,9 +16,10 @@ export default class Footer extends React.Component {
         return (
 
             <footer id="footer">
-                <div className="content">
+                <div className="content" >
                     <p className="copyright">
     
+
 
                     {/* {allLangs[language.name].textFooter}
                    <a href="/privacy/"> {allLangs[language.name].link1} </a>  | 

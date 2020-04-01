@@ -6,14 +6,9 @@ import Menu from "./Menu";
 
 import { LanguageSelector } from "../components/Language/LanguageSelector";
 
-import { allLangs } from "../components/Language/Langs/langs";
-
-
 export default class Header extends React.Component {
   render() {
     let menu = _.get(this.props, "pageContext.menus.main");
-    const { language } = this.props;
-
     return (
       <header
         id="header"
@@ -26,8 +21,6 @@ export default class Header extends React.Component {
         <div id="logo">
           <a href="/">
             <img className="logo" src="../images/logo-quenta.png"></img>
-            {allLangs[language.name].textFooter}
-
           </a>
 
           {/* <Link to={_.get(this.props, 'pageContext.site.pathPrefix') || '/'}>{_.get(this.props, 'pageContext.site.siteMetadata.title')}</Link> */}

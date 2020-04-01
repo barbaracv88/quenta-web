@@ -4,13 +4,7 @@ import _ from 'lodash';
 import {Layout} from '../components/index';
 import {markdownify, Link, toUrl, safePrefix, htmlToReact, getPages} from '../utils';
 
-import {
-    LanguageProvider,
-    LanguageContext
-  } from "../components/Language/LanguageContext";
-//   import { allLangs } from "../components/Language/Langs/langs";
-   
-  
+
 
 
 export default class Page extends React.Component {
@@ -18,12 +12,9 @@ export default class Page extends React.Component {
         let post_list = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'), ['frontmatter.show_in_sidebar', true]), 'frontmatter.date', 'desc');
         let post_len = _.size(post_list);
         // let x =0;
-        return (
 
-            <LanguageProvider>
-            <LanguageContext.Consumer>
-              {language => (
-                  
+        const { language } = this.props;
+        return (
 
             <Layout {...this.props} language={language}>
                 <section id="main" className={'wrapper' + (_.get(this.props, 'pageContext.frontmatter.sidebar.enabled') ? ' sidebar ' + _.get(this.props, 'pageContext.frontmatter.sidebar.side') : '')}>
@@ -59,9 +50,7 @@ export default class Page extends React.Component {
                     </div>
                 </section>
             </Layout>
-                    )}
-                    </LanguageContext.Consumer>
-                   </LanguageProvider>
+             
         );
     }
 }

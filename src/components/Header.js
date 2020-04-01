@@ -11,7 +11,7 @@ import { allLangs } from "../components/Language/Langs/langs";
 
 export default class Header extends React.Component {
   render() {
-    let menu = _.get(this.props, "pageContext.menus.main");
+    // let menu = _.get(this.props, "pageContext.menus.main");
     const { language } = this.props;
 
     return (

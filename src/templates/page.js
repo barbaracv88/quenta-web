@@ -8,7 +8,7 @@ import {
     LanguageProvider,
     LanguageContext
   } from "../components/Language/LanguageContext";
-  import { allLangs } from "../components/Language/Langs/langs";
+//   import { allLangs } from "../components/Language/Langs/langs";
    
   
 

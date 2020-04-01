@@ -1,9 +1,9 @@
 const en = {
   header: "Your transformation,",
   header1: "Our",
-  header2: "Commitment",
-  header3: "Target",
-  header4: "Value",
+  header2: " commitment",
+  header3: " target",
+  header4: " value",
   headerButton: "LETS´S TALK?",
 
 

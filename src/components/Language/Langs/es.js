@@ -1,9 +1,9 @@
 const es = {
   header: "Tu transformación,",
   header1: "Nuestro",
-  header2: "Compromiso",
-  header3: "Objetivo",
-  header4: "Valor",
+  header2: " compromiso",
+  header3: " objetivo",
+  header4: " valor",
   headerButton: "¿HABLAMOS?",
 
 

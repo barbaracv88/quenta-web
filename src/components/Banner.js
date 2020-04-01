@@ -35,11 +35,17 @@ const parallaxButtons = [
   }
 ];
 
+
 export default class Banner extends React.Component {
   onStartedTyping() {}
 
   render() {
     const { language } = this.props;
+    const word1 = allLangs[language.name].header2;
+    const word2 = allLangs[language.name].header3;
+    const word3 = allLangs[language.name].header4;
+
+
     return (
       <section id="banner">
         <div className="content">
@@ -66,11 +72,11 @@ export default class Banner extends React.Component {
                     steps={[
                       ' ',
                       1000,
-                      ' compromiso',
+                      word1,
                       1500,
-                      ' objetivo',
+                      word2,
                       1500,
-                      ' valor',
+                      word3,
                       1800
                     ]}
                   />

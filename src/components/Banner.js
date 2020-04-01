@@ -67,11 +67,9 @@ export default class Banner extends React.Component {
                 <h2 className="title-header">
                   {allLangs[language.name].header1}
                   <Typical
-                    loop={Infinity}
-                    wrapper="b"
+
                     steps={[
-                      ' ',
-                      1000,
+
                       word1,
                       1500,
                       word2,
@@ -79,6 +77,7 @@ export default class Banner extends React.Component {
                       word3,
                       1800
                     ]}
+                    wrapper="a"
                   />
                 </h2>
 

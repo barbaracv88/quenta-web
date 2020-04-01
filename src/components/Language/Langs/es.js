@@ -11,6 +11,11 @@ const es = {
   subTitle1: "Te ayudamos a conseguir tus objetivos, en tus proyectos tecnológicos.",
   buttonServices: "MÁS INFORMACIÓN",
 
+
+  //menu
+  inicio: "Inicio",
+  servicios: "Servicios",
+
   //apm
 
   breadcrumb1: "SERVICIOS  >  APM",

@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
                     <p className="copyright">
     
 
-                    {allLangs[language.name].textFooter}
+                    {/* {allLangs[language.name].textFooter} */}
                    <a href="/privacy/"> {allLangs[language.name].link1} </a>  | 
                     <a href="/aviso-legal/" > {allLangs[language.name].link2} </a>  | 
                     <a href="/seguridad-informacion/" > {allLangs[language.name].link3} </a>  | 

@@ -14,7 +14,7 @@ export default class Body extends React.Component {
         const { language } = this.props;
 
         return (
-            <React.Fragment language={language} >
+            <React.Fragment>
                 <Helmet>
                     <title>{_.get(this.props, 'pageContext.frontmatter.title') && _.get(this.props, 'pageContext.frontmatter.title') + ' - '}{_.get(this.props, 'pageContext.site.siteMetadata.title')}</title>
                     <meta charSet="utf-8"/>

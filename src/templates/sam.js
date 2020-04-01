@@ -1,9 +1,9 @@
 import React from 'react';
-import _ from 'lodash';
+// import _ from 'lodash';
 import ServiceTemplate from './../components/ServicesTemplate';
 
 import {Layout} from '../components/index';
-import {markdownify, Link} from '../utils';
+// import {markdownify, Link} from '../utils';
 
 
 import {

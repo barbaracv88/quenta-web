@@ -20,7 +20,7 @@ export default class Header extends React.Component {
       >
         <div id="logo">
           <a href="/">
-            <img className="logo" src="../images/logo-quenta.png"></img>
+            <img className="logo" src="../images/logo-quenta.png" alt=""></img>
           </a>
 
           {/* <Link to={_.get(this.props, 'pageContext.site.pathPrefix') || '/'}>{_.get(this.props, 'pageContext.site.siteMetadata.title')}</Link> */}

@@ -17,7 +17,7 @@ export default class Home extends React.Component {
       <LanguageProvider>
         <LanguageContext.Consumer>
           {language => (
-            <Layout {...this.props}>
+            <Layout {...this.props} language={language} >
               <Banner {...this.props} language={language} />
               {_.map(
                 _.get(this.props, "pageContext.frontmatter.sections"),

@@ -3,7 +3,7 @@ import _ from "lodash";
 // import Typing from 'react-typing-animation';
 import Typical from "react-typical";
 import Plx from "react-plx";
-import { classNames, Link, safePrefix } from "../utils";
+import { Link, safePrefix } from "../utils";
 
 import { allLangs } from "../components/Language/Langs/langs";
 

@@ -5,19 +5,19 @@ import Plx from 'react-plx';
 import { allLangs } from "../components/Language/Langs/langs";
 
 
-const parallaxSAM = [
-    {
-      start: 100,
-      end: 2900,
-      properties: [
-        {
-          startValue: 550,
-          endValue: -400,
-          property: 'translateY',
-        },
-      ],
-    },
-  ];
+// const parallaxSAM = [
+//     {
+//       start: 100,
+//       end: 2900,
+//       properties: [
+//         {
+//           startValue: 550,
+//           endValue: -400,
+//           property: 'translateY',
+//         },
+//       ],
+//     },
+//   ];
   const parallaxSAM2 = [
     {
       start: 1000,
@@ -39,13 +39,13 @@ export default class Sassetm extends React.Component {
         <div className="sam">
             <div>
 
-                <img className="img_service_fondo" src="images/fondo-sam.png"></img>   
+                <img className="img_service_fondo" src="images/fondo-sam.png" alt=""></img>   
            
                 <Plx
                 className='Parallax'
                 parallaxData={ parallaxSAM2 }
                 >
-            <img className="img_service" src="images/pantalla-sam.png"></img>    
+            <img className="img_service" src="images/pantalla-sam.png" alt=""></img>    
             </Plx>   
             </div>
             <Service

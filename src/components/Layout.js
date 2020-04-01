@@ -25,7 +25,7 @@ export default class Body extends React.Component {
                     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
                     <body className={((_.get(this.props, 'pageContext.frontmatter.template') === _.get(this.props, 'pageContext.site.siteMetadata.landing_template')) ? 'landing ' : '')} />
                 </Helmet>
-                    <Header {...this.props} language={language} />
+                    <Header {...this.props} />
                     {this.props.children}
                     <Footer {...this.props} language={language}/>
                     <CookieConsent

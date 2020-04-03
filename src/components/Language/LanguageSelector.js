@@ -23,11 +23,21 @@ export const LanguageSelector = () => {
       }
       className="select-leng"
     >
-      {languageOptions.map(item => (
-        <option key={item.id} value={item.id}>
-          {item.text}
-        </option>
-      ))}
+      {languageOptions.map(item => {
+        if (languageContext.name === item.id) {
+          return (
+            <option key={item.id} value={item.id} selected>
+              {item.text}
+            </option>
+          );
+        } else {
+          return (
+            <option key={item.id} value={item.id}>
+              {item.text}
+            </option>
+          );
+        }
+      })}
     </select>
   );
 };

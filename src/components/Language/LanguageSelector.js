@@ -24,7 +24,7 @@ export const LanguageSelector = () => {
       className="select-leng"
     >
       {languageOptions.map(item => (
-        <option key={item.id} value={item.id}>
+        <option key={item.id} value={item.id} className="lang_option">
           {item.text}
         </option>
       ))}

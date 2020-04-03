@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { languageOptions } from "./Langs/langs";
-import { LanguageContext } from "./LanguageContext";
+import { LanguageContext, isBrowser } from "./LanguageContext";
 
 export const LanguageSelector = () => {
   const languageContext = useContext(LanguageContext);
@@ -16,7 +16,11 @@ export const LanguageSelector = () => {
   return (
     <select
       onChange={handleLanguageChange}
-      value={languageContext.name}
+      value={
+        isBrowser() && window.localStorage.getItem("lang")
+          ? isBrowser() && window.localStorage.getItem("lang")
+          : languageContext.name
+      }
       className="select-leng"
     >
       {languageOptions.map(item => (

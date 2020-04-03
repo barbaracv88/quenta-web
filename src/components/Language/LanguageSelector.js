@@ -18,13 +18,13 @@ export const LanguageSelector = () => {
       onChange={handleLanguageChange}
       value={
         isBrowser() && window.localStorage.getItem("lang")
-          ? isBrowser() && window.localStorage.getItem("lang")
+          ? window.localStorage.getItem("lang")
           : languageContext.name
       }
       className="select-leng"
     >
       {languageOptions.map(item => (
-        <option key={item.id} value={item.id} className="lang_option">
+        <option key={item.id} value={item.id}>
           {item.text}
         </option>
       ))}

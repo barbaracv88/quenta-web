@@ -7,7 +7,6 @@ import { Link, safePrefix } from "../utils";
 
 import { allLangs } from "../components/Language/Langs/langs";
 
-
 const parallaxDataText = [
   {
     start: 0,
@@ -35,7 +34,6 @@ const parallaxButtons = [
   }
 ];
 
-
 export default class Banner extends React.Component {
   onStartedTyping() {}
 
@@ -45,7 +43,6 @@ export default class Banner extends React.Component {
     const word2 = allLangs[language.name].header3;
     const word3 = allLangs[language.name].header4;
 
-
     return (
       <section id="banner">
         <div className="content">
@@ -53,7 +50,7 @@ export default class Banner extends React.Component {
             <header>
               <Plx parallaxData={parallaxDataText}>
                 <h2 className="title-header">
-                {allLangs[language.name].header}
+                  {allLangs[language.name].header}
                 </h2>
                 {/* <Typing speed={25}>
                             <h2 className="title-header">{_.get(this.props, 'pageContext.frontmatter.banner.title')}</h2>   
@@ -67,16 +64,7 @@ export default class Banner extends React.Component {
                 <h2 className="title-header">
                   {allLangs[language.name].header1}
                   <Typical
-
-                    steps={[
-
-                      word1,
-                      1500,
-                      word2,
-                      1500,
-                      word3,
-                      1800
-                    ]}
+                    steps={[word1, 1500, word2, 1500, word3, 1800]}
                     wrapper="a"
                   />
                 </h2>

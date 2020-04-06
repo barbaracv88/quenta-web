@@ -6,6 +6,8 @@ import Services from "../components/Services";
 import components, { Layout } from "../components/index";
 import Banner from "../components/Banner";
 import Contacto from "../components/Contact";
+
+
 import {
   LanguageProvider,
   LanguageContext
@@ -13,6 +15,8 @@ import {
 
 export default class Home extends React.Component {
   render() {
+    
+
     return (
       <LanguageProvider>
         <LanguageContext.Consumer>

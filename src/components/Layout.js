@@ -25,6 +25,7 @@ export default class Body extends React.Component {
             content="width=device-width, initialScale=1, userScalable=no"
           />
           <link rel="stylesheet" href={safePrefix("assets/css/main.css")} />
+          {/* <link rel="shortcut icon" href="../../static/images/favicon.png" /> */}
           <link
             rel="stylesheet"
             href={safePrefix("assets/css/markdown-images.css")}

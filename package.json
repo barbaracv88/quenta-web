@@ -22,7 +22,7 @@
     "gatsby-plugin-react-leaflet": "^2.0.11",
     "gatsby-source-filesystem": "2.0.28",
     "gatsby-source-sanity": "^5.0.4",
-    "gatsby-transformer-remark": "2.3.8",
+    "gatsby-transformer-remark": "5.25.1",
     "google-maps-react": "^2.0.2",
     "js-yaml": "^3.12.2",
     "leaflet": "^1.5.1",
